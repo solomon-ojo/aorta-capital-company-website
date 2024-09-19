@@ -9,7 +9,7 @@ export default function Document() {
       <Head />
       <body
         className={clsx(
-          "bg-background overflow-hidden font-sans antialiased",
+          "bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
