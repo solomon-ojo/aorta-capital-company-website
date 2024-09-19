@@ -21,7 +21,7 @@ export default function DefaultLayout({
   };
 
   return (
-    <div className="relative flex flex-col footer-bg h-[100svh] overflow-hidden">
+    <div className="relative flex flex-col footer-bg h-[100svh] ">
       <Head />
       {/* Navbar */}
       <div

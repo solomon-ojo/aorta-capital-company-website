@@ -36,7 +36,7 @@ export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
     <nav className="max-screen-width relative w-full flex justify-between items-center">
       <Link href={siteConfig.pathLinks.home}>
         <h1
-          className={`text-[20px] text-white md:text-black ${openState ? "text-white" : "text-black"} cursor-pointer`}
+          className={`text-[20px]  md:text-black ${openState ? "text-white" : "text-black"} cursor-pointer`}
         >
           <span className="font-bold font-rubik">Aorta</span>{" "}
           <span className="font-light">Capital</span>
