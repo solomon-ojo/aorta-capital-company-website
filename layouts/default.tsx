@@ -19,6 +19,7 @@ export default function DefaultLayout({
       >
         <Navbar />
       </div>
+
       <main className="mx-auto w-full flex-grow">{children}</main>
       <footer className="w-full footer-bg flex items-center justify-center h-[50px] lg:h-[100px]">
         <p className="footer-text font-lato">© 2024 {siteConfig.name}</p>
