@@ -15,6 +15,7 @@ module.exports = {
         mono: ["var(--font-mono)"],
         lato: ["Lato", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
+        lora: ["Lora, sans-serif"],
       },
     },
   },

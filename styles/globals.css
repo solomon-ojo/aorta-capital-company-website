@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,4 +21,13 @@
 
 .max-screen-width {
   max-width: 1080px;
+}
+
+.home-text-color {
+  color: rgb(70, 70, 70);
+}
+
+.green-color {
+  color: #4fe18b;
+  text-decoration-color: #4fe18b;
 }
