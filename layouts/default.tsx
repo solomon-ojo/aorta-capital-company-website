@@ -19,7 +19,7 @@ export default function DefaultLayout({
       >
         <Navbar />
       </div>
-      <main className="mx-auto w-full flex-grow">{children}</main>
+      <main className="mx-auto w-full ">{children}</main>
       <footer className="w-full footer-bg flex items-center justify-center py-[17px] lg:py-[41px]">
         <p className="footer-text font-lato">© 2024 {siteConfig.name}</p>
       </footer>
