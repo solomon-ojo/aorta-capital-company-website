@@ -40,6 +40,10 @@ body::-webkit-scrollbar {
   max-width: 1080px;
 }
 
+.max-screen-pages-width {
+  max-width: 65%;
+}
+
 .home-text-color {
   color: rgb(70, 70, 70);
 }

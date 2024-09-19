@@ -21,9 +21,7 @@ export default function DefaultLayout({
       </div>
 
       {/* Main Content */}
-      <main className="mx-auto w-full flex-grow flex items-center justify-center">
-        {children}
-      </main>
+      <main className="mx-auto w-full flex-grow ">{children}</main>
 
       {/* Footer */}
       <footer className="w-full footer-bg flex items-center justify-center h-[50px] lg:h-[100px]">
