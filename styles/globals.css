@@ -31,3 +31,10 @@
   color: #4fe18b;
   text-decoration-color: #4fe18b;
 }
+
+.home-button {
+}
+
+.home-button:hover {
+  border-color: #22c55e;
+}
