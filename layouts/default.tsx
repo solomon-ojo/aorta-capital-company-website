@@ -11,7 +11,7 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative flex footer-bg flex-col h-[700px]">
+    <div className="relative flex footer-bg flex-col h-[100svh]">
       <Head />
       <div
         style={{ backgroundColor: "transparent" }}
