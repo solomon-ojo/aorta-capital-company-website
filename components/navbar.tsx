@@ -2,13 +2,19 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { useRouter } from "next/router";
+import { VscMenu } from "react-icons/vsc";
 
 interface LinkType {
   path: string;
   title: string;
 }
 
-export const Navbar = () => {
+interface NavbarProps {
+  toggleMenu: () => void;
+  openState: boolean;
+}
+
+export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
   const router = useRouter(); // Get current route
 
   const Links: LinkType[] = [
@@ -29,17 +35,26 @@ export const Navbar = () => {
   return (
     <nav className="max-screen-width relative w-full flex justify-between items-center">
       <Link href={siteConfig.pathLinks.home}>
-        <h1 className="text-[20px] cursor-pointer">
+        <h1
+          className={`text-[20px] text-white md:text-black ${openState ? "text-white" : "text-black"} cursor-pointer`}
+        >
           <span className="font-bold font-rubik">Aorta</span>{" "}
           <span className="font-light">Capital</span>
         </h1>
       </Link>
 
-      <div className="top-4 fixed right-3">
-        <IoIosMenu className="cursor-pointer flex sm:hidden" size={30} />
+      <div
+        role="presentation"
+        onClick={toggleMenu}
+        className="top-4 fixed right-6"
+      >
+        <VscMenu
+          className={`cursor-pointer ${openState ? "text-white" : "text-black"} flex md:hidden`}
+          size={25}
+        />
       </div>
 
-      <ul className="hidden sm:flex gap-7">
+      <ul className="hidden md:flex gap-7">
         {Links.map((v: LinkType, i: number) => {
           const isActive = router.pathname === v.path; // Check if current path is active
 
