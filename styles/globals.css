@@ -56,3 +56,7 @@ body::-webkit-scrollbar {
 .home-button:hover {
   border-color: #22c55e;
 }
+
+.paragraph {
+  margin-top: 1.5rem;
+}
