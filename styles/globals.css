@@ -6,6 +6,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Hide scrollbar but allow scrolling */
 html,
 body {
@@ -42,9 +47,6 @@ body::-webkit-scrollbar {
 .green-color {
   color: #4fe18b;
   text-decoration-color: #4fe18b;
-}
-
-.home-button {
 }
 
 .home-button:hover {
