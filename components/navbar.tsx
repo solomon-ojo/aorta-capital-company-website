@@ -39,7 +39,7 @@ export const Navbar = () => {
       <ul className="hidden sm:flex gap-7">
         {Links.map((v: any, i: any) => (
           <Link key={i} href={v.path}>
-            <li className="text-[11px] uppercase font-lato font-light">
+            <li className="text-[11px] hover:text-[#4fe18b] uppercase font-lato font-light">
               {v.title}
             </li>
           </Link>

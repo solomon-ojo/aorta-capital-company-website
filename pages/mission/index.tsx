@@ -22,7 +22,7 @@ export default function DocsPage() {
           </PagesHeader>
 
           {/* Body */}
-          <div>
+          <div className="mb-5">
             <p className="text[15px] paragraph home-text-color leading-[30px] font-normal font-lora xl:text-[17px]">
               The Internet has reached in, grabbed, and made the world we once
               knew totally unrecognizable. Yet the world of finance is, sadly,
@@ -53,7 +53,9 @@ export default function DocsPage() {
               beliefs and values motivating our mission have not changed.
             </p>
 
-            <PageTitle text={"This we believe:"} />
+            {/* <PageTitle text={"This we believe:"} /> */}
+
+            <span className="h-[2px] bg-black w-4 block my-6"></span>
           </div>
         </div>
       </section>
