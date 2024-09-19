@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider navigate={router.push}>
       <NextThemesProvider>
-        <main className="light fixed text-foreground bg-background">
+        <main className="light overflow-hidden text-foreground bg-background">
           <Component {...pageProps} />
         </main>
       </NextThemesProvider>
