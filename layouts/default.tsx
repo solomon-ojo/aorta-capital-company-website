@@ -40,7 +40,7 @@ export default function DefaultLayout({
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <ul className="mt-[110px] flex flex-col">
+        <ul className="mt-[100px] flex flex-col">
           {/* Mission Link */}
           <li className="">
             <Link
