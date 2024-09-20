@@ -36,9 +36,9 @@ export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
     <nav className="max-screen-width relative w-full flex justify-between items-center">
       <Link href={siteConfig.pathLinks.home}>
         <h1
-          className={`text-[20px]  md:text-black ${openState ? "text-white" : "text-black"} cursor-pointer`}
+          className={`text-[20px] font-lora md:text-black ${openState ? "text-white" : "text-black"} cursor-pointer`}
         >
-          <span className="font-bold font-rubik">Aorta</span>{" "}
+          <span className="font-bold ">Aorta</span>{" "}
           <span className="font-light">Capital</span>
         </h1>
       </Link>
@@ -62,7 +62,7 @@ export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
             <li key={i} className="list-none">
               <Link href={v.path}>
                 <p
-                  className={`relative text-[11px] uppercase font-lato font-light hover:text-[#4fe18b] ${
+                  className={`relative text-[11px] uppercase opacity-70 font-lora font-light hover:text-[#4fe18b] ${
                     isActive
                       ? "text-[#4fe18b] underline underline-offset-4 font-bold"
                       : "text-black"

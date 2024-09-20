@@ -1,7 +1,9 @@
 import { PagesHeader } from "@/components/pagesHeader";
 import { PageTitle } from "@/components/pageTitle";
+import { ParagraphComp } from "@/components/paragraphComp";
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
+import Image from "next/image";
 
 export default function DocsPage() {
   return (
@@ -10,52 +12,111 @@ export default function DocsPage() {
         <div className="w-full md:w-[700px] lg:w-[900px]">
           {/* Header */}
           <PagesHeader>
-            <p className="text-[15px] xl:text-[18px] font-lato leading-[25px] home-text-color">
-              <span className="font-[300]">
-                Ribbit. Because the World Needs More Financial Innovation.
+            <p className="text-[15px] xl:text-[18px] font-lora leading-[25px] home-text-color">
+              <span className="font-[300] opacity-80">
+                We have a level ground to play on:
               </span>
               <br />
               <span className="font-semibold">
-                And Less Financial Engineering.
+                There has never been a better time to effect a change in
+                Africa...
               </span>
             </p>
           </PagesHeader>
 
           {/* Body */}
           <div className="mb-5">
-            <p className="text[15px] paragraph home-text-color leading-[30px] font-normal font-lora xl:text-[17px]">
-              The Internet has reached in, grabbed, and made the world we once
-              knew totally unrecognizable. Yet the world of finance is, sadly,
-              totally recognizable. The way we transact, save, borrow, invest
-              and manage our money has barely advanced. Yes, there has been some
-              recent innovation– we’re proud to have invested behind many of the
-              intrepid entrepreneurs who are leading the charge – but it is far
-              from enough.
-            </p>
-            <p className="text[15px] paragraph home-text-color leading-[30px] font-normal font-lora xl:text-[17px]">
-              In short, we are still at the beginning of the beginning. Case in
-              point: less than 1% of all loans in the world are made online.
-              (Yeah, you heard us right). We’re all stuck in a financial time
-              warp.
-            </p>
-            <p className="text[15px] paragraph home-text-color leading-[30px] font-normal font-lora xl:text-[17px]">
-              And just like newspapers, travel agents, hotels and taxi companies
-              have been turned upside down from outside the cozy confines of
-              their industries, don’t expect banks to lead us out of the warp.
-              They’ve proven themselves either unable to create internal
-              environments where innovation can flourish – or simply unwilling
-              to change even though it’s best for their customers.
-            </p>
-            <p className="text[15px] paragraph home-text-color leading-[30px] font-normal font-lora xl:text-[17px]">
-              Ribbit Capital is a global investment organization with one
-              single, relentless mission: to change the world of finance. When
-              we look back at our mantra from the day we launched in 2012, the
-              beliefs and values motivating our mission have not changed.
-            </p>
+            <ParagraphComp>
+              When quizzed during a speech in his most recent national tour,
+              Obasanjo, Nigerian past president, made an intriguing statement
+              that offers great insight about his journey on how he rose to
+              become the president of Nigeria from a lowly, impoverished farm
+              boy in Ogun state, Nigeria.
+            </ParagraphComp>
 
-            {/* <PageTitle text={"This we believe:"} /> */}
+            <ParagraphComp>
+              “I joined the military” he said. “Shortly after, Nigeria gained
+              independence. Then, suddenly, there was an even ground to play
+              on”.
+            </ParagraphComp>
 
-            <span className="h-[2px] bg-black w-4 block my-6"></span>
+            <ParagraphComp>
+              <span className="font-semibold">
+                “...suddenly, there was an even ground to play on”
+              </span>
+            </ParagraphComp>
+
+            <ParagraphComp>
+              This is an incredibly insightful statement to which a discerning
+              mind ought to pay very close attention.
+            </ParagraphComp>
+
+            <ParagraphComp>
+              To Obasanjo and his contemporaries in their time, the army was the
+              even ground providence provided. It was the even ground that
+              erased and removed all societal and aristocratic blockades set in
+              place to frustrate and keep the ordinary man ordinary. The army
+              was what provided an even ground for their generation to play on.
+              An even ground where what mattered was abilities and capabilities;
+              not statuses and connections.
+            </ParagraphComp>
+
+            <ParagraphComp>
+              Today, in our own generation, that even ground is{" "}
+              <span className="font-semibold">technology.</span>
+            </ParagraphComp>
+
+            <ParagraphComp>
+              Technology has removed all obstacles and barricades that was
+              hitherto set by the ruling class to hamper the ordinary man’s
+              effort or ascension.
+            </ParagraphComp>
+
+            <ParagraphComp>
+              Today, anyone, anywhere, can pick up a computer, put himself under
+              strict training, and emerge after a few years, with skills that
+              will put him on par with any other “privileged” person of our
+              society.
+            </ParagraphComp>
+
+            <ParagraphComp>
+              What joining the army gave Obasanjo and his ilk in their days,
+              technology has given to us now.
+            </ParagraphComp>
+
+            <ParagraphComp>
+              The question is: what will we do with it?
+            </ParagraphComp>
+
+            {/* Optimized full-width Image */}
+            <div className="my-6 w-full">
+              <Image
+                src="/assets/ceo.jpg"
+                alt="ceo"
+                quality={40}
+                layout="responsive"
+                width={1000}
+                height={500}
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            <ParagraphComp>
+              Aorta’s goal is simple: To build the Africa we desire, by
+              Africans, owned by Africans, and independent of the inefficiencies
+              and inconsistencies of the government. Harnessing the limitless
+              capabilities afforded us by recent advancement in technologies,
+              and the colossal resources of the crowd.
+            </ParagraphComp>
+
+            <ParagraphComp>
+              <span className="font-semibold">
+                We are not hoping for a better future, we are building it.
+              </span>
+            </ParagraphComp>
+
+            <span className="h-[2px] bg-black w-4 block my-10"></span>
           </div>
         </div>
       </section>

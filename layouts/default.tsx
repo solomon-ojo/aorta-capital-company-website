@@ -40,7 +40,7 @@ export default function DefaultLayout({
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <ul className="mt-[100px] flex flex-col">
+        <ul className="mt-[80px] flex flex-col">
           {/* Mission Link */}
           <li className="">
             <Link
@@ -81,7 +81,7 @@ export default function DefaultLayout({
 
       {/* Footer */}
       <footer className="w-full footer-bg flex items-center justify-center py-[16px] lg:h-[100px]">
-        <p className="footer-text font-lato">© 2024 {siteConfig.name}</p>
+        <p className="footer-text font-lora">© 2024 {siteConfig.name}</p>
       </footer>
     </div>
   );

@@ -25,19 +25,17 @@ export default function IndexPage() {
         <div className="flex-1 bg-white flex items-center">
           <div className="px-6 md:pl-[95px] mt-[-100px] md:mt-[0px] lg:mt-[100px] w-full md:max-w-[78%] lg:max-w-[85%] xl:max-w-[78%]">
             <h1 className="font-lora home-text-color text-[24px] xl:text-[34px] font-normal leading-[30px] xl:leading-[44px]">
-              The future is built, <br />
-              not wished or hoped for.
+              Building the Africa we desire, <br /> one project at a time.
             </h1>
             <span className="h-[2px] bg-black w-4 block my-6 "></span>
-            <p className="font-lato leading-[25px] home-text-color font-light text-[17px]">
-              We employ the most recent technologies to build solutions. We look
-              at finance with a hungry eye for change, and with a desire to
-              share our learning and experience – including some painful
-              mistakes along the way –{" "}
+            <p className="font-lora opacity-85 leading-[25px] home-text-color font-light text-[17px]">
+              We partner with bold, visionary entrepreneurs to build the Africa
+              we desire—by Africans, for Africans—unhindered by government
+              inefficiencies. Together, we harness the limitless potential of
+              emerging technologies and the{" "}
               <span className="underline text-black font-medium underline-offset-4 decoration-[#4FE18B]">
-                with ambitious entrepreneurs
+                collective power of the crowd.
               </span>
-              .
             </p>
 
             <div className="mt-8">
