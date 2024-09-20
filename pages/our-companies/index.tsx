@@ -6,17 +6,17 @@ const companies = [
   {
     name: "Nulgen",
     description: "AI Powered e-learning platform and career companion",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
+    imageUrl: "/assets/company1.jpg", // Replace with actual image URL
   },
   {
     name: "Viola",
     description: "Internship for high school students",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
+    imageUrl: "/assets/company2.jpg", // Replace with actual image URL
   },
   {
     name: "Teresamed",
     description: "Free, virtual health care",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
+    imageUrl: "/assets/company3.jpg", // Replace with actual image URL
   },
   {
     name: "Ezzra",
