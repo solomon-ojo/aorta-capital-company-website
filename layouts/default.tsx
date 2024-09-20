@@ -17,6 +17,7 @@ export default function DefaultLayout({
 
   // Function to toggle the menu
   const toggleMenu = () => {
+    window.scrollTo({ top: 0, behavior: "auto" });
     setMenuOpen(!menuOpen);
   };
 

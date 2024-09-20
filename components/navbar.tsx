@@ -1,6 +1,5 @@
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
-import { IoIosMenu } from "react-icons/io";
 import { useRouter } from "next/router";
 import { VscMenu } from "react-icons/vsc";
 
@@ -15,7 +14,7 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
-  const router = useRouter(); // Get current route
+  const router = useRouter();
 
   const Links: LinkType[] = [
     {
