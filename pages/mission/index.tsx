@@ -11,7 +11,7 @@ export default function DocsPage() {
       <section className="bg-white flex h-full px-6 xl:px-0 flex-col items-center">
         <div className="w-full md:w-[700px] lg:w-[900px]">
           {/* Header */}
-          <PagesHeader>
+          <PagesHeader title="Mission">
             <p className="text-[15px] xl:text-[18px] font-lora leading-[25px] home-text-color">
               <span className="font-[300] opacity-80">
                 We have a level ground to play on:
