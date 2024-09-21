@@ -166,7 +166,7 @@ export default function CompanyDetails() {
               alt={"company image"}
               layout="fill"
               objectFit="cover"
-              priority
+              loading="lazy"
               placeholder="blur"
               blurDataURL="/assets/dessert.jpeg"
               quality={25}
