@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import AnimatedButtonDynamic from "@/components/animatedButtonDynamic";
 import Link from "next/link";
 import { Image } from "@nextui-org/image";
+import NextImage from "next/image";
 
 export default function CompanyDetails() {
   // Hooks
@@ -43,10 +44,14 @@ export default function CompanyDetails() {
         {/* Left Section */}
         <div className="w-full pr-0 lg:pr-6 lg:w-1/2 flex flex-col gap-10">
           {/* Company Logo */}
-          <Link href={companyObject.url}>
+          <Link
+            href={companyObject.path || "/"}
+            className=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               width={200}
-              height={200}
               src={companyObject.logo}
               alt={`${companyObject.name}`}
             />
