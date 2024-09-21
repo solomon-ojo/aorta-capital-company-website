@@ -17,14 +17,19 @@ export default function CompanyDetails() {
   // Find the company details by name
   const companyObject = companies.find((c) => c.name.toLowerCase() === company);
 
-  if (!companyObject) {
-    return (
-      <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]"></div>
-    );
-  }
-
   // Function
   const toggleMenu = () => {};
+
+  if (!companyObject) {
+    return (
+      <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]">
+        {/* Navbar */}
+        <div className="sticky top-0 bg-white z-20">
+          <NavbarDynamic openState={openState} toggleMenu={toggleMenu} />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]">
