@@ -1,17 +1,18 @@
-import { NavbarDynamic } from "@/components/navbar-dynamic";
-import { PagesHeader } from "@/components/pagesHeader";
-import { companies } from "@/data/objects";
-import DefaultLayout from "@/layouts/default";
-import { useRouter } from "next/router";
 import { useState } from "react";
+import { NavbarDynamic } from "@/components/navbar-dynamic";
+import { companies } from "@/data/objects";
+import { useRouter } from "next/router";
 import Image from "next/image";
-import AnimatedButton from "@/components/animatedButton";
 import AnimatedButtonDynamic from "@/components/animatedButtonDynamic";
 import Link from "next/link";
 
 export default function CompanyDetails() {
+  // Hooks
   const router = useRouter();
   const { company } = router.query;
+
+  // State
+  const [openState, setOpenState] = useState(false);
 
   // Find the company details by name
   const companyDetails = companies.find(
@@ -21,9 +22,6 @@ export default function CompanyDetails() {
   if (!companyDetails) {
     return <p>Company not found</p>;
   }
-
-  // State
-  const [openState, setOpenState] = useState(false);
 
   // Function
   const toggleMenu = () => {};
