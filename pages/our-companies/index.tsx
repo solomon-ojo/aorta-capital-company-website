@@ -70,7 +70,7 @@ const companies = [
   },
 ];
 
-export default function DocsPage() {
+export default function CompaniesPage() {
   return (
     <DefaultLayout>
       <section className="bg-white flex h-full px-6 xl:px-0 flex-col items-center">
@@ -94,7 +94,7 @@ export default function DocsPage() {
             {companies.map((company, index) => (
               <div
                 key={index}
-                className=" cursor-pointer hover:scale-95 transition-all duration-500 relative w-full pb-[100%] overflow-hidden shadow-lg"
+                className=" cursor-pointer hover:scale-95 transition-all duration-300 relative w-full pb-[100%] overflow-hidden shadow-lg"
               >
                 {/* Background Image */}
                 <Image
@@ -103,6 +103,8 @@ export default function DocsPage() {
                   layout="fill"
                   objectFit="cover"
                   priority
+                  placeholder="blur"
+                  blurDataURL="/assets/dessert.jpeg"
                   quality={40}
                   className="absolute inset-0"
                 />
