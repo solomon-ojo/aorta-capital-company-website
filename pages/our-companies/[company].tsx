@@ -101,7 +101,7 @@ export default function CompanyDetails() {
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-12">
+        <div className="w-full lg:w-1/2 px-0 lg:px-10 flex flex-col gap-12">
           {/* Milestones, Teams and Partners */}
           <div className="flex items-center flex-wrap md:flex-nowrap">
             <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
@@ -157,11 +157,27 @@ export default function CompanyDetails() {
               in a highly competitive market.
             </p>
           </div>
+
+          {/* Single Company Image */}
+          <div className=" cursor-pointer relative w-full pb-[100%] overflow-hidden shadow-lg">
+            {/* Background Image */}
+            <NextImage
+              src={"/assets/ceo.jpg"}
+              alt={"company image"}
+              layout="fill"
+              objectFit="cover"
+              priority
+              placeholder="blur"
+              blurDataURL="/assets/dessert.jpeg"
+              quality={25}
+              className="absolute inset-0"
+            />
+          </div>
         </div>
       </main>
 
       <footer className="w-full footer-bg flex items-center justify-center py-[8px] lg:h-[100px]">
-        <p className=" text-default-400 font-lora">© 2024 {siteConfig.name}</p>
+        <p className="footer-text font-lora">© 2024 {siteConfig.name}</p>
       </footer>
     </div>
   );
