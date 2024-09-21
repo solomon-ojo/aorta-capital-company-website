@@ -2,9 +2,9 @@ import { useState } from "react";
 import { NavbarDynamic } from "@/components/navbar-dynamic";
 import { companies } from "@/data/objects";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import AnimatedButtonDynamic from "@/components/animatedButtonDynamic";
 import Link from "next/link";
+import { Image } from "@nextui-org/image";
 
 export default function CompanyDetails() {
   // Hooks
@@ -45,10 +45,10 @@ export default function CompanyDetails() {
           {/* Company Logo */}
           <Link href={companyObject.url}>
             <Image
-              src={companyObject.logo}
-              alt={`${companyObject.name}`}
               width={200}
               height={200}
+              src={companyObject.logo}
+              alt={`${companyObject.name}`}
             />
           </Link>
           <p className="font-lora text-black  text-xl md:text-2xl lg:text-3xl xl:text-[33px] lg:leading-[40px] xl:leading-[50px] font-medium">
