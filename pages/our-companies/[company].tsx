@@ -16,30 +16,32 @@ export default function CompanyDetails() {
   const { company } = router.query;
 
   // State
-  const [openState, setOpenState] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // Find the company details by name
   const companyObject = companies.find((c) => c.name.toLowerCase() === company);
 
   // Function
-  const toggleMenu = () => {};
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   if (!companyObject) {
     return (
       <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]">
         {/* Navbar */}
         <div className="sticky top-0 bg-white z-20">
-          <NavbarDynamic openState={openState} toggleMenu={toggleMenu} />
+          <NavbarDynamic openState={menuOpen} toggleMenu={toggleMenu} />
         </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-white flex flex-col lg:gap-16 h-[100svh]">
+    <div className="bg-white flex relative flex-col lg:gap-16 h-[100svh]">
       {/* Navbar */}
       <div className="px-6 lg:px-11 sticky top-0 bg-white z-20">
-        <NavbarDynamic openState={openState} toggleMenu={toggleMenu} />
+        <NavbarDynamic openState={menuOpen} toggleMenu={toggleMenu} />
       </div>
 
       {/* Body */}
@@ -267,6 +269,57 @@ export default function CompanyDetails() {
           </div>
         </div>
       </main>
+
+      {/* Sliding Menu */}
+      <div
+        className={`fixed px-6 top-0 flex flex-col md:hidden right-0 h-full w-[100%] footer-bg z-50 transform transition-transform duration-300 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <NavbarDynamic
+          hideBottomBorder
+          openState={menuOpen}
+          toggleMenu={toggleMenu}
+        />
+
+        <ul className=" flex flex-col">
+          {/* Mission Link */}
+          <li className="">
+            <Link
+              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+                router.pathname === "/mission" ? "bg-[#2F313A]" : ""
+              }`}
+              href="/mission"
+            >
+              <p className="capitalize">MISSION</p>
+            </Link>
+          </li>
+
+          {/* Our Companies Link */}
+          <li className="">
+            <Link
+              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+                router.pathname === "/our-companies" ? "bg-[#2F313A]" : ""
+              }`}
+              href="/our-companies"
+            >
+              <p className="capitalize">OUR COMPANIES</p>
+            </Link>
+          </li>
+
+          {/* Team Link */}
+          <li className="">
+            <Link
+              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+                router.pathname === "/team" ? "bg-[#2F313A]" : ""
+              }`}
+              href="/team"
+            >
+              <p className="capitalize">TEAM</p>
+            </Link>
+          </li>
+        </ul>
+      </div>
 
       <footer className="w-full footer-bg flex items-center justify-center py-[8px] lg:h-[100px]">
         <p className="footer-text font-lora">© 2024 {siteConfig.name}</p>

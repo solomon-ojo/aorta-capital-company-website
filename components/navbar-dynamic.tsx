@@ -11,9 +11,14 @@ interface LinkType {
 interface NavbarProps {
   toggleMenu: () => void;
   openState: boolean;
+  hideBottomBorder?: boolean;
 }
 
-export const NavbarDynamic = ({ toggleMenu, openState }: NavbarProps) => {
+export const NavbarDynamic = ({
+  toggleMenu,
+  hideBottomBorder,
+  openState,
+}: NavbarProps) => {
   const router = useRouter();
 
   const Links: LinkType[] = [
@@ -32,7 +37,9 @@ export const NavbarDynamic = ({ toggleMenu, openState }: NavbarProps) => {
   ];
 
   return (
-    <nav className="py-4 relative w-full border-b flex justify-between items-center">
+    <nav
+      className={`py-4 relative w-full ${!hideBottomBorder && "border-b"} flex justify-between items-center`}
+    >
       <Link href={siteConfig.pathLinks.home}>
         <h1
           className={`text-[24px] md:text-[34px] font-lora md:text-black ${openState ? "text-white" : "text-black"} cursor-pointer`}
