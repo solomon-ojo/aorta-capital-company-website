@@ -118,27 +118,28 @@ export default function CompanyDetails() {
                 </div>
               </div>
               <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
-                <p className=" font-lora text-[14px] opacity-75">MILESTONES</p>
-                <div>
-                  <p className="text-[16px] font-lato font-medium">
-                    Founded 2023
+                <p className=" font-lora text-[14px] opacity-75">TEAM</p>
+                <div className="flex flex-col gap-1">
+                  <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
+                    Andy Fang
                   </p>
-                  <p className="text-[16px] font-lato font-medium">
-                    Partnered 2014
+                  <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
+                    Stanley Tang
                   </p>
-                  <p className="text-[16px] font-lato font-medium">IPO 2020</p>
+                  <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
+                    Tony Xu
+                  </p>
                 </div>
               </div>
               <div className="flex mt-4 md:mt-0 flex-col basis-[33%] gap-3">
-                <p className=" font-lora text-[14px] opacity-75">MILESTONES</p>
-                <div>
-                  <p className="text-[16px] font-lato font-medium">
-                    Founded 2023
+                <p className=" font-lora text-[14px] opacity-75">PARTNERS</p>
+                <div className="flex flex-col gap-1">
+                  <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
+                    Alfred Lin
                   </p>
-                  <p className="text-[16px] font-lato font-medium">
-                    Partnered 2014
+                  <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
+                    Isaiah Boone
                   </p>
-                  <p className="text-[16px] font-lato font-medium">IPO 2020</p>
                 </div>
               </div>
             </div>
@@ -162,7 +163,7 @@ export default function CompanyDetails() {
           </div>
         </main>
 
-        <footer className="w-full footers-bg flex items-center justify-center py-[16px] lg:h-[100px]">
+        <footer className="w-full footer-bg flex items-center justify-center py-[8px] lg:h-[100px]">
           <p className=" text-default-400 font-lora">
             © 2024 {siteConfig.name}
           </p>
