@@ -7,6 +7,8 @@ import Link from "next/link";
 import { Image } from "@nextui-org/image";
 import NextImage from "next/image";
 import { siteConfig } from "@/config/site";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { MdArrowRightAlt } from "react-icons/md";
 
 export default function CompanyDetails() {
   // Hooks
@@ -158,20 +160,110 @@ export default function CompanyDetails() {
             </p>
           </div>
 
-          {/* Single Company Image */}
-          <div className=" cursor-pointer relative w-full pb-[100%] overflow-hidden shadow-lg">
-            {/* Background Image */}
-            <NextImage
-              src={"/assets/ceo.jpg"}
-              alt={"company image"}
-              layout="fill"
-              objectFit="cover"
-              loading="lazy"
-              placeholder="blur"
-              blurDataURL="/assets/dessert.jpeg"
-              quality={25}
-              className="absolute inset-0"
-            />
+          <div className="flex flex-col gap-6">
+            {/* Single Company Image */}
+            <div className="cursor-pointer relative w-full pb-[100%] overflow-hidden shadow-lg group">
+              {/* Background Image */}
+              <NextImage
+                src={"/assets/ceo.jpg"}
+                alt={"company image"}
+                layout="fill"
+                objectFit="cover"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="/assets/dessert.jpeg"
+                quality={25}
+                className="absolute inset-0"
+              />
+
+              {/* Read more and arrow */}
+              <div className="absolute flex items-center right-5 top-5">
+                <p className="font-lato text-[18px] font-semibold text-white">
+                  READ
+                </p>
+                <MdArrowRightAlt
+                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                  color="white"
+                  size={24}
+                />
+              </div>
+
+              {/* Bottom text content */}
+              <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
+                <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[30px] font-bold text-white">
+                  Tony Xu on Mastering the Last Mile
+                </p>
+              </div>
+            </div>
+
+            {/* Double Company Image that will be single on small screens */}
+            <div className="flex flex-col md:flex-row gap-6 ">
+              {/* First Image */}
+              <div className="relative group cursor-pointer w-full md:w-1/2 pb-[100%] md:pb-[50%] overflow-hidden shadow-lg">
+                <NextImage
+                  src={"/assets/company1.jpg"} // Replace with actual company image path
+                  alt={"Company Image 1"}
+                  layout="fill"
+                  objectFit="cover"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="/assets/dessert.jpeg" // Replace with the correct path
+                  quality={25}
+                  className="absolute inset-0"
+                />
+                {/* Read more and arrow */}
+                <div className="absolute flex items-center right-5 top-5">
+                  <p className="font-lato text-[18px] font-semibold text-white">
+                    READ
+                  </p>
+                  <MdArrowRightAlt
+                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                    color="white"
+                    size={24}
+                  />
+                </div>
+
+                {/* Bottom text content */}
+                <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
+                  <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
+                    Tony Xu on Mastering the Last Mile
+                  </p>
+                </div>
+              </div>
+
+              {/* Second Image */}
+              <div className="relative cursor-pointer group w-full md:w-1/2 pb-[100%] md:pb-[50%] overflow-hidden shadow-lg">
+                <NextImage
+                  src={"/assets/company2.jpg"} // Replace with actual company image path
+                  alt={"Company Image 2"}
+                  layout="fill"
+                  objectFit="cover"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="/assets/dessert.jpeg" // Replace with the correct path
+                  quality={25}
+                  className="absolute inset-0"
+                />
+                {/* Read more and arrow */}
+                <div className="absolute flex items-center right-5 top-5">
+                  <p className="font-lato text-[18px] font-semibold text-white">
+                    READ
+                  </p>
+                  <MdArrowRightAlt
+                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                    color="white"
+                    size={24}
+                  />
+                </div>
+
+                {/* Bottom text content */}
+                <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
+                  <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
+                    Tony Xu on Mastering the Last Mile
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
