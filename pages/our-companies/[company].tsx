@@ -43,7 +43,7 @@ export default function CompanyDetails() {
         {/* Left Section */}
         <div className="w-full pr-0 lg:pr-6 lg:w-1/2 flex flex-col gap-10">
           {/* Company Logo */}
-          <div>
+          {/* <div>
             <Link href={companyObject.url}>
               <Image
                 src={companyObject.logo}
@@ -52,7 +52,7 @@ export default function CompanyDetails() {
                 height={200}
               />
             </Link>
-          </div>
+          </div> */}
           <p className="font-lora text-black  text-xl md:text-2xl lg:text-3xl xl:text-[33px] lg:leading-[40px] xl:leading-[50px] font-medium">
             {companyObject.details}
           </p>
