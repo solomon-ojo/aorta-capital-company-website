@@ -18,7 +18,9 @@ export default function CompanyDetails() {
   const companyObject = companies.find((c) => c.name.toLowerCase() === company);
 
   if (!companyObject) {
-    return <p>Company not found</p>;
+    return (
+      <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]"></div>
+    );
   }
 
   // Function
