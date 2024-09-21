@@ -5,7 +5,7 @@ export const companies = [
     details:
       "Nulgen is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/company1.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "nulgen.com",
     path: "https://nulgen.com",
   },
@@ -15,7 +15,7 @@ export const companies = [
     details:
       "Viola is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/company2.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "viola.com",
     path: "https://viola.com",
   },
@@ -25,7 +25,7 @@ export const companies = [
     details:
       "Teresamed revolutionizes healthcare is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/company3.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "teresamed.com",
     path: "https://teresamed.com",
   },
@@ -35,7 +35,7 @@ export const companies = [
     details:
       "Ezzra is a cutting-is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "ezzra.com",
     path: "https://ezzra.com",
   },
@@ -45,7 +45,7 @@ export const companies = [
     details:
       "Molus is an innovative is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "molus.com",
     path: "https://molus.com",
   },
@@ -55,7 +55,7 @@ export const companies = [
     details:
       "Papperboy provides secure is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "papperboy.com",
     path: "https://papperboy.com",
   },
@@ -65,7 +65,7 @@ export const companies = [
     details:
       "Getwasabi leverages AI is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "getwasabi.com",
     path: "https://getwasabi.com",
   },
@@ -75,7 +75,7 @@ export const companies = [
     details:
       "Bourgeon is a is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "bourgeon.com",
     path: "https://bourgeon.com",
   },
@@ -85,7 +85,7 @@ export const companies = [
     details:
       "Yellowsun connects talented is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "yellowsun.com",
     path: "https://yellowsun.com",
   },
@@ -95,7 +95,7 @@ export const companies = [
     details:
       "Thesislab/Thesis4u is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "thesislab.com",
     path: "https://thesislab.com",
   },
@@ -105,7 +105,7 @@ export const companies = [
     details:
       "MrMan is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "mrman.com",
     path: "https://mrman.com",
   },
@@ -115,7 +115,7 @@ export const companies = [
     details:
       "Paperboy.shop is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "paperboy.shop",
   },
   {
@@ -124,7 +124,7 @@ export const companies = [
     details:
       "Hexis is a comprehensive is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
     imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/teresamed.png",
+    logo: "/assets/logo/logo.svg",
     url: "hexis.com",
     path: "https://hexis.com",
   },
