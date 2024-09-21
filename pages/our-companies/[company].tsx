@@ -178,7 +178,7 @@ export default function CompanyDetails() {
 
               {/* Read more and arrow */}
               <div className="absolute flex items-center right-5 top-5">
-                <p className="font-lato text-[18px] font-semibold text-white">
+                <p className="font-lato text-[16px] font-semibold text-white">
                   READ
                 </p>
                 <MdArrowRightAlt
@@ -213,7 +213,7 @@ export default function CompanyDetails() {
                 />
                 {/* Read more and arrow */}
                 <div className="absolute flex items-center right-5 top-5">
-                  <p className="font-lato text-[18px] font-semibold text-white">
+                  <p className="font-lato text-[16px] font-semibold text-white">
                     READ
                   </p>
                   <MdArrowRightAlt
@@ -246,7 +246,7 @@ export default function CompanyDetails() {
                 />
                 {/* Read more and arrow */}
                 <div className="absolute flex items-center right-5 top-5">
-                  <p className="font-lato text-[18px] font-semibold text-white">
+                  <p className="font-lato text-[16px] font-semibold text-white">
                     READ
                   </p>
                   <MdArrowRightAlt
