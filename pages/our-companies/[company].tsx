@@ -43,16 +43,14 @@ export default function CompanyDetails() {
         {/* Left Section */}
         <div className="w-full pr-0 lg:pr-6 lg:w-1/2 flex flex-col gap-10">
           {/* Company Logo */}
-          {/* <div>
-            <Link href={companyObject.url}>
-              <Image
-                src={companyObject.logo}
-                alt={`${companyObject.name} logo`}
-                width={200}
-                height={200}
-              />
-            </Link>
-          </div> */}
+          <Link href={companyObject.url}>
+            <Image
+              src={companyObject.logo}
+              alt={`${companyObject.name}`}
+              width={200}
+              height={200}
+            />
+          </Link>
           <p className="font-lora text-black  text-xl md:text-2xl lg:text-3xl xl:text-[33px] lg:leading-[40px] xl:leading-[50px] font-medium">
             {companyObject.details}
           </p>
