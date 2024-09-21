@@ -44,7 +44,7 @@ export default function CompanyDetails() {
         {/* Body */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
           {/* Left Section */}
-          <div className="w-full pr-0 lg:pr-6 lg:w-1/2 flex flex-col gap-10">
+          <div className="w-full pr-0 lg:pr-14 lg:w-1/2 flex flex-col gap-10">
             {/* Company Logo */}
             <Link
               href={companyObject.path || "/"}
@@ -162,11 +162,11 @@ export default function CompanyDetails() {
           </div>
         </div>
 
-        <footer className="w-full footers-bg flex items-center justify-center py-[16px] lg:h-[100px]">
+        {/* <footer className="w-full footers-bg flex items-center justify-center py-[16px] lg:h-[100px]">
           <p className=" text-default-400 font-lora">
             © 2024 {siteConfig.name}
           </p>
-        </footer>
+        </footer> */}
       </section>
     </>
   );
