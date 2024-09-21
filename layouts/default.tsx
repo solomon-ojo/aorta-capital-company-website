@@ -33,7 +33,9 @@ export default function DefaultLayout({
       </div>
 
       {/* Main Content */}
-      <main className="mx-auto w-full flex-grow">{children}</main>
+      <main className={`${menuOpen && "fixed"} mx-auto w-full flex-grow`}>
+        {children}
+      </main>
 
       {/* Sliding Menu */}
       <div

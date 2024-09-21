@@ -38,14 +38,16 @@ export default function CompanyDetails() {
   }
 
   return (
-    <div className="bg-white flex relative flex-col lg:gap-16 h-[100svh]">
+    <div className="bg-white  flex relative flex-col lg:gap-16 h-[100svh]">
       {/* Navbar */}
       <div className="px-6 lg:px-11 sticky top-0 bg-white z-20">
         <NavbarDynamic openState={menuOpen} toggleMenu={toggleMenu} />
       </div>
 
       {/* Body */}
-      <main className="px-6 pb-6 mt-16 lg:px-11 flex bg-white flex-col lg:flex-row gap-8 lg:gap-0">
+      <main
+        className={`px-6 ${menuOpen && "fixed"} pb-6 mt-16 lg:px-11 flex bg-white flex-col lg:flex-row gap-8 lg:gap-0`}
+      >
         {/* Left Section */}
         <div className="w-full pr-0 lg:pr-14 lg:w-1/2 flex flex-col gap-10">
           {/* Company Logo */}
