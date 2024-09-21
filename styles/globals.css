@@ -44,6 +44,10 @@ body::-webkit-scrollbar {
   max-width: 65%;
 }
 
+.max-screen-width-dynamic {
+  padding: 0 20px;
+}
+
 .home-text-color {
   color: rgb(70, 70, 70);
 }
@@ -55,6 +59,10 @@ body::-webkit-scrollbar {
 
 .home-button:hover {
   border-color: #22c55e;
+}
+
+.dynamic-button:hover {
+  border-color: black;
 }
 
 .paragraph {

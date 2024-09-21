@@ -1,74 +1,8 @@
 import { PagesHeader } from "@/components/pagesHeader";
+import { companies } from "@/data/objects";
 import DefaultLayout from "@/layouts/default";
 import Image from "next/image";
-
-const companies = [
-  {
-    name: "Nulgen",
-    description: "AI Powered e-learning platform and career companion",
-    imageUrl: "/assets/company1.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Viola",
-    description: "Internship for high school students",
-    imageUrl: "/assets/company2.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Teresamed",
-    description: "Free, virtual health care",
-    imageUrl: "/assets/company3.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Ezzra",
-    description: "Church database and AI Bot",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Molus",
-    description: "International shipping optimized",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Papperboy",
-    description: "Payment processing for international e-commerce",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Getwasabi",
-    description: "AI legal assistant",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Bourgeon",
-    description: "Startup studio",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Yellowsun",
-    description: "Remote freelance job for African talents",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Thesislab/Thesis4u",
-    description: "AI Thesis writer and collaboration platform",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "MrMan",
-    description: "Generative AI for WestAfrica",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Paperboy.shop",
-    description: "Alibaba for made in Nigeria products",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-  {
-    name: "Hexis",
-    description: "School Management platform for West African schools",
-    imageUrl: "/assets/ceo.jpg", // Replace with actual image URL
-  },
-];
+import Link from "next/link";
 
 export default function CompaniesPage() {
   return (
@@ -92,7 +26,8 @@ export default function CompaniesPage() {
           {/* Body */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-5">
             {companies.map((company, index) => (
-              <div
+              <Link
+                href={`/our-companies/${company.name.toLowerCase()}`}
                 key={index}
                 className=" cursor-pointer hover:scale-95 transition-all duration-300 relative w-full pb-[100%] overflow-hidden shadow-lg"
               >
@@ -117,7 +52,7 @@ export default function CompaniesPage() {
                     {company.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
