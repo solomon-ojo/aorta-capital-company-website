@@ -41,7 +41,7 @@ export default function CompanyDetails() {
       </div>
 
       {/* Body */}
-      <main className="px-6 mt-16 lg:px-11 flex bg-white flex-col lg:flex-row gap-8 lg:gap-0">
+      <main className="px-6 pb-6 mt-16 lg:px-11 flex bg-white flex-col lg:flex-row gap-8 lg:gap-0">
         {/* Left Section */}
         <div className="w-full pr-0 lg:pr-14 lg:w-1/2 flex flex-col gap-10">
           {/* Company Logo */}
@@ -160,7 +160,7 @@ export default function CompanyDetails() {
         </div>
       </main>
 
-      <footer className="w-full mt-6 footer-bg flex items-center justify-center py-[8px] lg:h-[100px]">
+      <footer className="w-full footer-bg flex items-center justify-center py-[8px] lg:h-[100px]">
         <p className=" text-default-400 font-lora">© 2024 {siteConfig.name}</p>
       </footer>
     </div>
