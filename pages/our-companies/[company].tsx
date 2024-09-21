@@ -35,14 +35,14 @@ export default function CompanyDetails() {
 
   return (
     <>
-      <section className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]">
+      <section className=" bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]">
         {/* Navbar */}
-        <div className="sticky top-0 bg-white z-20">
+        <div className="px-6 lg:px-11 sticky top-0 bg-white z-20">
           <NavbarDynamic openState={openState} toggleMenu={toggleMenu} />
         </div>
 
         {/* Body */}
-        <main className="flex bg-white flex-col lg:flex-row gap-8 lg:gap-0">
+        <main className="px-6 lg:px-11 flex bg-white flex-col lg:flex-row gap-8 lg:gap-0">
           {/* Left Section */}
           <div className="w-full pr-0 lg:pr-14 lg:w-1/2 flex flex-col gap-10">
             {/* Company Logo */}
@@ -162,11 +162,11 @@ export default function CompanyDetails() {
           </div>
         </main>
 
-        {/* <footer className="w-full footers-bg flex items-center justify-center py-[16px] lg:h-[100px]">
+        <footer className="w-full footers-bg flex items-center justify-center py-[16px] lg:h-[100px]">
           <p className=" text-default-400 font-lora">
             © 2024 {siteConfig.name}
           </p>
-        </footer> */}
+        </footer>
       </section>
     </>
   );
