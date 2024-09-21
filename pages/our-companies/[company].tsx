@@ -192,7 +192,7 @@ export default function CompanyDetails() {
 
               {/* Bottom text content */}
               <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
-                <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[30px] font-bold text-white">
+                <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[30px] font-bold text-white">
                   Tony Xu on Mastering the Last Mile
                 </p>
               </div>
