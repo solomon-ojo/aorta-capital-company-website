@@ -27,7 +27,7 @@ export default function CompanyDetails() {
   const toggleMenu = () => {};
 
   return (
-    <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16">
+    <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-screen">
       {/* Navbar */}
       <div className="sticky top-0 bg-white z-20">
         <NavbarDynamic openState={openState} toggleMenu={toggleMenu} />
