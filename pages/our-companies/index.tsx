@@ -105,7 +105,7 @@ export default function CompaniesPage() {
                   priority
                   placeholder="blur"
                   blurDataURL="/assets/dessert.jpeg"
-                  quality={40}
+                  quality={25}
                   className="absolute inset-0"
                 />
                 {/* Overlay */}
