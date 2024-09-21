@@ -129,3 +129,46 @@ export const companies = [
     path: "https://hexis.com",
   },
 ];
+
+export const teams = [
+  {
+    name: "Denise Gilbert",
+    linkedin: "https://linked.com/denisegilbert",
+    picture: "/assets/team1.jpg",
+  },
+  {
+    name: "Michael Johnson",
+    linkedin: "https://linked.com/michaeljohnson",
+    picture: "/assets/team2.jpg",
+  },
+  {
+    name: "Sarah Williams",
+    linkedin: "https://linked.com/sarahwilliams",
+    picture: "/assets/team3.jpg",
+  },
+  {
+    name: "Emily Davis",
+    linkedin: "https://linked.com/emilydavis",
+    picture: "/assets/team4.jpg",
+  },
+  {
+    name: "Robert Brown",
+    linkedin: "https://linked.com/robertbrown",
+    picture: "/assets/team5.jpg",
+  },
+  {
+    name: "Jessica Taylor",
+    linkedin: "https://linked.com/jessicataylor",
+    picture: "/assets/team6.jpg",
+  },
+  {
+    name: "David Anderson",
+    linkedin: "https://linked.com/davidanderson",
+    picture: "/assets/team7.jpg",
+  },
+  {
+    name: "Sophia Martinez",
+    linkedin: "https://linked.com/sophiamartinez",
+    picture: "/assets/team8.jpg",
+  },
+];

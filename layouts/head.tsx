@@ -3,10 +3,13 @@ import NextHead from "next/head";
 
 import { siteConfig } from "@/config/site";
 
-export const Head = () => {
+interface Types {
+  title?: string;
+}
+export const Head = ({ title }: Types) => {
   return (
     <NextHead>
-      <title>{siteConfig.name}</title>
+      <title>{title ? title : siteConfig.name}</title>
       <meta key="title" content={siteConfig.name} property="og:title" />
       <meta content={siteConfig.description} property="og:description" />
       <meta content={siteConfig.description} name="description" />

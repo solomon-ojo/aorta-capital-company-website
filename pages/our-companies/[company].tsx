@@ -9,6 +9,7 @@ import NextImage from "next/image";
 import { siteConfig } from "@/config/site";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MdArrowRightAlt } from "react-icons/md";
+import { Head } from "@/layouts/head";
 
 export default function CompanyDetails() {
   // Hooks
@@ -39,6 +40,7 @@ export default function CompanyDetails() {
 
   return (
     <div className="bg-white  flex relative flex-col lg:gap-16 h-[100svh]">
+      <Head title={siteConfig.name + " / " + companyObject.name} />
       {/* Navbar */}
       <div className="px-6 lg:px-11 sticky top-0 bg-white z-20">
         <NavbarDynamic openState={menuOpen} toggleMenu={toggleMenu} />
