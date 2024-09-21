@@ -63,13 +63,34 @@ export default function CompanyDetails() {
           {/* Connect */}
           <div>
             <span className="h-[1px] bg-gray-500 w-[70px] block"></span>
-            <div className="my-5 flex items-center gap-4">
+            <div className="my-7 flex items-center gap-4">
               <button className="h-[45px] text-white rounded-full text-sm transition-all duration-350 hover:text-black border border-black hover:bg-transparent bg-black px-[30px]">
                 {companyObject.url}
               </button>
-              <div className="h-[45px] w-[45px] flex items-center justify-center overflow-hidden border border-black hover:bg-black rounded-full"></div>
-              <div className="h-[45px] w-[45px] flex items-center justify-center overflow-hidden border border-black hover:bg-black rounded-full"></div>
-              <div className="h-[45px] w-[45px] flex items-center justify-center overflow-hidden border border-black hover:bg-black rounded-full"></div>
+              <div className="h-[45px] w-[45px] flex items-center justify-center border border-black rounded-full">
+                <NextImage
+                  width={25}
+                  height={25}
+                  src={"/assets/logo/x.svg"}
+                  alt={`${companyObject.name}`}
+                />
+              </div>
+              <div className="h-[45px] w-[45px] flex items-center justify-center border border-black rounded-full">
+                <NextImage
+                  width={25}
+                  height={25}
+                  src={"/assets/logo/linkedin.svg"}
+                  alt={`${companyObject.name}`}
+                />
+              </div>
+              <div className="h-[45px] w-[45px] flex items-center justify-center border border-black rounded-full">
+                <NextImage
+                  width={25}
+                  height={25}
+                  src={"/assets/logo/instagram.svg"}
+                  alt={`${companyObject.name}`}
+                />
+              </div>
             </div>
             <span className="h-[1px] bg-gray-500 w-[70px] block"></span>
           </div>
