@@ -288,9 +288,9 @@ export default function CompanyDetails() {
 
         <ul className=" flex flex-col">
           {/* Mission Link */}
-          <li className="">
+          <li className="py-5">
             <Link
-              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+              className={`text-white text-[13px] w-full ${
                 router.pathname === "/mission" ? "bg-[#2F313A]" : ""
               }`}
               href="/mission"
@@ -300,9 +300,9 @@ export default function CompanyDetails() {
           </li>
 
           {/* Our Companies Link */}
-          <li className="">
+          <li className="py-5">
             <Link
-              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+              className={`text-white text-[13px] w-full ${
                 router.pathname === "/our-companies" ? "bg-[#2F313A]" : ""
               }`}
               href="/our-companies"
@@ -312,9 +312,9 @@ export default function CompanyDetails() {
           </li>
 
           {/* Team Link */}
-          <li className="">
+          <li className="py-5">
             <Link
-              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+              className={`text-white text-[13px] w-full ${
                 router.pathname === "/team" ? "bg-[#2F313A]" : ""
               }`}
               href="/team"
