@@ -47,9 +47,8 @@ export default function TeamsPage() {
                     <AnimatedButtonTeams title="LinkedIn" />
                   </div>
                 </div>
-                <p className="mb-3 font-light font-lora mt-1">{v.name}</p>
-
-                <button className="md:hidden border border-black hover:border-[#4fe18b] hover:text-[#4fe18b] py-2">
+                <p className="mb-2 font-light font-lora mt-1">{v.name}</p>
+                <button className="md:hidden mb-4 border border-black hover:border-[#4fe18b] hover:text-[#4fe18b] py-2">
                   LinkedIn
                 </button>
               </div>
