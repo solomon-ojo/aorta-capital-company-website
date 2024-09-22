@@ -29,7 +29,7 @@ export default function TeamsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-3 mb-5">
             {teams.map((v: any, i: any) => (
               <div key={i} className="flex flex-col gap-1">
-                <div className="relative cursor-pointer group w-full pb-[100%] overflow-hidden">
+                <div className="relative group w-full pb-[100%] overflow-hidden">
                   {/* Background Image */}
                   <Image
                     src={v.picture}
@@ -43,11 +43,15 @@ export default function TeamsPage() {
                     className="absolute inset-0"
                   />
 
-                  <div className="px-4 opacity-0 group-hover:opacity-100 absolute bottom-3 left-0 w-full">
+                  <div className="px-4 hidden md:flex opacity-0 group-hover:opacity-100 absolute bottom-3 left-0 w-full">
                     <AnimatedButtonTeams title="LinkedIn" />
                   </div>
                 </div>
-                <p className="mb-3 mt-1">{v.name}</p>
+                <p className="mb-3 font-light font-lora mt-1">{v.name}</p>
+
+                <button className="md:hidden border border-black hover:border-[#4fe18b] hover:text-[#4fe18b] py-2">
+                  LinkedIn
+                </button>
               </div>
             ))}
           </div>
