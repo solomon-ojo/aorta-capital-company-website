@@ -1,4 +1,5 @@
 import { nextui } from "@nextui-org/theme";
+import { siteConfig } from "./config/site";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,5 +21,20 @@ module.exports = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            herobg: siteConfig.siteColors.heroBg,
+          },
+        },
+        dark: {
+          colors: {
+            herobg: siteConfig.siteColors.heroBg,
+          },
+        },
+      },
+    }),
+  ],
 };

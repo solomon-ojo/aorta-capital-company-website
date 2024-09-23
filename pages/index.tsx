@@ -1,51 +1,67 @@
-import Image from "next/image";
-import DefaultLayout from "@/layouts/default";
-import { SiteFiles } from "@/config/siteFiles";
-import AnimatedButton from "@/components/animatedButton";
+import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export default function IndexPage() {
+  const Links = [
+    {
+      title: "Mission",
+      path: "/mission",
+    },
+    {
+      title: "Our Companies",
+      path: "/our-companies",
+    },
+    {
+      title: "Team",
+      path: "/team",
+    },
+  ];
+
   return (
-    <DefaultLayout>
-      <section className="flex h-full flex-col lg:flex-row">
-        {/* Left div with background image */}
-        <div className="lg:flex-1 h-[130px] md:h-[300px] lg:h-full relative">
-          <Image
-            src={SiteFiles.homeBg}
-            alt="Background Image"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="left 50%"
-            quality={75}
-            priority
-          />
-        </div>
+    <div
+      className={`relative items-center justify-center flex flex-col bg-herobg h-[100svh]`}
+    >
+      <div className="flex flex-col gap-5">
+        <h1 className="text-green-100 text-[17px] sm:text-[40px] py-3 px-6 sm:px-8 border-1 border-green-100 font-thin tracking-[0.6rem] font-lora">
+          AORTA CAPITAL
+        </h1>
 
-        {/* Right div with text content */}
-        <div className="flex-1 bg-white flex items-center">
-          <div className="px-6 md:pl-[95px] mt-[-100px] md:mt-[0px] lg:mt-[100px] w-full md:max-w-[78%] lg:max-w-[85%] xl:max-w-[78%]">
-            <h1 className="font-lora home-text-color text-[24px] xl:text-[34px] font-normal leading-[30px] xl:leading-[44px]">
-              Building the Africa we desire, <br /> one project at a time.
-            </h1>
-            <span className="h-[2px] bg-black w-4 block my-6 "></span>
-            <p className="font-lora opacity-85 leading-[25px] home-text-color font-light text-[17px]">
-              We partner with bold, visionary entrepreneurs to build the Africa
-              we desire—by Africans, for Africans—unhindered by government
-              inefficiencies. Together, we harness the limitless potential of
-              emerging technologies and the{" "}
-              <span className="underline text-black font-medium underline-offset-4 decoration-[#4FE18B]">
-                collective power of the crowd.
-              </span>
-            </p>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 items-start">
+          <div className=" basis-[100%] w-full sm:basis-[50%] px-4 sm:px-6">
+            <Link
+              href="https://www.google.com/maps/search/?api=1&query=Seestrase+14,+Berlin,+Germany+13347"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="text-green-50 leading-6  underline-offset-4 text-center text-[14px] font-lora">
+                Seestrase 14, <br />{" "}
+                <span className=" decoration-zinc-400 underline underline-offset-4">
+                  Berlin, Germany 13347
+                </span>
+              </p>
+            </Link>
+            {/* <Divider /> */}
+            <Link href="mailto:info@aortacap.com">
+              <p className=" leading-6 text-green-50 underline-offset-4 text-center text-[14px] font-lora">
+                <span className="text-zinc-400">More info:</span>{" "}
+                <span className=" underline underline-offset-4 decoration-zinc-400">
+                  @aorta
+                </span>
+              </p>
+            </Link>
+          </div>
 
-            <div className="mt-8">
-              <Link href="/mission">
-                <AnimatedButton />
+          <div className="basis-[100%] w-full sm:basis-[50%] px-4 sm:px-6">
+            {Links.map((v: any, i: any) => (
+              <Link key={i} href={v.path}>
+                <p className="text-green-50 leading-6  underline-offset-4 text-center text-[14px] font-lora">
+                  {v.title}
+                </p>
               </Link>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
-    </DefaultLayout>
+      </div>
+    </div>
   );
 }
