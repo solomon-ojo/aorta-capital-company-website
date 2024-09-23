@@ -50,16 +50,6 @@ export const companies = [
     path: "https://molus.com",
   },
   {
-    name: "Papperboy",
-    description: "Payment processing for international e-commerce",
-    details:
-      "Papperboy provides secure is a technology and logistics company that started with on-demand door-to-door delivery. It empowers local businesses to connect with people through their platform of diners and dashers.",
-    imageUrl: "/assets/ceo.jpg",
-    logo: "/assets/logo/logo.svg",
-    url: "papperboy.com",
-    path: "https://papperboy.com",
-  },
-  {
     name: "Getwasabi",
     description: "AI legal assistant",
     details:
