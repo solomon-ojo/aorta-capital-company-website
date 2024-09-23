@@ -41,6 +41,7 @@ export default function IndexPage() {
             <div className="mt-8">
               <Link href="/mission">
                 <AnimatedButton />
+                <p>scs</p>
               </Link>
             </div>
           </div>
