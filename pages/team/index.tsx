@@ -31,7 +31,7 @@ export default function TeamsPage() {
             {teams.map((v: any, i: any) => (
               <div key={i} className="flex flex-col gap-1">
                 <div className="relative group w-full pb-[100%] overflow-hidden">
-                  {/* Background Image */}
+                  {/* Background Img */}
                   <Image
                     src={v.picture}
                     alt={"team1"}
