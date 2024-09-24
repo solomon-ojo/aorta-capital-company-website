@@ -10,6 +10,7 @@ import { siteConfig } from "@/config/site";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MdArrowRightAlt } from "react-icons/md";
 import { Head } from "@/layouts/head";
+import { title } from "@/components/primitives";
 
 export default function CompanyDetails() {
   // Hooks
@@ -48,12 +49,12 @@ export default function CompanyDetails() {
 
       {/* Body */}
       <main
-        className={`px-6 ${menuOpen && "fixed"} pb-6 mt-16 lg:px-11 flex bg-white flex-col lg:flex-row gap-8 lg:gap-0`}
+        className={`px-6 ${menuOpen && "fixed"} pb-6 mt-7 lg:px-11 flex bg-white flex-col lg:flex-row gap-8 lg:gap-0`}
       >
         {/* Left Section */}
         <div className="w-full pr-0 lg:pr-14 lg:w-1/2 flex flex-col gap-10">
           {/* Company Logo */}
-          <Link
+          {/* <Link
             href={companyObject.path || "/"}
             className=""
             target="_blank"
@@ -64,6 +65,15 @@ export default function CompanyDetails() {
               src={companyObject.logo}
               alt={`${companyObject.name}`}
             />
+          </Link> */}
+
+          <Link
+            href={companyObject.path || "/"}
+            className=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className={title()}>{companyObject.name}</h1>
           </Link>
           <p className="font-lora text-black  text-xl md:text-2xl lg:text-3xl xl:text-[33px] lg:leading-[40px] xl:leading-[50px] font-medium">
             {companyObject.details}
@@ -111,42 +121,38 @@ export default function CompanyDetails() {
         {/* Right Section */}
         <div className="w-full lg:w-1/2 px-0 lg:px-10 flex flex-col gap-12">
           {/* Milestones, Teams and Partners */}
-          <div className="flex items-center flex-wrap md:flex-nowrap">
+          <div className="flex items-start flex-wrap md:flex-nowrap">
             <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
-              <p className=" font-lora text-[14px] opacity-75">MILESTONES</p>
+              <p className=" font-lora text-[14px] opacity-75">INDUSTRY</p>
               <div>
-                <p className="text-[16px] font-lato font-medium">
-                  Founded 2023
-                </p>
-                <p className="text-[16px] font-lato font-medium">
-                  Partnered 2014
-                </p>
-                <p className="text-[16px] font-lato font-medium">IPO 2020</p>
+                {companyObject.industry.map((industry, index) => (
+                  <p key={index} className="text-[16px] font-lato font-medium">
+                    {industry}
+                  </p>
+                ))}
               </div>
             </div>
             <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">TEAM</p>
               <div className="flex flex-col gap-1">
-                <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
-                  Andy Fang
-                </p>
-                <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
-                  Stanley Tang
-                </p>
-                <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
-                  Tony Xu
-                </p>
+                {companyObject.team.map((team, index) => (
+                  <p
+                    key={index}
+                    className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium"
+                  >
+                    {team}
+                  </p>
+                ))}
               </div>
             </div>
             <div className="flex mt-4 md:mt-0 flex-col basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">PARTNERS</p>
               <div className="flex flex-col gap-1">
-                <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
-                  Alfred Lin
-                </p>
-                <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
-                  Isaiah Boone
-                </p>
+                {companyObject.location.map((location, index) => (
+                  <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
+                    {location}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -154,15 +160,7 @@ export default function CompanyDetails() {
           <div className="flex flex-col gap-4">
             <p className=" font-lora text-[14px] opacity-75">WHY WE INVESTED</p>
             <p className=" font-lato text-[16px] font-medium leading-[24px]">
-              We sat next to Tony at a dinner one night and were amazed by how
-              deeply he understood the logistical challenges of restaurant
-              service. His methodical mindset, and grasp of complex, multi-sided
-              marketplaces combined with a missionary zeal to serve local
-              merchants convinced us that DoorDash was going to upend the
-              last-mile logistics industry. Starting with the most complicated
-              local businesses, restaurants in suburban America, highlighted the
-              company’s determination and ability to carve out a marketing wedge
-              in a highly competitive market.
+              {companyObject.why}
             </p>
           </div>
 

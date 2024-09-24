@@ -12,13 +12,13 @@ export default function CompaniesPage() {
           {/* Header */}
           <PagesHeader title="Our Companies">
             <p className="text-[15px] xl:text-[18px] font-lora leading-[25px] home-text-color">
-              <span className="font-[300] opacity-80">
-                We have a level ground to play on:
-              </span>
-              <br />
               <span className="font-semibold">
                 There has never been a better time to effect a change in
                 Africa...
+              </span>
+              <br />
+              <span className="font-[300] opacity-80">
+                We have a level ground to play on:
               </span>
             </p>
           </PagesHeader>
