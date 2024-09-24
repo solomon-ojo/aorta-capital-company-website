@@ -73,7 +73,7 @@ export default function CompanyDetails() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className={title()}>{companyObject.name}</h1>
+            <h1 className={`${title()} font-lora`}>{companyObject.name}</h1>
           </Link>
           <p className="font-lora text-black  text-xl md:text-2xl lg:text-3xl xl:text-[33px] lg:leading-[40px] xl:leading-[50px] font-medium">
             {companyObject.details}
@@ -125,7 +125,7 @@ export default function CompanyDetails() {
             <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">INDUSTRY</p>
               <div>
-                {companyObject.industry.map((industry, index) => (
+                {companyObject.industry.map((industry: any, index: any) => (
                   <p key={index} className="text-[16px] font-lato font-medium">
                     {industry}
                   </p>
@@ -135,7 +135,7 @@ export default function CompanyDetails() {
             <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">TEAM</p>
               <div className="flex flex-col gap-1">
-                {companyObject.team.map((team, index) => (
+                {companyObject.team.map((team: any, index: any) => (
                   <p
                     key={index}
                     className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium"
@@ -148,7 +148,7 @@ export default function CompanyDetails() {
             <div className="flex mt-4 md:mt-0 flex-col basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">PARTNERS</p>
               <div className="flex flex-col gap-1">
-                {companyObject.location.map((location, index) => (
+                {companyObject.location.map((location: any, index: any) => (
                   <p
                     key={index}
                     className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium"
@@ -172,7 +172,7 @@ export default function CompanyDetails() {
             <div className="cursor-pointer relative w-full pb-[100%] overflow-hidden shadow-lg group">
               {/* Background Image */}
               <NextImage
-                src={"/assets/ceo.jpg"}
+                src={companyObject.imageUrl2}
                 alt={"company image"}
                 layout="fill"
                 objectFit="cover"
@@ -198,7 +198,7 @@ export default function CompanyDetails() {
               {/* Bottom text content */}
               <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
                 <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[30px] font-bold text-white">
-                  Tony Xu on Mastering the Last Mile
+                  {companyObject.description}
                 </p>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function CompanyDetails() {
               {/* First Image */}
               <div className="relative group cursor-pointer w-full md:w-1/2 pb-[100%] md:pb-[50%] overflow-hidden shadow-lg">
                 <NextImage
-                  src={"/assets/company1.jpg"} // Replace with actual company image path
+                  src={companyObject.imageUrl3} // Replace with actual company image path
                   alt={"Company Image 1"}
                   layout="fill"
                   objectFit="cover"
@@ -233,7 +233,7 @@ export default function CompanyDetails() {
                 {/* Bottom text content */}
                 <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
                   <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
-                    Tony Xu on Mastering the Last Mile
+                    More About {companyObject.name}
                   </p>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export default function CompanyDetails() {
               {/* Second Image */}
               <div className="relative cursor-pointer group w-full md:w-1/2 pb-[100%] md:pb-[50%] overflow-hidden shadow-lg">
                 <NextImage
-                  src={"/assets/company2.jpg"} // Replace with actual company image path
+                  src={companyObject.imageUrl} // Replace with actual company image path
                   alt={"Company Image 2"}
                   layout="fill"
                   objectFit="cover"
@@ -266,7 +266,7 @@ export default function CompanyDetails() {
                 {/* Bottom text content */}
                 <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
                   <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
-                    Tony Xu on Mastering the Last Mile
+                    More About {companyObject.name}
                   </p>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import DefaultLayout from "@/layouts/default";
 import { teams } from "@/data/objects";
 import AnimatedButton from "@/components/animatedButton";
+import Link from "next/link";
 import AnimatedButtonTeams from "@/components/animatedButtonTeam";
 
 export default function TeamsPage() {
@@ -43,14 +44,19 @@ export default function TeamsPage() {
                     className="absolute inset-0"
                   />
 
-                  <div className="px-4 hidden md:flex opacity-0 group-hover:opacity-100 absolute bottom-3 left-0 w-full">
-                    <AnimatedButtonTeams title="LinkedIn" />
-                  </div>
+                  <Link
+                    href={`mailto:${siteConfig.mailAddress}`}
+                    className="px-4 hidden md:flex opacity-0 group-hover:opacity-100 absolute bottom-3 left-0 w-full"
+                  >
+                    <AnimatedButtonTeams title="Contact" />
+                  </Link>
                 </div>
                 <p className="mb-2 font-light font-lora mt-1">{v.name}</p>
-                <button className="md:hidden text-[14px] mb-4 border border-black hover:border-[#4fe18b] hover:text-[#4fe18b] py-2">
-                  LinkedIn
-                </button>
+                <Link href={`mailto:${siteConfig.mailAddress}`}>
+                  <button className="md:hidden text-[14px] w-full mb-4 border border-black hover:border-[#4fe18b] hover:text-[#4fe18b] py-2">
+                    Contact
+                  </button>
+                </Link>
               </div>
             ))}
           </div>

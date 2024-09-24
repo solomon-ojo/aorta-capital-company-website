@@ -6,6 +6,7 @@ export const siteConfig = {
   pathLinks: {
     home: "/",
   },
+  mailAddress: "info@aortacap.com",
   siteColors: {
     heroBg: "#032630",
   },

@@ -1,10 +1,28 @@
-export const companies = [
+interface CompaniesType {
+  name: string;
+  description: string;
+  details: string;
+  imageUrl: string;
+  imageUrl2: string;
+  imageUrl3: string;
+  logo: string;
+  url: string;
+  path: string;
+  why: string;
+  industry: any;
+  team: any;
+  location: any;
+}
+
+export const companies: CompaniesType[] = [
   {
     name: "Nulgen",
     description: "AI Powered e-learning platform and career companion",
     details:
       "Nulgen empowers learners through a free, AI-driven eLearning platform, offering personalized courses and interactive experiences, utilizing open-source content to enhance skills and knowledge anytime, anywhere.",
-    imageUrl: "/assets/company1.jpg",
+    imageUrl: "/assets/company/nulgen2.png",
+    imageUrl2: "/assets/company/nulgen.png",
+    imageUrl3: "/assets/company/nulgen2.jpg",
     logo: "/assets/logo/logo.svg",
     url: "nulgen.com",
     path: "https://nulgen.com",
@@ -18,7 +36,9 @@ export const companies = [
     description: "Internship and job experience for high school students",
     details:
       "Viola connects high school students with valuable internship and job experience opportunities, helping them gain real-world skills and build their career paths early. We specialize in bridging the gap between education and the workforce, offering students a head start in exploring their passions and preparing for the future.",
-    imageUrl: "/assets/company2.jpg",
+    imageUrl: "/assets/company/viola2.jpg",
+    imageUrl2: "/assets/company/viola1.png",
+    imageUrl3: "/assets/company/viola2.jpg",
     logo: "/assets/logo/logo.svg",
     url: "viola.com",
     path: "https://viola.com",
@@ -32,7 +52,9 @@ export const companies = [
     description: "Free, virtual healthcare",
     details:
       "Provides free, virtual healthcare services to ensure everyone has access to quality medical care, regardless of their location or financial situation. Through our easy-to-use platform, individuals can connect with licensed healthcare professionals from the comfort of their homes, receiving expert advice, consultations, and treatment recommendations at no cost.",
-    imageUrl: "/assets/company3.jpg",
+    imageUrl: "/assets/company/teresamed.png",
+    imageUrl2: "/assets/company/teresamed2.png",
+    imageUrl3: "/assets/company/teresamed.png",
     logo: "/assets/logo/logo.svg",
     url: "teresamed.com",
     path: "https://teresamed.com",
@@ -46,7 +68,9 @@ export const companies = [
     description: "Church database and AI Bot",
     details:
       "Ezra offers secure data storage and AI-powered search solutions tailored for churches. We help organizations manage and access their digital resources with ease, allowing members and leaders to quickly find answers to important queries through an intelligent, church-specific search bot.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/ezzra.jpg",
+    imageUrl2: "/assets/company/ezzra.jpg",
+    imageUrl3: "/assets/company/ezzra2.jpg",
     logo: "/assets/logo/logo.svg",
     url: "ezra.com",
     path: "https://ezra.com",
@@ -60,7 +84,9 @@ export const companies = [
     description: "International shipping, optimized with Machine Learning",
     details:
       "Molus leverages advanced machine learning to optimize international shipping processes, ensuring faster, more efficient, and cost-effective global logistics. By analyzing vast amounts of shipping data, we provide intelligent solutions that improve route planning, reduce delays, and streamline supply chain operations for businesses worldwide.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/molus.jpg",
+    imageUrl2: "/assets/company/molus3.jpg",
+    imageUrl3: "/assets/company/molus4.jpg",
     logo: "/assets/logo/logo.svg",
     url: "molus.com",
     path: "https://molus.com",
@@ -74,7 +100,9 @@ export const companies = [
     description: "Seamless payment processing for eCommerce businesses",
     details:
       "Papperboy specializes in seamless payment processing solutions for eCommerce businesses. We empower online retailers with secure, efficient, and user-friendly payment options, ensuring a smooth checkout experience for customers.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/papperboy.jpg",
+    imageUrl2: "/assets/company/molus5.jpg",
+    imageUrl3: "/assets/company/any.png",
     logo: "/assets/logo/logo.svg",
     url: "papperboy.com",
     path: "https://papperboy.com",
@@ -88,7 +116,9 @@ export const companies = [
     description: "AI Legal assistant",
     details:
       "Wasabi AI assistant is designed to enhance efficiency, accuracy, and productivity. By streamlining legal workflows and providing instant access to legal information and advice, it helps lawyers draft contracts, research legal topics, and more, saving time and resources.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/any.png",
+    imageUrl2: "/assets/company/any.png",
+    imageUrl3: "/assets/company/any.png",
     logo: "/assets/logo/logo.svg",
     url: "wasabi.com",
     path: "https://wasabi.com",
@@ -102,7 +132,9 @@ export const companies = [
     description: "Startup studio tailored for founders",
     details:
       "Bourgeon is a startup studio that partners with exceptional founders to build groundbreaking companies. We provide the resources, expertise, and network needed to accelerate growth and achieve lasting success.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/bourgeon.jpg",
+    imageUrl2: "/assets/company/bourgeon2.png",
+    imageUrl3: "/assets/company/bourgeon3.jpg",
     logo: "/assets/logo/logo.svg",
     url: "bourgeon.com",
     path: "https://bourgeon.com",
@@ -116,7 +148,9 @@ export const companies = [
     description: "Remote freelance jobs for African talents",
     details:
       "Yellowsun connects African talents with remote freelance opportunities, empowering skilled professionals to work from anywhere while tapping into the global market. The mission is to bridge the gap between talented individuals and employers seeking diverse, remote talent, fostering economic growth and opportunity across the continent.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/yellowsun3.jpg",
+    imageUrl2: "/assets/company/yellowsun3.jpg",
+    imageUrl3: "/assets/company/any.png",
     logo: "/assets/logo/logo.svg",
     url: "yellowsun.com",
     path: "https://yellowsun.com",
@@ -130,7 +164,9 @@ export const companies = [
     description: "AI Thesis writer and collaborative platform",
     details:
       "Thesislab is an AI-powered platform designed to help students, researchers, and academics create well-structured, comprehensive theses and research papers. The platform provides an intelligent writing assistant, collaboration tools, and access to research databases, streamlining the writing process and enhancing academic output.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/thesislab.png",
+    imageUrl2: "/assets/company/thesislab.png",
+    imageUrl3: "/assets/company/any.png",
     logo: "/assets/logo/logo.svg",
     url: "thesislab.com",
     path: "https://thesislab.com",
@@ -144,7 +180,9 @@ export const companies = [
     description: "Generative AI for WestAfrica",
     details:
       "Specializes in developing generative AI solutions tailored for the West African market. By harnessing cutting-edge technology, we create innovative applications that address local challenges and enhance various sectors, including education, agriculture, and healthcare. Our mission is to empower communities with AI-driven tools that promote growth, creativity, and sustainable development across the region.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/mr_man.jpg",
+    imageUrl2: "/assets/company/mr_man.jpg",
+    imageUrl3: "/assets/company/any.png",
     logo: "/assets/logo/logo.svg",
     url: "mrman.com",
     path: "https://mrman.com",
@@ -158,7 +196,9 @@ export const companies = [
     description: "AI powered school and learning management platform",
     details:
       "Hexis AI-powered school and learning management platform revolutionizes education by integrating advanced technology to enhance teaching and learning experiences. The platform empowers educators, students, and parents to collaborate effectively.",
-    imageUrl: "/assets/ceo.jpg",
+    imageUrl: "/assets/company/hexis.jpg",
+    imageUrl2: "/assets/company/hexis.jpg",
+    imageUrl3: "/assets/company/hexsis.jpg",
     logo: "/assets/logo/logo.svg",
     url: "hexis.com",
     path: "https://hexis.com",
@@ -171,43 +211,33 @@ export const companies = [
 
 export const teams = [
   {
-    name: "Denise Gilbert",
+    name: "Solomon Ojo",
     linkedin: "https://linked.com/denisegilbert",
-    picture: "/assets/team1.jpg",
+    picture: "/assets/solomon_ojo.jpg",
   },
   {
-    name: "Michael Johnson",
+    name: "Adenike Tinu",
     linkedin: "https://linked.com/michaeljohnson",
-    picture: "/assets/team2.jpg",
+    picture: "/assets/adenike_tinu.jpg",
   },
   {
-    name: "Sarah Williams",
+    name: "Mohammed Aminu",
     linkedin: "https://linked.com/sarahwilliams",
-    picture: "/assets/team3.jpg",
+    picture: "/assets/mohammed_aminu.jpg",
   },
   {
-    name: "Emily Davis",
-    linkedin: "https://linked.com/emilydavis",
-    picture: "/assets/team4.jpg",
-  },
-  {
-    name: "Robert Brown",
+    name: "Biola Williams",
     linkedin: "https://linked.com/robertbrown",
-    picture: "/assets/team5.jpg",
+    picture: "/assets/biola_williams.jpg",
   },
   {
-    name: "Jessica Taylor",
+    name: "Blossom Williams",
+    linkedin: "https://linked.com/emilydavis",
+    picture: "/assets/blossom_anukposi.jpg",
+  },
+  {
+    name: "Victor Ailemen",
     linkedin: "https://linked.com/jessicataylor",
-    picture: "/assets/team6.jpg",
-  },
-  {
-    name: "David Anderson",
-    linkedin: "https://linked.com/davidanderson",
-    picture: "/assets/team7.jpg",
-  },
-  {
-    name: "Sophia Martinez",
-    linkedin: "https://linked.com/sophiamartinez",
-    picture: "/assets/team8.jpg",
+    picture: "/assets/victor_ailemen.jpg",
   },
 ];
