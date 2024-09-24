@@ -3,7 +3,6 @@ import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import DefaultLayout from "@/layouts/default";
 import { teams } from "@/data/objects";
-import AnimatedButton from "@/components/animatedButton";
 import Link from "next/link";
 import AnimatedButtonTeams from "@/components/animatedButtonTeam";
 
