@@ -149,7 +149,10 @@ export default function CompanyDetails() {
               <p className=" font-lora text-[14px] opacity-75">PARTNERS</p>
               <div className="flex flex-col gap-1">
                 {companyObject.location.map((location, index) => (
-                  <p className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium">
+                  <p
+                    key={index}
+                    className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium"
+                  >
                     {location}
                   </p>
                 ))}
