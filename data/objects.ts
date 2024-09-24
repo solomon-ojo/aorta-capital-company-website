@@ -132,8 +132,8 @@ export const companies: CompaniesType[] = [
     description: "Startup studio tailored for founders",
     details:
       "Bourgeon is a startup studio that partners with exceptional founders to build groundbreaking companies. We provide the resources, expertise, and network needed to accelerate growth and achieve lasting success.",
-    imageUrl: "/assets/company/bourgeon.jpg",
-    imageUrl2: "/assets/company/bourgeon2.png",
+    imageUrl: "/assets/company/bourgeon2.jpg",
+    imageUrl2: "/assets/company/bourgeon.png",
     imageUrl3: "/assets/company/bourgeon3.jpg",
     logo: "/assets/logo/logo.svg",
     url: "bourgeon.com",
