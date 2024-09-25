@@ -172,7 +172,7 @@ export default function CompanyDetails() {
             <div className="cursor-pointer relative w-full pb-[100%] overflow-hidden shadow-lg group">
               {/* Background Image */}
               <NextImage
-                src={companyObject.imageUrl2}
+                src={companyObject.imageUrl}
                 alt={"company image"}
                 layout="fill"
                 objectFit="cover"
@@ -241,7 +241,7 @@ export default function CompanyDetails() {
               {/* Second Image */}
               <div className="relative cursor-pointer group w-full md:w-1/2 pb-[100%] md:pb-[50%] overflow-hidden shadow-lg">
                 <NextImage
-                  src={companyObject.imageUrl} // Replace with actual company image path
+                  src={companyObject.imageUrl2} // Replace with actual company image path
                   alt={"Company Image 2"}
                   layout="fill"
                   objectFit="cover"
