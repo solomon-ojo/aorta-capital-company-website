@@ -91,7 +91,7 @@ export default function DocsPage() {
             {/* Optimized full-width Image */}
             <div className="my-6 w-full">
               <Image
-                src="/assets/mission.jpg"
+                src="/assets/mission1.png"
                 alt="ceo"
                 quality={60}
                 layout="responsive"
