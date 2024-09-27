@@ -10,6 +10,8 @@ import { MdOutlinePeopleAlt } from "react-icons/md";
 import { CardCol } from "@/components/aboutcomps/cardcol";
 import { IoMdWifi } from "react-icons/io";
 import { MdOutlinePersonSearch } from "react-icons/md";
+import Image from "next/image";
+import FeaturedProjectComp from "@/components/aboutcomps/featuredProjects";
 
 const AboutPage = () => {
   const router = useRouter();
@@ -34,10 +36,10 @@ const AboutPage = () => {
         {/* Header content */}
         <div className="flex flex-col px-3 lg:px-0 justify-center h-[650px] md:h-[750px] about-hero-light-yellow-bg items-center">
           <div className="text-center mb-[90px] flex flex-col items-center">
-            <p className="text-[35px] md:text-[40px] lg:text-[85px] font-testsignifier font-[300]">
+            <p className="text-[40px] md:text-[60px] lg:text-[85px] font-testsignifier font-[300]">
               Invest in <span className="italic">four steps.</span>
             </p>
-            <p className="pt-3 pb-7 text-[14px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
+            <p className="pt-3 pb-7 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
               Moonfare makes investing in private equity far simpler. Use our
               online platform to create an account and verify your ID in
               minutes, then access our funds and manage your holdings whenever
@@ -46,11 +48,11 @@ const AboutPage = () => {
             <button className="about-hero-blue-bg">Register now</button>
           </div>
         </div>
-        <div className="about-hero-yellow-bg relative h-[300px] md:h-[400px] "></div>
+        <div className="about-hero-yellow-bg relative h-[50px] md:h-[50px] "></div>
       </section>
 
       {/* Sections */}
-      <section className="py-[60px] gap-[70px] md:gap-[200px] flex flex-col items-center about-hero-light-yellow-bg">
+      <section className="pd-[0px] md:pb-[40px] pt-[60px] gap-[70px] md:gap-[200px] flex flex-col items-center about-hero-light-yellow-bg">
         <LeftAndRightComp
           img="/assets/testheroimg.webp"
           title="Capital calls and distributions."
@@ -80,14 +82,14 @@ const AboutPage = () => {
             <p className="text-[35px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
               We invest in your safety and privacy.
             </p>
-            <p className="pt-3 text-[14px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
+            <p className="pt-3 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
               Moonfare invests in the highest security standards to help protect
               you and your money. This includes a range of digital and
               procedural controls, some of which are highlighted below.
             </p>
           </div>
         </div>
-        <div className="gap-[70px] md:gap-[200px] pb-[0px] md:pb-[190px] flex flex-col items-center">
+        <div className="gap-[70px] md:gap-[200px] pb-[0px] lg:pb-[190px] flex flex-col items-center">
           <RightWithChildren img="/assets/famiimg.png">
             <div className="flex flex-col gap-8">
               <CardListComp
@@ -110,7 +112,7 @@ const AboutPage = () => {
       {/* Join */}
       <section className="about-hero-light-yellow-bg">
         {/* Header content */}
-        <div className="flex flex-col justify-center pt-[100px] md:pt-[190px] pb-[50px] md:pb-[100px] items-center">
+        <div className="flex flex-col pt-[100px] md:pt-[150px] items-center">
           <div className="text-center w-full flex gap-[30px] md:gap-[50px] flex-col items-center">
             <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
               Join the Moonfare community.
@@ -131,7 +133,42 @@ const AboutPage = () => {
               />
             </div>
           </div>
+
+          <div className=" max-w-[1200px] w-full h-[500px] lg:h-[650px] relative">
+            <Image
+              src="/assets/flatimg.webp"
+              objectFit="cover"
+              className="absolute top-0 lg:px-3 mt-[70px] lg:mt-[150px]"
+              layout="fill"
+              alt="flat-img"
+            />
+          </div>
         </div>
+      </section>
+
+      {/* Sections */}
+      <section className="pd-[60px] lg:pb-[90px] pt-[200px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
+        <LeftAndRightComp
+          img="/assets/woman.png"
+          title={
+            <p>
+              Digital first. <br />{" "}
+              <span className="italic">Service always.</span>
+            </p>
+          }
+          description="Investing with Moonfare requires less starting capital than you may
+          think. Usually, you put down 25 percent of the full commitment up
+          front – the rest is spread out via capital calls over the fund’s
+          lifecycle. You may also receive distributions which could further
+          reduce your net cash outlay. What's more, Moonfare manages all the
+          admin and cash flow for you."
+          isImgRight={false}
+        />
+      </section>
+
+      {/* Feature Component */}
+      <section className="about-hero-yellow-bg py-7">
+        <FeaturedProjectComp />
       </section>
     </div>
   );

@@ -43,7 +43,7 @@ export default function FeaturedProjectComp() {
           {images.map((src, index) => (
             <motion.div
               key={index}
-              className="w-[240px] md:w-[400px] lg:w-[580px] h-[280px] md:h-[600px] lg:h-[800px] flex-shrink-0 relative"
+              className="w-[240px] md:w-[400px]  h-[280px] md:h-[600px] flex-shrink-0 relative"
             >
               <img
                 src={src}
@@ -57,7 +57,7 @@ export default function FeaturedProjectComp() {
           {images.map((src, index) => (
             <motion.div
               key={index + images.length}
-              className="w-[240px] md:w-[400px] lg:w-[580px] h-[280px] md:h-[600px] lg:h-[800px] flex-shrink-0 relative"
+              className="w-[240px] md:w-[400px] h-[280px] md:h-[600px] flex-shrink-0 relative"
             >
               <img
                 src={src}

@@ -14,7 +14,7 @@ export const CardListComp = ({ title, description }: Types) => {
       </div>
       <div className="flex flex-col gap-1">
         <h1 className="text-[16px] sm:text-[20px] font-semibold">{title}</h1>
-        <p className="text-[14px] sm:text-[18px] max-w-[99%] sm:max-w-[60%] lg:max-w-[90%]">
+        <p className="text-[15px] sm:text-[18px] max-w-[99%] sm:max-w-[60%] lg:max-w-[90%]">
           {description}
         </p>
       </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 type Props = {
   isImgRight: boolean;
   img: string;
-  title: string;
+  title: any;
   titleItalic?: boolean;
   description: string;
 };
@@ -28,7 +28,7 @@ export const LeftAndRightComp = ({
         >
           {title}
         </h1>
-        <p className="pt-3 pb-7 text-[14px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
+        <p className="pt-3 pb-7 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
           {description}
         </p>
       </div>
