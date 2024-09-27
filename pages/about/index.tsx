@@ -86,25 +86,22 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="gap-[70px] md:gap-[200px] flex flex-col items-center">
-          <RightWithChildren
-            img="/assets/famiimg.png"
-            children={
-              <div className="flex flex-col gap-8">
-                <CardListComp
-                  title="Data encryption"
-                  description="We safeguard your accounts and personal information using proven, industry-standard 'at-rest' and 'in-transit' encryption."
-                />
-                <CardListComp
-                  title="DDoS and web application security"
-                  description="Moonfare uses industry-leading firewalls to defend against intrusions and our security team constantly monitors emerging threats and responds immediately."
-                />
-                <CardListComp
-                  title="Backups and recovery"
-                  description="Our systems are continuously backed up across multiple sites to retain recovery capabilities in case of disasters or disruption."
-                />
-              </div>
-            }
-          />
+          <RightWithChildren img="/assets/famiimg.png">
+            <div className="flex flex-col gap-8">
+              <CardListComp
+                title="Data encryption"
+                description="We safeguard your accounts and personal information using proven, industry-standard 'at-rest' and 'in-transit' encryption."
+              />
+              <CardListComp
+                title="DDoS and web application security"
+                description="Moonfare uses industry-leading firewalls to defend against intrusions and our security team constantly monitors emerging threats and responds immediately."
+              />
+              <CardListComp
+                title="Backups and recovery"
+                description="Our systems are continuously backed up across multiple sites to retain recovery capabilities in case of disasters or disruption."
+              />
+            </div>
+          </RightWithChildren>
         </div>
       </section>
     </div>
