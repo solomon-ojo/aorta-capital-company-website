@@ -12,6 +12,10 @@ import { IoMdWifi } from "react-icons/io";
 import { MdOutlinePersonSearch } from "react-icons/md";
 import Image from "next/image";
 import FeaturedProjectComp from "@/components/aboutcomps/featuredProjects";
+import { MdAlternateEmail } from "react-icons/md";
+import { siteConfig } from "@/config/site";
+import Link from "next/link";
+import { AboutNavbar } from "@/components/aboutcomps/nav";
 
 const AboutPage = () => {
   const router = useRouter();
@@ -27,8 +31,10 @@ const AboutPage = () => {
     <div className="relative h-[100svh]">
       <Head title="About Aorta Capital" />
       {/* Navigation Bar */}
-      <section className="sticky top-0 z-30 about-hero-light-yellow-bg w-full h-[65px] px-6 flex flex-col items-center justify-center">
-        <Navbar openState={menuOpen} toggleMenu={toggleMenu} />
+      <section
+        className={`sticky top-0 z-30 transition-all duration-500  ${menuOpen ? "bg-herobg" : "about-hero-light-yellow-bg"} w-full h-[65px] px-6 flex flex-col items-center justify-center`}
+      >
+        <AboutNavbar openState={menuOpen} toggleMenu={toggleMenu} />
       </section>
 
       {/* Hero */}
@@ -167,9 +173,84 @@ const AboutPage = () => {
       </section>
 
       {/* Feature Component */}
-      <section className="about-hero-yellow-bg py-7">
+      <section className="about-hero-yellow-bg py-12">
         <FeaturedProjectComp />
       </section>
+
+      {/* Contact */}
+      <section className="py-[100px] md:py-[170px] bg-white">
+        <div className="flex flex-col items-center gap-[20px] md:gap-[50px]">
+          <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
+            More questions?
+          </p>
+          <div className="flex items-center gap-3">
+            <p className="font-bold cursor-pointer text-[18px] underline underline-offset-4 decoration-gray-300">
+              Contact us
+            </p>
+            <div className="h-[40px] w-[40px] flex items-center bg-[#0425e8] justify-center rounded-full ">
+              <MdAlternateEmail color="white" size={20} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full footer-bg flex items-center justify-center py-[16px] lg:h-[100px]">
+        <p className="footer-text font-lora">© 2024 {siteConfig.name}</p>
+      </footer>
+
+      {/* Sliding Menu */}
+      <div
+        className={`fixed top-0 w-full flex flex-col md:hidden right-0 h-full bg-herobg z-20 transform transition-transform duration-300 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <ul className="mt-[100px] w-full flex  flex-col">
+          {/* Mission Link */}
+          <li
+            className={`text-white w-full px-6 text-[13px] py-6 ${
+              router.pathname === "/about" ? "bg-[#051b22]" : ""
+            }`}
+          >
+            <Link href="/about">
+              <p className="capitalize">ABOUT</p>
+            </Link>
+          </li>
+
+          {/* Mission Link */}
+          <li
+            className={`text-white w-full px-6 text-[13px] py-6 ${
+              router.pathname === "/mission" ? "bg-[#051b22]" : ""
+            }`}
+          >
+            <Link href="/mission">
+              <p className="capitalize">MISSION</p>
+            </Link>
+          </li>
+
+          {/* Our Companies Link */}
+          <li
+            className={`text-white w-full px-6 text-[13px] py-6 ${
+              router.pathname === "/our-companies" ? "bg-[#051b22]" : ""
+            }`}
+          >
+            <Link href="/our-companies">
+              <p className="capitalize">OUR COMPANIES</p>
+            </Link>
+          </li>
+
+          {/* Team Link */}
+          <li
+            className={`text-white w-full px-6 text-[13px] py-6 ${
+              router.pathname === "/team" ? "bg-[#051b22]" : ""
+            }`}
+          >
+            <Link href="/team">
+              <p className="capitalize">TEAM</p>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
