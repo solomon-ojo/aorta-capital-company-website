@@ -1,11 +1,30 @@
 import { Avatar } from "@nextui-org/avatar";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 export const TeamComponent = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  // Animation variants
+  const fadeInVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
+  };
   return (
     <section className="flex px-6 xl:px-0 max-w-[1250px] py-24 gap-14 flex-col justify-center">
       {/* Top */}
-      <div className="flex flex-col md:flex-row items-center">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={fadeInVariant}
+        className="flex flex-col md:flex-row items-center"
+      >
         {/* Left */}
         <div className=" w-full basis-[100%] md:basis-[15%] xl:basis-[31%]">
           <p className="text-zinc-500">[TEAM]</p>
@@ -23,12 +42,24 @@ export const TeamComponent = () => {
             innovation, we are dedicated to continuous growth and delivering
             exceptional, forward-thinking solutions.
           </p>
-          <button className="h-[55px] w-[140px] bg-white ">Learn more</button>
+          <motion.button
+            className="h-[55px] w-[140px] bg-white"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Learn more
+          </motion.button>
         </div>
-      </div>
+      </motion.div>
 
       {/* Bottom */}
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-[30px] md:gap-[50px] lg:gap-[100px] xl:gap-[220px]">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={fadeInVariant}
+        className="flex flex-col md:flex-row items-start md:items-center gap-[30px] md:gap-[50px] lg:gap-[100px] xl:gap-[220px]"
+      >
         <img
           src="/assets/teamtest.avif"
           alt=""
@@ -64,7 +95,7 @@ export const TeamComponent = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

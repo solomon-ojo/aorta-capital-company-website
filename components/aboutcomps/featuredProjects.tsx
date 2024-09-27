@@ -10,8 +10,6 @@ export default function FeaturedProjectComp() {
     "/assets/company/molus3.jpg",
     "/assets/company/papperboy.jpg",
     "/assets/company/molus5.jpg",
-    "/assets/company/bourgeon2.png",
-    "/assets/company/bourgeon.jpg",
     "/assets/company/yellowsun3.jpg",
     "/assets/company/thesislab.png",
     "/assets/company/mr_man.jpg",
