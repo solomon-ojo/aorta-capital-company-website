@@ -8,10 +8,6 @@ export default function IndexPage() {
       path: "/about",
     },
     {
-      title: "Mission",
-      path: "/mission",
-    },
-    {
       title: "Our Companies",
       path: "/our-companies",
     },

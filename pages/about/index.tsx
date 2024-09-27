@@ -1,21 +1,17 @@
-import { useEffect, useRef, useState } from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
 import { Navbar } from "@/components/navbar";
-import Image from "next/image";
-import { Image as NextImage } from "@nextui-org/image";
-import FeaturedProjectComp from "@/components/aboutcomps/featuredProjects";
-import { AboutCompanyCard } from "@/components/aboutcomps/companyCard";
-import { MyMotionComponent } from "@/components/aboutcomps/test";
-import { TeamComponent } from "@/components/teamcomps/TeamComponent";
-import Link from "next/link";
+import { Head } from "@/layouts/head";
 import { useRouter } from "next/router";
-import { ContactUsComp } from "@/components/contactuscomp/ContactUs";
-import { siteConfig } from "@/config/site";
+import { useState } from "react";
+import SwiperPagination from "./swiper";
+import SwiperComp from "./swiper";
+import { LeftAndRightComp } from "@/components/aboutcomps/leftandrightcomp";
+import { RightWithChildren } from "@/components/aboutcomps/rightwithchildren";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { CardListComp } from "@/components/aboutcomps/cardlistcomp";
 
-export default function DocsPage() {
+const AboutPage = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-  const targetRef = useRef<HTMLDivElement>(null);
 
   // Function to toggle the menu
   const toggleMenu = () => {
@@ -24,148 +20,95 @@ export default function DocsPage() {
   };
 
   return (
-    <section className={`flex flex-col  bg-white justify-center`}>
-      {/* Navbar */}
-      <div
-        style={{ backgroundColor: "transparent" }}
-        className="absolute top-0 z-50 w-full h-[65px] px-6 flex flex-col items-center justify-center"
-      >
+    <div className="relative h-[100svh]">
+      <Head title="About Aorta Capital" />
+      {/* Navigation Bar */}
+      <section className="sticky top-0 z-30 about-hero-light-yellow-bg w-full h-[65px] px-6 flex flex-col items-center justify-center">
         <Navbar openState={menuOpen} toggleMenu={toggleMenu} />
-      </div>
+      </section>
 
-      <main className={`${menuOpen && "fixed"} mt-[115px]`}>
-        {/* Hero Section */}
-        <div className="w-full">
-          <div className="flex px-4 flex-col items-center justify-center h-[100px] lg:h-[200px]">
-            <div className="max-w-[1250px] w-full">
-              <h1 className="text-[23px] sm:text-[40px] lg:text-[60px] leading-[35px] sm:leading-[45px] lg:leading-[85px] tracking-normal md:tracking-tight scale-y-125 uppercase font-bebas font-semibold">
-                Transform Your Space <br />
-                with Timeless Furniture
-              </h1>
-            </div>
-          </div>
-
-          {/* Hero Image */}
-          <div className="lg:flex-1 mt-[40px] h-[50vh] md:h-[70vh] lg:h-[100svh] relative">
-            <Image
-              src="/assets/testbg.avif"
-              alt="Background Image"
-              layout="fill"
-              style={{ objectFit: "cover", objectPosition: "left 50%" }}
-              quality={40}
-              priority
-            />
+      {/* Hero */}
+      <section className="">
+        {/* Header content */}
+        <div className="flex flex-col px-3 lg:px-0 justify-center h-[650px] md:h-[750px] about-hero-light-yellow-bg items-center">
+          <div className="text-center mb-[90px] flex flex-col items-center">
+            <p className="text-[35px] md:text-[40px] lg:text-[85px] font-testsignifier font-[300]">
+              Invest in <span className="italic">four steps.</span>
+            </p>
+            <p className="pt-3 pb-7 text-[14px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
+              Moonfare makes investing in private equity far simpler. Use our
+              online platform to create an account and verify your ID in
+              minutes, then access our funds and manage your holdings whenever
+              and from wherever you choose.
+            </p>
+            <button className="about-hero-blue-bg">Register now</button>
           </div>
         </div>
+        <div className="about-hero-yellow-bg relative h-[300px] md:h-[400px] "></div>
+      </section>
 
-        {/* Our Work, approach, etc */}
-        <div className="px-4 testbox md:px-6 pt-[70px] md:pt-[120px] flex flex-col items-center">
-          <div className="max-w-[1250px] w-full flex flex-col gap-7 lg:gap-0 lg:flex-row justify-between items-center">
-            {/* Left */}
-            {/* Duplicate this section and when the user scrolls on the paraent div while the div is on sticky, the first div here should kind of rotate out on in vertical direction while the  second div scrolls in also in same direction. */}
-            <div className="basis-[43%]  flex flex-col gap-4">
-              <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] leading-[35px] sm:leading-[45px] lg:leading-[75px] tracking-normal md:tracking-tight scale-y-125 uppercase font-bebas font-semibold">
-                OUR WORK
-              </h1>
-              <p className="text-[16px] md:text-[20px] font-lato">
-                We create furniture that seamlessly blends timeless
-                craftsmanship with contemporary design. Every piece is carefully
-                crafted to enhance the aesthetic of your home while providing
-                lasting durability. From the selection of premium materials to
-                the attention to detail in every stitch and joint, our furniture
-                is made to be beautiful.
-              </p>
-            </div>
+      {/* Sections */}
+      <section className="py-[60px] gap-[70px] md:gap-[200px] flex flex-col items-center about-hero-light-yellow-bg">
+        <LeftAndRightComp
+          img="/assets/testheroimg.webp"
+          title="Capital calls and distributions."
+          description="Investing with Moonfare requires less starting capital than you may
+          think. Usually, you put down 25 percent of the full commitment up
+          front – the rest is spread out via capital calls over the fund’s
+          lifecycle. You may also receive distributions which could further
+          reduce your net cash outlay. What's more, Moonfare manages all the
+          admin and cash flow for you."
+          isImgRight={true}
+        />
 
-            {/* Right */}
-            {/* Duplicate this section and when the user scrolls on the paraent div while the div is on sticky, the first div here should kind of rotate out on in vertical direction while the  second div scrolls in also in same direction. */}
-            <div className="basis-[43%] h-[400px] lg:h-full">
-              <NextImage
-                src="/assets/test1.avif"
-                className="w-[500px] object-cover rounded-none h-[450px] lg:h-[750px]"
-              />
-            </div>
+        <LeftAndRightComp
+          title="Reporting and taxes."
+          description="You can access Moonfare's Digital Reporting and Quarterly Reports roughly three to six months after your first capital call. You'll see insights about your portfolio composition and track performance. Your tax reports are also uploaded directly on the platform once a year."
+          img="/assets/testimgimg.jpg"
+          isImgRight={false}
+          titleItalic={true}
+        />
+      </section>
+
+      {/* Where we invest */}
+      <section className="bg-white">
+        {/* Header content */}
+        <div className="flex flex-col px-3 lg:px-0 justify-center pt-[100px] md:pt-[190px] pb-[50px] md:pb-[100px] items-center">
+          <div className="text-center max-w-[700px] flex gap-[30px] md:gap-[50px] flex-col items-center">
+            <p className="text-[35px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
+              We invest in your safety and privacy.
+            </p>
+            <p className="pt-3 text-[14px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
+              Moonfare invests in the highest security standards to help protect
+              you and your money. This includes a range of digital and
+              procedural controls, some of which are highlighted below.
+            </p>
           </div>
         </div>
-
-        {/* Featured Projects */}
-        <div className="w-full flex pt-[70px] md:pt-[120px] flex-col items-center">
-          <div className="max-w-[1250px] px-4  snap-start w-full flex justify-between items-center mb-12">
-            <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] leading-[35px] sm:leading-[45px] lg:leading-[75px] tracking-normal md:tracking-tight scale-y-125 uppercase font-bebas font-semibold">
-              Featured Projects
-            </h1>
-          </div>
-          <FeaturedProjectComp />
+        <div className="gap-[70px] md:gap-[200px] flex flex-col items-center">
+          <RightWithChildren
+            img="/assets/famiimg.png"
+            children={
+              <div className="flex flex-col gap-8">
+                <CardListComp
+                  title="Data encryption"
+                  description="We safeguard your accounts and personal information using proven, industry-standard 'at-rest' and 'in-transit' encryption."
+                />
+                <CardListComp
+                  title="DDoS and web application security"
+                  description="Moonfare uses industry-leading firewalls to defend against intrusions and our security team constantly monitors emerging threats and responds immediately."
+                />
+                <CardListComp
+                  title="Backups and recovery"
+                  description="Our systems are continuously backed up across multiple sites to retain recovery capabilities in case of disasters or disruption."
+                />
+              </div>
+            }
+          />
         </div>
-
-        {/* Team Section */}
-        <div className="mt-[70px] flex flex-col items-center bg-[#1D1D1D] md:mt-[120px]">
-          <TeamComponent />
-        </div>
-
-        {/* Footer */}
-        <div className="w-full flex pt-[70px] md:pt-[120px] flex-col items-center">
-          <div className="max-w-[1250px] px-4  snap-start w-full flex justify-between items-center mb-12">
-            <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] leading-[35px] sm:leading-[45px] lg:leading-[75px] scale-y-125 lowercase font-bebas font-semibold">
-              {siteConfig.mailAddress}
-            </h1>
-          </div>
-          <ContactUsComp />
-        </div>
-      </main>
-
-      {/* Sliding Menu */}
-      <div
-        className={`fixed top-0 w-full flex flex-col md:hidden right-0 h-full bg-herobg z-10 transform transition-transform duration-300 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <ul className="mt-[100px] w-full flex  flex-col">
-          {/* Mission Link */}
-          <li
-            className={`text-white w-full px-6 text-[13px] py-6 ${
-              router.pathname === "/about" ? "bg-[#051b22]" : ""
-            }`}
-          >
-            <Link href="/about">
-              <p className="capitalize">ABOUT</p>
-            </Link>
-          </li>
-
-          {/* Mission Link */}
-          <li
-            className={`text-white w-full px-6 text-[13px] py-6 ${
-              router.pathname === "/mission" ? "bg-[#051b22]" : ""
-            }`}
-          >
-            <Link href="/mission">
-              <p className="capitalize">MISSION</p>
-            </Link>
-          </li>
-
-          {/* Our Companies Link */}
-          <li
-            className={`text-white w-full px-6 text-[13px] py-6 ${
-              router.pathname === "/our-companies" ? "bg-[#051b22]" : ""
-            }`}
-          >
-            <Link href="/our-companies">
-              <p className="capitalize">OUR COMPANIES</p>
-            </Link>
-          </li>
-
-          {/* Team Link */}
-          <li
-            className={`text-white w-full px-6 text-[13px] py-6 ${
-              router.pathname === "/team" ? "bg-[#051b22]" : ""
-            }`}
-          >
-            <Link href="/team">
-              <p className="capitalize">TEAM</p>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
+    </div>
   );
-}
+};
+
+export default AboutPage;
