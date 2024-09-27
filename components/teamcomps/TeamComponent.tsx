@@ -3,26 +3,39 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 export const TeamComponent = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const topRef = useRef(null);
+  const bottomRef = useRef(null);
 
-  // Animation variants
-  const fadeInVariant = {
-    hidden: { opacity: 0, y: 50 },
+  const isTopInView = useInView(topRef, { once: true });
+  const isBottomInView = useInView(bottomRef, { once: true });
+
+  // Slide-in and fade-in animation variants
+  const slideInLeftVariant = {
+    hidden: { opacity: 0, x: -50 },
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0,
       transition: { duration: 0.8, ease: "easeInOut" },
     },
   };
+
+  const slideInRightVariant = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
+  };
+
   return (
     <section className="flex px-6 xl:px-0 max-w-[1250px] py-24 gap-14 flex-col justify-center">
       {/* Top */}
       <motion.div
-        ref={ref}
+        ref={topRef}
         initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={fadeInVariant}
+        animate={isTopInView ? "visible" : "hidden"}
+        variants={slideInLeftVariant}
         className="flex flex-col md:flex-row items-center"
       >
         {/* Left */}
@@ -30,7 +43,10 @@ export const TeamComponent = () => {
           <p className="text-zinc-500">[TEAM]</p>
         </div>
         {/* Right */}
-        <div className="w-full basis-[69%] flex flex-col gap-5">
+        <motion.div
+          variants={slideInRightVariant}
+          className="w-full basis-[69%] flex flex-col gap-5"
+        >
           <h1 className="font-lato text-[43px] md:text-[50px] lg:text-[65px] xl:text-[82px] font-semibold  text-[#3ded98]">
             Meet our team
           </h1>
@@ -49,23 +65,24 @@ export const TeamComponent = () => {
           >
             Learn more
           </motion.button>
-        </div>
+        </motion.div>
       </motion.div>
 
       {/* Bottom */}
       <motion.div
-        ref={ref}
+        ref={bottomRef}
         initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={fadeInVariant}
+        animate={isBottomInView ? "visible" : "hidden"}
+        variants={slideInRightVariant}
         className="flex flex-col md:flex-row items-start md:items-center gap-[30px] md:gap-[50px] lg:gap-[100px] xl:gap-[220px]"
       >
-        <img
+        <motion.img
           src="/assets/teamtest.avif"
           alt=""
+          variants={slideInLeftVariant}
           className="w-[300px] lg:w-[350px] xl:w-[450px]"
         />
-        <div>
+        <motion.div variants={slideInRightVariant}>
           <h1 className="text-[28px] xl:text-[36px] font-lato font-semibold">
             <span className="text-zinc-400 ">Feedback</span>{" "}
             <span className="text-[#d9d9d9]"> from client</span>
@@ -94,7 +111,7 @@ export const TeamComponent = () => {
               size="sm"
             />
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );
