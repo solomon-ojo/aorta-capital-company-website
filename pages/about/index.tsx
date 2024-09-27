@@ -52,7 +52,7 @@ export default function DocsPage() {
               alt="Background Image"
               layout="fill"
               style={{ objectFit: "cover", objectPosition: "left 50%" }}
-              quality={1}
+              quality={30}
               priority
             />
           </div>
