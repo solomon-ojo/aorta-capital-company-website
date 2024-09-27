@@ -39,7 +39,7 @@ export default function DefaultLayout({
 
       {/* Sliding Menu */}
       <div
-        className={`fixed top-0 flex flex-col md:hidden right-0 h-full w-[100%] footer-bg z-10 transform transition-transform duration-300 ${
+        className={`fixed top-0 flex flex-col md:hidden right-0 h-full w-[100%] bg-herobg z-10 transform transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -48,7 +48,19 @@ export default function DefaultLayout({
           <li className="">
             <Link
               className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
-                router.pathname === "/mission" ? "bg-[#2F313A]" : ""
+                router.pathname === "/about" ? "bg-[#051b22]" : ""
+              }`}
+              href="/about"
+            >
+              <p className="capitalize">ABOUT</p>
+            </Link>
+          </li>
+
+          {/* Mission Link */}
+          <li className="">
+            <Link
+              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+                router.pathname === "/mission" ? "bg-[#051b22]" : ""
               }`}
               href="/mission"
             >
@@ -60,7 +72,7 @@ export default function DefaultLayout({
           <li className="">
             <Link
               className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
-                router.pathname === "/our-companies" ? "bg-[#2F313A]" : ""
+                router.pathname === "/our-companies" ? "bg-[#051b22]" : ""
               }`}
               href="/our-companies"
             >
@@ -72,7 +84,7 @@ export default function DefaultLayout({
           <li className="">
             <Link
               className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
-                router.pathname === "/team" ? "bg-[#2F313A]" : ""
+                router.pathname === "/team" ? "bg-[#051b22]" : ""
               }`}
               href="/team"
             >

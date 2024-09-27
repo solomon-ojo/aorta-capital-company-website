@@ -23,6 +23,10 @@ export const NavbarDynamic = ({
 
   const Links: LinkType[] = [
     {
+      title: "About",
+      path: "/about",
+    },
+    {
       title: "Mission",
       path: "/mission",
     },

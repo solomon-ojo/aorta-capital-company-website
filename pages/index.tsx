@@ -4,6 +4,10 @@ import Link from "next/link";
 export default function IndexPage() {
   const Links = [
     {
+      title: "About",
+      path: "/about",
+    },
+    {
       title: "Mission",
       path: "/mission",
     },

@@ -277,7 +277,7 @@ export default function CompanyDetails() {
 
       {/* Sliding Menu */}
       <div
-        className={`fixed px-6 top-0 flex flex-col md:hidden right-0 h-full w-[100%] footer-bg z-50 transform transition-transform duration-300 ${
+        className={`fixed px-6 top-0 flex flex-col md:hidden right-0 h-full w-[100%] bg-herobg z-50 transform transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -288,11 +288,22 @@ export default function CompanyDetails() {
         />
 
         <ul className=" flex flex-col">
+          {/* About Link */}
+          <li className="py-5">
+            <Link
+              className={`text-white text-[13px] w-full ${
+                router.pathname === "/about" ? "bg-[#051b22]" : ""
+              }`}
+              href="/about"
+            >
+              <p className="capitalize">ABOUT</p>
+            </Link>
+          </li>
           {/* Mission Link */}
           <li className="py-5">
             <Link
               className={`text-white text-[13px] w-full ${
-                router.pathname === "/mission" ? "bg-[#2F313A]" : ""
+                router.pathname === "/mission" ? "bg-[#051b22]" : ""
               }`}
               href="/mission"
             >
@@ -304,7 +315,7 @@ export default function CompanyDetails() {
           <li className="py-5">
             <Link
               className={`text-white text-[13px] w-full ${
-                router.pathname === "/our-companies" ? "bg-[#2F313A]" : ""
+                router.pathname === "/our-companies" ? "bg-[#051b22]" : ""
               }`}
               href="/our-companies"
             >
@@ -316,7 +327,7 @@ export default function CompanyDetails() {
           <li className="py-5">
             <Link
               className={`text-white text-[13px] w-full ${
-                router.pathname === "/team" ? "bg-[#2F313A]" : ""
+                router.pathname === "/team" ? "bg-[#051b22]" : ""
               }`}
               href="/team"
             >

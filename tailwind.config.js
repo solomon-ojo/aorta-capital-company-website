@@ -17,6 +17,7 @@ module.exports = {
         lato: ["Lato", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
         lora: ["Lora, sans-serif"],
+        bebas: ["Bebas, sans-serif"],
       },
     },
   },
