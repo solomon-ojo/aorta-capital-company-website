@@ -2,8 +2,6 @@ import { Navbar } from "@/components/navbar";
 import { Head } from "@/layouts/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import SwiperPagination from "./swiper";
-import SwiperComp from "./swiper";
 import { LeftAndRightComp } from "@/components/aboutcomps/leftandrightcomp";
 import { RightWithChildren } from "@/components/aboutcomps/rightwithchildren";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
