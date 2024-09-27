@@ -69,7 +69,7 @@ export default function FeaturedProjectComp() {
             >
               <img
                 src={src}
-                alt={`Image ${index + 1}`}
+                alt="sknks"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -83,7 +83,7 @@ export default function FeaturedProjectComp() {
             >
               <img
                 src={src}
-                alt={`Image ${index + 1}`}
+                alt="sknksss"
                 className="w-full h-full object-cover"
               />
             </motion.div>
