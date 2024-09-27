@@ -6,6 +6,10 @@ import { LeftAndRightComp } from "@/components/aboutcomps/leftandrightcomp";
 import { RightWithChildren } from "@/components/aboutcomps/rightwithchildren";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { CardListComp } from "@/components/aboutcomps/cardlistcomp";
+import { MdOutlinePeopleAlt } from "react-icons/md";
+import { CardCol } from "@/components/aboutcomps/cardcol";
+import { IoMdWifi } from "react-icons/io";
+import { MdOutlinePersonSearch } from "react-icons/md";
 
 const AboutPage = () => {
   const router = useRouter();
@@ -83,7 +87,7 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="gap-[70px] md:gap-[200px] flex flex-col items-center">
+        <div className="gap-[70px] md:gap-[200px] pb-[0px] md:pb-[190px] flex flex-col items-center">
           <RightWithChildren img="/assets/famiimg.png">
             <div className="flex flex-col gap-8">
               <CardListComp
@@ -100,6 +104,33 @@ const AboutPage = () => {
               />
             </div>
           </RightWithChildren>
+        </div>
+      </section>
+
+      {/* Join */}
+      <section className="about-hero-light-yellow-bg">
+        {/* Header content */}
+        <div className="flex flex-col justify-center pt-[100px] md:pt-[190px] pb-[50px] md:pb-[100px] items-center">
+          <div className="text-center w-full flex gap-[30px] md:gap-[50px] flex-col items-center">
+            <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
+              Join the Moonfare community.
+            </p>
+            <div className="flex w-full px-3 flex-col gap-8 md:gap-0 md:flex-row max-w-[1200px] items-center justify-between">
+              {/* Card */}
+              <CardCol
+                icon={<MdOutlinePeopleAlt color="#0425e8" size={22} />}
+                title="Meet like-minded investors at Moonfare curated events."
+              />
+              <CardCol
+                icon={<IoMdWifi color="#0425e8" size={22} />}
+                title="Hear from top GPs and the best minds in the business through our fund webinars."
+              />
+              <CardCol
+                icon={<MdOutlinePersonSearch color="#0425e8" size={22} />}
+                title="Become an ambassador and enjoy exclusive benefits"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </div>
