@@ -68,4 +68,7 @@ const HeroCarousel = forwardRef((props, ref) => {
   );
 });
 
+// Set the display name explicitly
+HeroCarousel.displayName = "HeroCarousel";
+
 export default HeroCarousel;
