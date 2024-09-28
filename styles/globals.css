@@ -1,6 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-Black-BF663d8461d0303.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-BlackItalic-BF663d8461e2e0e.otf")
+    format("opentype");
+  font-weight: 900; /* Black */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-Bold-BF663d84626293d.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-BoldItalic-BF663d84627c436.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-Medium-BF663d8462c7c04.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-MediumItalic-BF663d846296820.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-Regular-BF663d8462c4c0b.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-MediumItalic-BF663d846296820.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-Light-BF663d8462b5549.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestSignifier";
+  src: url("/fonts/TestSignifier-LightItalic-BF663d8462b3681.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
 
 @tailwind base;
 @tailwind components;
@@ -21,6 +98,31 @@ body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+}
+
+:root {
+  --about-hero-primary: #0425e8;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer-bg {
@@ -67,4 +169,81 @@ body::-webkit-scrollbar {
 
 .paragraph {
   margin-top: 1.5rem;
+}
+
+.stretched-text {
+  @apply inline-block transform; /* Apply transform utilities */
+  transform: scaleY(2); /* Stretch text vertically */
+}
+
+/* Hide scrollbars on all browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.testbox {
+}
+
+.about-hero-blue-bg {
+  color: white;
+  width: 135px;
+  background-color: var(--about-hero-primary);
+  padding: 11px 0;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.about-hero-light-yellow-bg {
+  background-color: #fcf9f0;
+}
+
+.about-hero-yellow-bg {
+  background: #f8f0d9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+form select,
+button {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.step-content {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

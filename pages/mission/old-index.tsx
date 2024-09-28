@@ -15,33 +15,22 @@ import { title } from "@/components/primitives";
 export default function CompanyDetails() {
   // Hooks
   const router = useRouter();
-  const { company } = router.query;
-
   // State
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // Find the company details by name
-  const companyObject = companies.find((c) => c.name.toLowerCase() === company);
 
   // Function
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  if (!companyObject) {
-    return (
-      <div className="px-6 lg:px-11 bg-white flex flex-col gap-16 lg:gap-16 h-[100svh]">
-        {/* Navbar */}
-        <div className="sticky top-0 bg-white z-20">
-          <NavbarDynamic openState={menuOpen} toggleMenu={toggleMenu} />
-        </div>
-      </div>
-    );
-  }
+  const AortaIndustry = ["Technology", "Artificial Intelligence", "HR"];
+  const AortaTeam = ["Deborah Oleg", "Biola Williams", "Seun Emmanuel"];
+  const AortaLocation = ["Germany", "Nigeria", "United Kingdom"];
 
   return (
     <div className="bg-white  flex relative flex-col lg:gap-16 h-[100svh]">
-      <Head title={siteConfig.name + " / " + companyObject.name} />
+      {/* Head */}
+      <Head title="Mission" />
       {/* Navbar */}
       <div className="px-6 lg:px-11 sticky top-0 bg-white z-20">
         <NavbarDynamic openState={menuOpen} toggleMenu={toggleMenu} />
@@ -53,30 +42,14 @@ export default function CompanyDetails() {
       >
         {/* Left Section */}
         <div className="w-full pr-0 lg:pr-14 lg:w-1/2 flex flex-col gap-10">
-          {/* Company Logo */}
-          {/* <Link
-            href={companyObject.path || "/"}
-            className=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              width={200}
-              src={companyObject.logo}
-              alt={`${companyObject.name}`}
-            />
-          </Link> */}
-
-          <Link
-            href={companyObject.path || "/"}
-            className=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h1 className={`${title()} font-lora`}>{companyObject.name}</h1>
-          </Link>
+          {/* Company Name */}
+          <h1 className={`${title()} font-lora`}>{siteConfig.name}</h1>
           <p className="font-lora text-black  text-xl md:text-2xl lg:text-3xl xl:text-[33px] lg:leading-[40px] xl:leading-[50px] font-medium">
-            {companyObject.details}
+            When quizzed during a speech in his most recent national tour,
+            Obasanjo, Nigerian past president, made an intriguing statement that
+            offers great insight about his journey on how he rose to become the
+            president of Nigeria from a lowly, impoverished farm boy in Ogun
+            state, Nigeria.
           </p>
 
           {/* Connect */}
@@ -84,14 +57,14 @@ export default function CompanyDetails() {
             <span className="h-[1px] bg-gray-500 w-[70px] block"></span>
             <div className="my-7 flex items-center gap-4">
               <button className="h-[40px] text-white rounded-full text-sm transition-all duration-350 hover:text-black border border-black hover:bg-transparent bg-black px-[25px]">
-                {companyObject.url}
+                aortacap.com
               </button>
               <div className="h-[40px] shrink-0 w-[40px] flex items-center justify-center border border-black rounded-full">
                 <NextImage
                   width={20}
                   height={20}
                   src={"/assets/logo/x.svg"}
-                  alt={`${companyObject.name}`}
+                  alt={`${siteConfig.name}`}
                 />
               </div>
               <div className="h-[40px] shrink-0 w-[40px] flex items-center justify-center border border-black rounded-full">
@@ -99,7 +72,7 @@ export default function CompanyDetails() {
                   width={20}
                   height={20}
                   src={"/assets/logo/linkedin.svg"}
-                  alt={`${companyObject.name}`}
+                  alt={`${siteConfig.name}`}
                 />
               </div>
               <div className="h-[40px] shrink-0 w-[40px] flex items-center justify-center border border-black rounded-full">
@@ -107,7 +80,7 @@ export default function CompanyDetails() {
                   width={20}
                   height={20}
                   src={"/assets/logo/instagram.svg"}
-                  alt={`${companyObject.name}`}
+                  alt={`${siteConfig.name}`}
                 />
               </div>
             </div>
@@ -125,7 +98,7 @@ export default function CompanyDetails() {
             <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">INDUSTRY</p>
               <div>
-                {companyObject.industry.map((industry: any, index: any) => (
+                {AortaIndustry.map((industry: any, index: any) => (
                   <p key={index} className="text-[16px] font-lato font-medium">
                     {industry}
                   </p>
@@ -135,7 +108,7 @@ export default function CompanyDetails() {
             <div className="flex flex-col basis-[50%] md:basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">TEAM</p>
               <div className="flex flex-col gap-1">
-                {companyObject.team.map((team: any, index: any) => (
+                {AortaTeam.map((team: any, index: any) => (
                   <p
                     key={index}
                     className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium"
@@ -148,7 +121,7 @@ export default function CompanyDetails() {
             <div className="flex mt-4 md:mt-0 flex-col basis-[33%] gap-3">
               <p className=" font-lora text-[14px] opacity-75">PARTNERS</p>
               <div className="flex flex-col gap-1">
-                {companyObject.location.map((location: any, index: any) => (
+                {AortaLocation.map((location: any, index: any) => (
                   <p
                     key={index}
                     className="text-[16px] cursor-pointer font-lato underline underline-offset-4 font-medium"
@@ -159,11 +132,18 @@ export default function CompanyDetails() {
               </div>
             </div>
           </div>
+
           {/* Why we invested */}
           <div className="flex flex-col gap-4">
             <p className=" font-lora text-[14px] opacity-75">WHY WE INVESTED</p>
             <p className=" font-lato text-[16px] font-medium leading-[24px]">
-              {companyObject.why}
+              To Obasanjo and his contemporaries in their time, the army was the
+              even ground providence provided. It was the even ground that
+              erased and removed all societal and aristocratic blockades set in
+              place to frustrate and keep the ordinary man ordinary. The army
+              was what provided an even ground for their generation to play on.
+              An even ground where what mattered was abilities and capabilities;
+              not statuses and connections.
             </p>
           </div>
 
@@ -172,7 +152,7 @@ export default function CompanyDetails() {
             <div className="cursor-pointer relative w-full pb-[100%] overflow-hidden shadow-lg group">
               {/* Background Image */}
               <NextImage
-                src={companyObject.imageUrl}
+                src={"/assets/mission.jpg"}
                 alt={"company image"}
                 layout="fill"
                 objectFit="cover"
@@ -198,7 +178,7 @@ export default function CompanyDetails() {
               {/* Bottom text content */}
               <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
                 <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[30px] font-bold text-white">
-                  {companyObject.description}
+                  Aorta Capital Companies
                 </p>
               </div>
             </div>
@@ -208,7 +188,7 @@ export default function CompanyDetails() {
               {/* First Image */}
               <div className="relative group cursor-pointer w-full md:w-1/2 pb-[100%] md:pb-[50%] overflow-hidden shadow-lg">
                 <NextImage
-                  src={companyObject.imageUrl3} // Replace with actual company image path
+                  src="/assets/dessert.jpeg" // Replace with actual company image path
                   alt={"Company Image 1"}
                   layout="fill"
                   objectFit="cover"
@@ -233,7 +213,7 @@ export default function CompanyDetails() {
                 {/* Bottom text content */}
                 <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
                   <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
-                    More About {companyObject.name}
+                    More About Aorta Capital
                   </p>
                 </div>
               </div>
@@ -241,7 +221,7 @@ export default function CompanyDetails() {
               {/* Second Image */}
               <div className="relative cursor-pointer group w-full md:w-1/2 pb-[100%] md:pb-[50%] overflow-hidden shadow-lg">
                 <NextImage
-                  src={companyObject.imageUrl2} // Replace with actual company image path
+                  src="/assets/dessert.jpeg" // Replace with actual company image path
                   alt={"Company Image 2"}
                   layout="fill"
                   objectFit="cover"
@@ -266,7 +246,7 @@ export default function CompanyDetails() {
                 {/* Bottom text content */}
                 <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
                   <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
-                    More About {companyObject.name}
+                    More About Aorta Capital
                   </p>
                 </div>
               </div>
@@ -277,7 +257,7 @@ export default function CompanyDetails() {
 
       {/* Sliding Menu */}
       <div
-        className={`fixed px-6 top-0 flex flex-col md:hidden right-0 h-full w-[100%] bg-herobg z-50 transform transition-transform duration-300 ${
+        className={`fixed px-6 top-0 flex flex-col md:hidden right-0 h-full w-[100%] footer-bg z-50 transform transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -288,22 +268,11 @@ export default function CompanyDetails() {
         />
 
         <ul className=" flex flex-col">
-          {/* About Link */}
-          <li className="py-5">
-            <Link
-              className={`text-white text-[13px] w-full ${
-                router.pathname === "/about" ? "bg-[#051b22]" : ""
-              }`}
-              href="/about"
-            >
-              <p className="capitalize">ABOUT</p>
-            </Link>
-          </li>
           {/* Mission Link */}
           <li className="py-5">
             <Link
               className={`text-white text-[13px] w-full ${
-                router.pathname === "/mission" ? "bg-[#051b22]" : ""
+                router.pathname === "/mission" ? "bg-[#2F313A]" : ""
               }`}
               href="/mission"
             >
@@ -315,7 +284,7 @@ export default function CompanyDetails() {
           <li className="py-5">
             <Link
               className={`text-white text-[13px] w-full ${
-                router.pathname === "/our-companies" ? "bg-[#051b22]" : ""
+                router.pathname === "/our-companies" ? "bg-[#2F313A]" : ""
               }`}
               href="/our-companies"
             >
@@ -327,7 +296,7 @@ export default function CompanyDetails() {
           <li className="py-5">
             <Link
               className={`text-white text-[13px] w-full ${
-                router.pathname === "/team" ? "bg-[#051b22]" : ""
+                router.pathname === "/team" ? "bg-[#2F313A]" : ""
               }`}
               href="/team"
             >
