@@ -63,10 +63,11 @@ const AboutPage = () => {
       {/* Hero */}
       <section className="">
         {/* Header content */}
-        <div className="flex flex-col relative px-3 lg:px-0 pt-[80px] h-[960px] md:h-[770px] about-hero-light-yellow-bg items-center">
+        <div className="flex flex-col relative px-3 lg:px-0 pt-[80px] h-[1000px] md:h-[770px] about-hero-light-yellow-bg items-center">
           <div className="text-center mb-[40px] flex flex-col items-center">
-            <p className="text-[40px] md:text-[60px] lg:text-[85px] font-testsignifier font-[300]">
-              Invest in <span className="italic">four steps.</span>
+            <p className="text-[40px] leading-[50px] md:leading-[70px] lg:leading-[90px] md:text-[60px] lg:text-[75px] font-testsignifier font-[300]">
+              Where Partnership <br />
+              <span className="italic"> Meets Possibilities</span>
             </p>
             <p className="pt-3 pb-7 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
               Moonfare makes investing in private equity far simpler. Use our
@@ -81,8 +82,8 @@ const AboutPage = () => {
             <HeroCarousel ref={carouselRef} />
           </div>
         </div>
-        <div className="about-hero-yellow-bg flex text-center flex-col items-center h-[290px] md:h-[500px] ">
-          <div className="max-w-[90%] sm:max-w-[40%] lg:max-w-[30%] mt-[40px] md:mt-[250px] lg:mt-[270px] flex flex-col items-center">
+        <div className="about-hero-yellow-bg flex text-center flex-col items-center h-[290px] md:h-[500px] lg:h-[570px] ">
+          <div className="max-w-[90%] sm:max-w-[40%] lg:max-w-[30%] mt-[40px] md:mt-[280px] lg:mt-[330px] flex flex-col items-center">
             <div className="flex flex-col  gap-4">
               <p className="text-[15px] lg:text-[20px] font-semibold">
                 1. Sign in one minutes.
