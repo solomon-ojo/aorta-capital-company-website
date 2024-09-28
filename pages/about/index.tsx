@@ -39,14 +39,23 @@ const AboutPage = () => {
     {
       id: 0,
       num: 1,
+      title: "1. Sign up in minutes.",
+      description:
+        "Create your free account online and answer a few questions to determine if you qualify to invest.",
     },
     {
       id: 1,
       num: 2,
+      title: "2. View exclusive fund details.",
+      description:
+        "View funds, access documents and review data to help you make better investment decisions.",
     },
     {
       id: 2,
       num: 3,
+      title: "3. Digital subscription",
+      description:
+        "Request allocations and sign documents online. Moonfare does the administrative work for you.",
     },
   ];
 
@@ -86,11 +95,18 @@ const AboutPage = () => {
           <div className="max-w-[90%] sm:max-w-[40%] lg:max-w-[30%] mt-[40px] md:mt-[280px] lg:mt-[330px] flex flex-col items-center">
             <div className="flex flex-col  gap-4">
               <p className="text-[15px] lg:text-[20px] font-semibold">
-                1. Sign in one minutes.
+                {currentHero == 0
+                  ? "1. Sign in one minutes."
+                  : currentHero == 1
+                    ? "2. View exclusive fund details."
+                    : "3. Digital subscription"}
               </p>
               <p className="text-[13px] lg:text-[16px] font-[400]">
-                Create your free account online and answer a few questions to
-                determine if you qualify to invest.
+                {currentHero == 0
+                  ? "Create your free account online and answer a few questions to determine if you qualify to invest."
+                  : currentHero == 1
+                    ? "View funds, access documents and review data to help you make better investment decisions."
+                    : "Request allocations and sign documents online. Moonfare does the administrative work for you."}
               </p>
             </div>
 
