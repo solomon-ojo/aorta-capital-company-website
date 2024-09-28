@@ -13,8 +13,9 @@ export default function FeaturedProjectComp() {
     "/assets/company/yellowsun3.jpg",
     "/assets/company/thesislab.png",
     "/assets/company/mr_man.jpg",
-    "/assets/company/hexis.jpg",
-    "/assets/company/hexsis.jpg",
+    "/assets/company/papperboy.jpg",
+    "/assets/company/molus3.jpg",
+    "/assets/company/viola2.jpg",
   ];
 
   const scrollVariants = {
