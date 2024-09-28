@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function CompaniesPage() {
   return (
     <DefaultLayout>
-      <section className="bg-white flex h-full px-6 xl:px-0 flex-col items-center">
+      <section className="about-hero-light-yellow-bg flex h-full px-6 xl:px-0 flex-col items-center">
         <div className="w-full md:w-[700px] lg:w-[900px]">
           {/* Header */}
           <PagesHeader title="Our Companies">
