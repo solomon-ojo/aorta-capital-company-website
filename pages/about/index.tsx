@@ -1,10 +1,8 @@
-import { Navbar } from "@/components/navbar";
 import { Head } from "@/layouts/head";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { LeftAndRightComp } from "@/components/aboutcomps/leftandrightcomp";
 import { RightWithChildren } from "@/components/aboutcomps/rightwithchildren";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { CardListComp } from "@/components/aboutcomps/cardlistcomp";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { CardCol } from "@/components/aboutcomps/cardcol";
@@ -16,16 +14,41 @@ import { MdAlternateEmail } from "react-icons/md";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { AboutNavbar } from "@/components/aboutcomps/nav";
+import HeroCarousel from "@/components/carousel/HeroCarousel";
 
 const AboutPage = () => {
   const router = useRouter();
+  const carouselRef = useRef<any>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentHero, setCurrentHero] = useState(0);
 
   // Function to toggle the menu
   const toggleMenu = () => {
     window.scrollTo({ top: 0, behavior: "auto" });
     setMenuOpen(!menuOpen);
   };
+
+  const scrollTo = (num: number) => {
+    if (carouselRef.current) {
+      carouselRef?.current?.scrollTo(num);
+      setCurrentHero(num);
+    }
+  };
+
+  const controllButton = [
+    {
+      id: 0,
+      num: 1,
+    },
+    {
+      id: 1,
+      num: 2,
+    },
+    {
+      id: 2,
+      num: 3,
+    },
+  ];
 
   return (
     <div className="relative h-[100svh]">
@@ -40,8 +63,8 @@ const AboutPage = () => {
       {/* Hero */}
       <section className="">
         {/* Header content */}
-        <div className="flex flex-col px-3 lg:px-0 justify-center h-[650px] md:h-[750px] about-hero-light-yellow-bg items-center">
-          <div className="text-center mb-[90px] flex flex-col items-center">
+        <div className="flex flex-col relative px-3 lg:px-0 pt-[80px] h-[960px] md:h-[770px] about-hero-light-yellow-bg items-center">
+          <div className="text-center mb-[40px] flex flex-col items-center">
             <p className="text-[40px] md:text-[60px] lg:text-[85px] font-testsignifier font-[300]">
               Invest in <span className="italic">four steps.</span>
             </p>
@@ -53,12 +76,47 @@ const AboutPage = () => {
             </p>
             <button className="about-hero-blue-bg">Register now</button>
           </div>
+
+          <div className="w-full">
+            <HeroCarousel ref={carouselRef} />
+          </div>
         </div>
-        <div className="about-hero-yellow-bg relative h-[50px] md:h-[50px] "></div>
+        <div className="about-hero-yellow-bg flex text-center flex-col items-center h-[290px] md:h-[500px] ">
+          <div className="max-w-[90%] sm:max-w-[40%] lg:max-w-[30%] mt-[40px] md:mt-[250px] lg:mt-[270px] flex flex-col items-center">
+            <div className="flex flex-col  gap-4">
+              <p className="text-[15px] lg:text-[20px] font-semibold">
+                1. Sign in one minutes.
+              </p>
+              <p className="text-[13px] lg:text-[16px] font-[400]">
+                Create your free account online and answer a few questions to
+                determine if you qualify to invest.
+              </p>
+            </div>
+
+            <div className="flex items-center mt-[40px] gap-3">
+              {controllButton.map((v) => (
+                <span
+                  key={v.id}
+                  role="presentation"
+                  onClick={() => scrollTo(v.id)}
+                  className={`h-[45px] flex items-center cursor-pointer ${currentHero == v.id ? "bg-[#F1E2B9]" : "bg-[#F6ECD1]"}  justify-center w-[45px] rounded-full`}
+                >
+                  <p
+                    className={`font-medium ${currentHero == v.id ? "text-black" : "text-gray-500"} `}
+                  >
+                    {v.num}
+                  </p>
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Sections */}
-      <section className="pd-[0px] md:pb-[40px] pt-[60px] gap-[70px] md:gap-[200px] flex flex-col items-center about-hero-light-yellow-bg">
+      <section
+        className={`pd-[0px] md:pb-[40px] pt-[60px] gap-[70px] md:gap-[200px] flex flex-col items-center about-hero-light-yellow-bg`}
+      >
         <LeftAndRightComp
           img="/assets/testheroimg.webp"
           title="Capital calls and distributions."
@@ -153,7 +211,7 @@ const AboutPage = () => {
       </section>
 
       {/* Sections */}
-      <section className="pd-[60px] lg:pb-[90px] pt-[200px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
+      <section className="pb-[30px] lg:pb-[90px] pt-[130px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
         <LeftAndRightComp
           img="/assets/woman.png"
           title={
@@ -170,6 +228,8 @@ const AboutPage = () => {
           admin and cash flow for you."
           isImgRight={false}
         />
+
+        {/* <div></div> */}
       </section>
 
       {/* Feature Component */}
