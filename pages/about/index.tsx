@@ -129,18 +129,19 @@ const AboutPage = () => {
         <LeftAndRightComp
           img="/assets/about3.jpg"
           title="The future is built not wished for."
-          description="Investing with Moonfare requires less starting capital than you may
-          think. Usually, you put down 25 percent of the full commitment up
-          front – the rest is spread out via capital calls over the fund’s
-          lifecycle. You may also receive distributions which could further
-          reduce your net cash outlay. What's more, Moonfare manages all the
-          admin and cash flow for you."
+          description="we invest in founders who don’t just dream of change—they build it. 
+          By backing visionary entrepreneurs with the resources, mentorship, and network they need, 
+          we help turn bold ideas into powerful businesses that shape the future. 
+          We are not hoping for a better future, we are building it."
           isImgRight={true}
         />
 
         <LeftAndRightComp
           title="The future is partnership"
-          description="You can access Moonfare's Digital Reporting and Quarterly Reports roughly three to six months after your first capital call. You'll see insights about your portfolio composition and track performance. Your tax reports are also uploaded directly on the platform once a year."
+          description="We believe the future is shaped by bold ideas and strong collaborations. 
+          We partner with visionary founders, providing the capital, expertise, and global network 
+          they need to turn their ambitions into impactful businesses. Together, we build a future of 
+          innovation and lasting success."
           img="/assets/about1.jpg"
           isImgRight={false}
           titleItalic={true}
@@ -155,10 +156,9 @@ const AboutPage = () => {
             <p className="text-[35px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
               Build quicly with extreme agility.
             </p>
-            <p className="pt-3 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
-              Moonfare invests in the highest security standards to help protect
-              you and your money. This includes a range of digital and
-              procedural controls, some of which are highlighted below.
+            <p className=" text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
+            We prioritize agility and speed, empowering founders to rapidly seize opportunities, develope 
+            ideas, fail, learn and navigate challenges with confidence and in record time.
             </p>
           </div>
         </div>
@@ -225,8 +225,8 @@ const AboutPage = () => {
           img="/assets/about5.jpg"
           title={
             <p>
-              Digital first. <br />{" "}
-              <span className="italic">Service always.</span>
+              Want to talk? <br />{" "}
+              <span className="italic">Get in touch.</span>
             </p>
           }
           description="Investing with Moonfare requires less starting capital than you may
