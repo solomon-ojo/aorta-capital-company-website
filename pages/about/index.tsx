@@ -175,7 +175,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="gap-[70px] md:gap-[200px] pb-[0px] lg:pb-[190px] flex flex-col items-center">
-          <RightWithChildren img="/assets/about4.jpg">
+          <RightWithChildren img="/assets/about7.jpg">
             <div className="flex flex-col gap-8">
               <CardListComp
                 title="Data encryption"
@@ -221,7 +221,7 @@ const AboutPage = () => {
 
           <div className=" max-w-[1200px] w-full h-[500px] lg:h-[650px] relative">
             <Image
-              src="/assets/about2.png"
+              src="/assets/about6.jpg"
               objectFit="cover"
               className="absolute top-0 lg:px-3 mt-[70px] lg:mt-[150px]"
               layout="fill"
