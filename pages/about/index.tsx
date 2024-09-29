@@ -79,12 +79,12 @@ const AboutPage = () => {
               <span className="italic"> Meets Possibilities</span>
             </p>
             <p className="pt-3 pb-7 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
-              Moonfare makes investing in private equity far simpler. Use our
-              online platform to create an account and verify your ID in
-              minutes, then access our funds and manage your holdings whenever
-              and from wherever you choose.
+            We partner with bold, visionary African entrepreneurs to build 
+            extremly agile and resilient companies.
             </p>
-            <button className="about-hero-blue-bg">Register now</button>
+            <Link href="/mission">
+            <button className="about-hero-blue-bg">Read Our Mission</button>
+            </Link>
           </div>
 
           <div className="w-full">
@@ -135,21 +135,22 @@ const AboutPage = () => {
         className={`pd-[0px] md:pb-[40px] pt-[60px] gap-[70px] md:gap-[200px] flex flex-col items-center about-hero-light-yellow-bg`}
       >
         <LeftAndRightComp
-          img="/assets/testheroimg.webp"
-          title="Capital calls and distributions."
-          description="Investing with Moonfare requires less starting capital than you may
-          think. Usually, you put down 25 percent of the full commitment up
-          front – the rest is spread out via capital calls over the fund’s
-          lifecycle. You may also receive distributions which could further
-          reduce your net cash outlay. What's more, Moonfare manages all the
-          admin and cash flow for you."
+          img="/assets/about3.jpg"
+          title="The future is built not wished for."
+          description="We invest in founders who don’t just dream of change—they build it. 
+          By backing visionary entrepreneurs with the resources, mentorship, and network they need, 
+          we help turn bold ideas into powerful businesses that shape the future. 
+          We are not hoping for a better future, we are building it."
           isImgRight={true}
         />
 
         <LeftAndRightComp
-          title="Reporting and taxes."
-          description="You can access Moonfare's Digital Reporting and Quarterly Reports roughly three to six months after your first capital call. You'll see insights about your portfolio composition and track performance. Your tax reports are also uploaded directly on the platform once a year."
-          img="/assets/testimgimg.jpg"
+          title="The future is partnership."
+          description="We believe the future is shaped by bold ideas and strong collaborations. 
+          We partner with visionary founders, providing the capital, expertise, and global network 
+          they need to turn their ambitions into impactful businesses. Together, we build a future of 
+          innovation and lasting success."
+          img="/assets/about1.jpg"
           isImgRight={false}
           titleItalic={true}
         />
@@ -161,17 +162,16 @@ const AboutPage = () => {
         <div className="flex flex-col px-3 lg:px-0 justify-center pt-[100px] md:pt-[190px] pb-[50px] md:pb-[100px] items-center">
           <div className="text-center max-w-[700px] flex gap-[30px] md:gap-[50px] flex-col items-center">
             <p className="text-[35px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
-              We invest in your safety and privacy.
+              Build quicly with extreme agility.
             </p>
             <p className="pt-3 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
-              Moonfare invests in the highest security standards to help protect
-              you and your money. This includes a range of digital and
-              procedural controls, some of which are highlighted below.
+            We prioritize agility and speed, empowering founders to rapidly seize opportunities, develope 
+            ideas, fail, learn and navigate challenges with confidence and in record time.
             </p>
           </div>
         </div>
         <div className="gap-[70px] md:gap-[200px] pb-[0px] lg:pb-[190px] flex flex-col items-center">
-          <RightWithChildren img="/assets/famiimg.png">
+          <RightWithChildren img="/assets/about4.jpg">
             <div className="flex flex-col gap-8">
               <CardListComp
                 title="Data encryption"
@@ -196,7 +196,7 @@ const AboutPage = () => {
         <div className="flex flex-col pt-[100px] md:pt-[150px] items-center">
           <div className="text-center w-full flex gap-[30px] md:gap-[50px] flex-col items-center">
             <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
-              Join the Moonfare community.
+              Professionals accross the world.
             </p>
             <div className="flex w-full px-3 flex-col gap-8 md:gap-0 md:flex-row max-w-[1200px] items-center justify-between">
               {/* Card */}
@@ -217,7 +217,7 @@ const AboutPage = () => {
 
           <div className=" max-w-[1200px] w-full h-[500px] lg:h-[650px] relative">
             <Image
-              src="/assets/flatimg.webp"
+              src="/assets/about2.png"
               objectFit="cover"
               className="absolute top-0 lg:px-3 mt-[70px] lg:mt-[150px]"
               layout="fill"
@@ -233,8 +233,8 @@ const AboutPage = () => {
           img="/assets/woman.png"
           title={
             <p>
-              Digital first. <br />{" "}
-              <span className="italic">Service always.</span>
+              Want to talk? <br />{" "}
+              <span className="italic">Get in touch</span>
             </p>
           }
           description="Investing with Moonfare requires less starting capital than you may
