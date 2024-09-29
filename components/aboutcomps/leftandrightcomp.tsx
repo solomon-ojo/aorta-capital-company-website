@@ -1,11 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   isImgRight: boolean;
   img: string;
   title: any;
+  button_title:any
   titleItalic?: boolean;
   description: string;
+  button_url: string;
 };
 
 export const LeftAndRightComp = ({
@@ -13,6 +16,8 @@ export const LeftAndRightComp = ({
   title,
   img,
   titleItalic,
+  button_title,
+  button_url,
   description,
 }: Props) => {
   return (
@@ -31,6 +36,9 @@ export const LeftAndRightComp = ({
         <p className="pt-3 pb-7 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
           {description}
         </p>
+        <Link href={button_url}>
+            <button className="about-hero-blue-bg">{button_title}</button>
+        </Link>
       </div>
 
       {/* Image Section */}

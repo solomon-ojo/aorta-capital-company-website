@@ -142,6 +142,8 @@ const AboutPage = () => {
           we help turn bold ideas into powerful businesses that shape the future. 
           We are not hoping for a better future, we are building it."
           isImgRight={true}
+          button_title="Read More"
+          button_url="/mission"
         />
 
         <LeftAndRightComp
@@ -153,6 +155,8 @@ const AboutPage = () => {
           img="/assets/about1.jpg"
           isImgRight={false}
           titleItalic={true}
+          button_title="Our Team"
+          button_url="/team"
         />
       </section>
 
@@ -244,6 +248,8 @@ const AboutPage = () => {
           reduce your net cash outlay. What's more, Moonfare manages all the
           admin and cash flow for you."
           isImgRight={false}
+          button_title="Contact us"
+          button_url={`mailto:${siteConfig.mailAddress}`}
         />
 
         {/* <div></div> */}
