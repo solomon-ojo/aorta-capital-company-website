@@ -39,7 +39,7 @@ const HeroCarousel = forwardRef((props, ref) => {
         <div className="embla__slide relative border-t-[11px] border-[#f8f0d9] flex-shrink-0 px-5 flex-grow-0 basis-[88%] md:basis-[750px] lg:basis-[800px] xl:basis-[900px] shadow-2xl bg-white mx-[120px] h-[550px] ">
           <Image
             quality={40}
-            src={"/assets/company/nulgen2.png"}
+            src={"/assets/company/getwasabi.jpg"}
             alt="test-img"
             objectFit="cover"
             layout="fill"

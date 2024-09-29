@@ -255,7 +255,7 @@ const AboutPage = () => {
       </section>
 
       {/* Contact */}
-      <section className="py-[100px] md:py-[170px] bg-white">
+      {/* <section className="py-[100px] md:py-[170px] bg-white">
         <div className="flex flex-col items-center gap-[20px] md:gap-[50px]">
           <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
             More questions?
@@ -269,7 +269,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="w-full footer-bg flex items-center justify-center py-[16px] lg:h-[100px]">
