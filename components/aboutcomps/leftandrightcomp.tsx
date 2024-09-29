@@ -24,7 +24,7 @@ export const LeftAndRightComp = ({
       {/* Text Section */}
       <div className="w-full flex flex-col px-3 xl:px-0 gap-4">
         <h1
-          className={`text-[35px] ${titleItalic && "italic"} leading-[40px] sm:leading-[80px] md:text-[66px] lg:text-[66px] font-testsignifier font-[300]`}
+          className={`text-[35px]  leading-[40px] sm:leading-[80px] md:text-[66px] lg:text-[66px] font-testsignifier font-[300]`}
         >
           {title}
         </h1>

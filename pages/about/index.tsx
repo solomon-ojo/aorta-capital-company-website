@@ -39,14 +39,20 @@ const AboutPage = () => {
     {
       id: 0,
       num: 1,
+      title: "",
+      description:""
     },
     {
       id: 1,
       num: 2,
+      title: "",
+      description:""
     },
     {
       id: 2,
       num: 3,
+      title: "",
+      description:""
     },
   ];
 
@@ -70,12 +76,13 @@ const AboutPage = () => {
               <span className="italic"> Meets Possibilities</span>
             </p>
             <p className="pt-3 pb-7 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
-              Moonfare makes investing in private equity far simpler. Use our
-              online platform to create an account and verify your ID in
-              minutes, then access our funds and manage your holdings whenever
-              and from wherever you choose.
+              We partner with bold, visionary African entrepreneurs to build 
+              extremly agile and resilient companies.
             </p>
-            <button className="about-hero-blue-bg">Register now</button>
+            <Link href="/mission">
+            <button className="about-hero-blue-bg">Read Our Mission</button>
+            </Link>
+            
           </div>
 
           <div className="w-full">
@@ -106,6 +113,7 @@ const AboutPage = () => {
                     className={`font-medium ${currentHero == v.id ? "text-black" : "text-gray-500"} `}
                   >
                     {v.num}
+                    
                   </p>
                 </span>
               ))}
@@ -119,8 +127,8 @@ const AboutPage = () => {
         className={`pd-[0px] md:pb-[40px] pt-[60px] gap-[70px] md:gap-[200px] flex flex-col items-center about-hero-light-yellow-bg`}
       >
         <LeftAndRightComp
-          img="/assets/testheroimg.webp"
-          title="Capital calls and distributions."
+          img="/assets/about3.jpg"
+          title="The future is built not wished for."
           description="Investing with Moonfare requires less starting capital than you may
           think. Usually, you put down 25 percent of the full commitment up
           front – the rest is spread out via capital calls over the fund’s
@@ -131,9 +139,9 @@ const AboutPage = () => {
         />
 
         <LeftAndRightComp
-          title="Reporting and taxes."
+          title="The future is partnership"
           description="You can access Moonfare's Digital Reporting and Quarterly Reports roughly three to six months after your first capital call. You'll see insights about your portfolio composition and track performance. Your tax reports are also uploaded directly on the platform once a year."
-          img="/assets/testimgimg.jpg"
+          img="/assets/about1.jpg"
           isImgRight={false}
           titleItalic={true}
         />
@@ -145,7 +153,7 @@ const AboutPage = () => {
         <div className="flex flex-col px-3 lg:px-0 justify-center pt-[100px] md:pt-[190px] pb-[50px] md:pb-[100px] items-center">
           <div className="text-center max-w-[700px] flex gap-[30px] md:gap-[50px] flex-col items-center">
             <p className="text-[35px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
-              We invest in your safety and privacy.
+              Build quicly with extreme agility.
             </p>
             <p className="pt-3 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
               Moonfare invests in the highest security standards to help protect
@@ -155,7 +163,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="gap-[70px] md:gap-[200px] pb-[0px] lg:pb-[190px] flex flex-col items-center">
-          <RightWithChildren img="/assets/famiimg.png">
+          <RightWithChildren img="/assets/about4.jpg">
             <div className="flex flex-col gap-8">
               <CardListComp
                 title="Data encryption"
@@ -180,7 +188,7 @@ const AboutPage = () => {
         <div className="flex flex-col pt-[100px] md:pt-[150px] items-center">
           <div className="text-center w-full flex gap-[30px] md:gap-[50px] flex-col items-center">
             <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[85px] font-testsignifier font-[300]">
-              Join the Moonfare community.
+              Professionals accross the world.
             </p>
             <div className="flex w-full px-3 flex-col gap-8 md:gap-0 md:flex-row max-w-[1200px] items-center justify-between">
               {/* Card */}
@@ -201,7 +209,7 @@ const AboutPage = () => {
 
           <div className=" max-w-[1200px] w-full h-[500px] lg:h-[650px] relative">
             <Image
-              src="/assets/flatimg.webp"
+              src="/assets/team1.png"
               objectFit="cover"
               className="absolute top-0 lg:px-3 mt-[70px] lg:mt-[150px]"
               layout="fill"
@@ -214,7 +222,7 @@ const AboutPage = () => {
       {/* Sections */}
       <section className="pb-[30px] lg:pb-[90px] pt-[130px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
         <LeftAndRightComp
-          img="/assets/woman.png"
+          img="/assets/about5.jpg"
           title={
             <p>
               Digital first. <br />{" "}
@@ -230,6 +238,7 @@ const AboutPage = () => {
           isImgRight={false}
         />
 
+
         {/* <div></div> */}
       </section>
 
@@ -239,7 +248,7 @@ const AboutPage = () => {
       </section>
 
       {/* Contact */}
-      <section className="py-[100px] md:py-[170px] bg-white">
+      {/* <section className="py-[100px] md:py-[170px] bg-white">
         <div className="flex flex-col items-center gap-[20px] md:gap-[50px]">
           <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
             More questions?
@@ -253,7 +262,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="w-full footer-bg flex items-center justify-center py-[16px] lg:h-[100px]">
