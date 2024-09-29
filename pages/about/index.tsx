@@ -1,6 +1,6 @@
 import { Head } from "@/layouts/head";
 import { useRouter } from "next/router";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LeftAndRightComp } from "@/components/aboutcomps/leftandrightcomp";
 import { RightWithChildren } from "@/components/aboutcomps/rightwithchildren";
 import { CardListComp } from "@/components/aboutcomps/cardlistcomp";
@@ -27,6 +27,19 @@ const AboutPage = () => {
     window.scrollTo({ top: 0, behavior: "auto" });
     setMenuOpen(!menuOpen);
   };
+
+  // useEffect(() => {
+  //   if (carouselRef?.current?.currentIndex) {
+  //     setCurrentHero(carouselRef?.current?.currentIndex);
+  //     const handleSelect = () => {
+  //       const currentSlideIndex = carouselRef?.current?.currentIndex;
+  //       console.log(currentSlideIndex);
+  //       setCurrentHero(currentSlideIndex);
+  //     };
+  //     handleSelect();
+  //     return () => {};
+  //   }
+  // }, [carouselRef?.current?.currentIndex]);
 
   const scrollTo = (num: number) => {
     if (carouselRef.current) {
@@ -228,7 +241,7 @@ const AboutPage = () => {
       </section>
 
       {/* Sections */}
-      <section className="pb-[30px] lg:pb-[90px] pt-[130px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
+      <section className="pb-[0px] lg:pb-[90px] pt-[130px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
         <LeftAndRightComp
           img="/assets/woman.png"
           title={
@@ -250,24 +263,33 @@ const AboutPage = () => {
       </section>
 
       {/* Feature Component */}
-      <section className="about-hero-yellow-bg py-12">
+      <section className="abosut-hero-yellow-bg flex flex-col gap-5 lg:gap-10 pt-12">
+        <div className="flex px-3 flex-col items-center w-full">
+          <div className="flex flex-col max-w-[1200px] w-full items-center sm:items-start  gap-[20px] md:gap-[50px]">
+            <p className="text-[35px] max-w-[700px] sm:text-[45px] md:text-[80px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
+              Featured Companies
+            </p>
+          </div>
+        </div>
         <FeaturedProjectComp />
       </section>
 
       {/* Contact */}
-      <section className="py-[100px] md:py-[170px] bg-white">
+      <section className="py-[70px] md:py-[150px] bg-white">
         <div className="flex flex-col items-center gap-[20px] md:gap-[50px]">
           <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
             More questions?
           </p>
-          <div className="flex items-center gap-3">
-            <p className="font-bold cursor-pointer text-[18px] underline underline-offset-4 decoration-gray-300">
-              Contact us
-            </p>
-            <div className="h-[40px] w-[40px] flex items-center bg-[#0425e8] justify-center rounded-full ">
-              <MdAlternateEmail color="white" size={20} />
+          <Link href={`mailto:${siteConfig.mailAddress}`}>
+            <div className="flex items-center gap-3">
+              <p className="font-bold cursor-pointer text-[18px] underline underline-offset-4 decoration-gray-300">
+                Contact us
+              </p>
+              <div className="h-[40px] w-[40px] flex items-center bg-[#0425e8] justify-center rounded-full ">
+                <MdAlternateEmail color="white" size={20} />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 
