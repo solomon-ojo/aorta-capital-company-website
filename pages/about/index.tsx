@@ -39,21 +39,21 @@ const AboutPage = () => {
     {
       id: 0,
       num: 1,
-      title: "1. Sign up in minutes.",
+      title: "Nulgen",
       description:
-        "Create your free account online and answer a few questions to determine if you qualify to invest.",
+        "AI Powered e-learning platform and career companion",
     },
     {
       id: 1,
       num: 2,
-      title: "2. View exclusive fund details.",
+      title: "Wasabi",
       description:
         "View funds, access documents and review data to help you make better investment decisions.",
     },
     {
       id: 2,
       num: 3,
-      title: "3. Digital subscription",
+      title: "Ezra",
       description:
         "Request allocations and sign documents online. Moonfare does the administrative work for you.",
     },
@@ -96,17 +96,17 @@ const AboutPage = () => {
             <div className="flex flex-col  gap-4">
               <p className="text-[15px] lg:text-[20px] font-semibold">
                 {currentHero == 0
-                  ? "1. Sign in one minutes."
+                  ? "Nulgen"
                   : currentHero == 1
-                    ? "2. View exclusive fund details."
-                    : "3. Digital subscription"}
+                    ? "Wasabi"
+                    : "Ezra"}
               </p>
               <p className="text-[13px] lg:text-[16px] font-[400]">
                 {currentHero == 0
-                  ? "Create your free account online and answer a few questions to determine if you qualify to invest."
+                  ? "AI Powered e-learning platform and career companion. Reimagining the future of education and learning."
                   : currentHero == 1
-                    ? "View funds, access documents and review data to help you make better investment decisions."
-                    : "Request allocations and sign documents online. Moonfare does the administrative work for you."}
+                    ? "AI legal assistant: Wasabi AI assistant is designed to enhance efficiency, accuracy, and productivity."
+                    : "Church database and AI Bot: Ezra offers secure data storage and AI-powered search solutions for churches."}
               </p>
             </div>
 
