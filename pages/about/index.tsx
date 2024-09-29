@@ -241,12 +241,10 @@ const AboutPage = () => {
               <span className="italic">Get in touch</span>
             </p>
           }
-          description="Investing with Moonfare requires less starting capital than you may
-          think. Usually, you put down 25 percent of the full commitment up
-          front – the rest is spread out via capital calls over the fund’s
-          lifecycle. You may also receive distributions which could further
-          reduce your net cash outlay. What's more, Moonfare manages all the
-          admin and cash flow for you."
+          description="Whether you have a question, a business inquiry, 
+          or want to explore partnership opportunities, we're here to help! 
+          Reach out to us, and let's start a conversation. Our team of professionals are 
+          eager and able to work with you from any part of the world. ."
           isImgRight={false}
           button_title="Contact us"
           button_url={`mailto:${siteConfig.mailAddress}`}
