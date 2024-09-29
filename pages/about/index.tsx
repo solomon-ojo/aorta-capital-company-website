@@ -234,7 +234,7 @@ const AboutPage = () => {
       {/* Sections */}
       <section className="pb-[30px] lg:pb-[90px] pt-[130px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
         <LeftAndRightComp
-          img="/assets/woman.png"
+          img="/assets/contact.jpg"
           title={
             <p>
               Want to talk? <br />{" "}
