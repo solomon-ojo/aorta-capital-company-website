@@ -270,7 +270,7 @@ const AboutPage = () => {
       </section>
 
       {/* Feature Component */}
-      <section className="abosut-hero-yellow-bg pb-10 md:pb-16 flex flex-col gap-5 lg:gap-10 pt-12">
+      <section className="bg-white pb-10 md:pb-16 flex flex-col gap-5 lg:gap-10 pt-12">
         <div className="flex px-3 flex-col items-center w-full">
           <div className="flex flex-col max-w-[1200px] w-full items-center sm:items-start  gap-[20px] md:gap-[50px]">
             <p className="text-[35px] max-w-[700px] sm:text-[45px] md:text-[80px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
