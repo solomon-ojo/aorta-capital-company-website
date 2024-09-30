@@ -65,15 +65,15 @@ export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
             <li key={i} className="list-none">
               <Link href={v.path}>
                 <p
-                  className={`relative text-[11px] uppercase opacity-70 font-lora font-light hover:text-[#4fe18b] ${
+                  className={`relative text-[11px] uppercase opacity-70 font-lora font-light hover:text-black ${
                     isActive
-                      ? "text-[#4fe18b] underline underline-offset-4 font-bold"
+                      ? "text-black underline underline-offset-4 font-bold"
                       : "text-black"
                   } group`}
                 >
                   {v.title}
                   <span
-                    className={`absolute left-0 bottom-[-2px] h-[1px] bg-[#4fe18b] transition-all duration-200 ease-in-out w-0 group-hover:w-full`}
+                    className={`absolute left-0 bottom-[-2px] h-[1px] bg-black transition-all duration-200 ease-in-out w-0 group-hover:w-full`}
                   ></span>
                 </p>
               </Link>

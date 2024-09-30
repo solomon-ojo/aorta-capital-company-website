@@ -1,6 +1,6 @@
 import { Head } from "@/layouts/head";
 import { useRouter } from "next/router";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LeftAndRightComp } from "@/components/aboutcomps/leftandrightcomp";
 import { RightWithChildren } from "@/components/aboutcomps/rightwithchildren";
 import { CardListComp } from "@/components/aboutcomps/cardlistcomp";
@@ -28,6 +28,19 @@ const AboutPage = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // useEffect(() => {
+  //   if (carouselRef?.current?.currentIndex) {
+  //     setCurrentHero(carouselRef?.current?.currentIndex);
+  //     const handleSelect = () => {
+  //       const currentSlideIndex = carouselRef?.current?.currentIndex;
+  //       console.log(currentSlideIndex);
+  //       setCurrentHero(currentSlideIndex);
+  //     };
+  //     handleSelect();
+  //     return () => {};
+  //   }
+  // }, [carouselRef?.current?.currentIndex]);
+
   const scrollTo = (num: number) => {
     if (carouselRef.current) {
       carouselRef?.current?.scrollTo(num);
@@ -40,8 +53,7 @@ const AboutPage = () => {
       id: 0,
       num: 1,
       title: "Nulgen",
-      description:
-        "AI Powered e-learning platform and career companion",
+      description: "AI Powered e-learning platform and career companion",
     },
     {
       id: 1,
@@ -79,11 +91,11 @@ const AboutPage = () => {
               <span className="italic"> Meets Possibilities</span>
             </p>
             <p className="pt-3 pb-7 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[520px] font-[400]">
-            We partner with bold, visionary African entrepreneurs to build 
-            extremly agile and resilient companies.
+              We partner with bold, visionary African entrepreneurs to build
+              extremly agile and resilient companies.
             </p>
             <Link href="/mission">
-            <button className="about-hero-blue-bg">Read Our Mission</button>
+              <button className="about-hero-blue-bg">Read Our Mission</button>
             </Link>
           </div>
 
@@ -94,13 +106,17 @@ const AboutPage = () => {
         <div className="about-hero-yellow-bg flex text-center flex-col items-center h-[290px] md:h-[500px] lg:h-[570px] ">
           <div className="max-w-[90%] sm:max-w-[40%] lg:max-w-[30%] mt-[40px] md:mt-[280px] lg:mt-[330px] flex flex-col items-center">
             <div className="flex flex-col  gap-4">
-              <p className="text-[15px] lg:text-[20px] font-semibold">
-                {currentHero == 0
-                  ? "Nulgen"
-                  : currentHero == 1
-                    ? "Wasabi"
-                    : "Ezra"}
-              </p>
+              <Link
+                href={`/our-companies/${currentHero == 0 ? "nulgen" : currentHero == 1 ? "wasabi" : "ezra"}`}
+              >
+                <p className="text-[15px] lg:text-[20px] font-semibold">
+                  {currentHero == 0
+                    ? "Nulgen"
+                    : currentHero == 1
+                      ? "Wasabi"
+                      : "Ezra"}
+                </p>
+              </Link>
               <p className="text-[13px] lg:text-[16px] font-[400]">
                 {currentHero == 0
                   ? "AI Powered e-learning platform and career companion. Reimagining the future of education and learning."
@@ -169,8 +185,9 @@ const AboutPage = () => {
               Build quicly with extreme agility.
             </p>
             <p className="pt-3 text-[15px] md:text-[16px] lg:text-[18px] w-full md:max-w-[620px] font-[400]">
-            We prioritize agility and speed, empowering founders to rapidly seize opportunities, develope 
-            ideas, fail, learn and navigate challenges with confidence and in record time.
+              We prioritize agility and speed, empowering founders to rapidly
+              seize opportunities, develope ideas, fail, learn and navigate
+              challenges with confidence and in record time.
             </p>
           </div>
         </div>
@@ -232,13 +249,12 @@ const AboutPage = () => {
       </section>
 
       {/* Sections */}
-      <section className="pb-[30px] lg:pb-[90px] pt-[130px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
+      <section className="pb-[0px] lg:pb-[90px] pt-[130px] lg:pt-[300px] gap-[70px] md:gap-[200px] flex flex-col items-center bg-white">
         <LeftAndRightComp
           img="/assets/contact.jpg"
           title={
             <p>
-              Want to talk? <br />{" "}
-              <span className="italic">Get in touch</span>
+              Want to talk? <br /> <span className="italic">Get in touch</span>
             </p>
           }
           description="Whether you have a question, a business inquiry, 
@@ -254,7 +270,14 @@ const AboutPage = () => {
       </section>
 
       {/* Feature Component */}
-      <section className="about-hero-yellow-bg py-12">
+      <section className="abosut-hero-yellow-bg pb-10 md:pb-16 flex flex-col gap-5 lg:gap-10 pt-12">
+        <div className="flex px-3 flex-col items-center w-full">
+          <div className="flex flex-col max-w-[1200px] w-full items-center sm:items-start  gap-[20px] md:gap-[50px]">
+            <p className="text-[35px] max-w-[700px] sm:text-[45px] md:text-[80px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
+              Featured Companies
+            </p>
+          </div>
+        </div>
         <FeaturedProjectComp />
       </section>
 
@@ -264,14 +287,16 @@ const AboutPage = () => {
           <p className="text-[35px] max-w-[700px] md:text-[40px] leading-[40px] sm:leading-[90px] lg:text-[80px] font-testsignifier font-[300]">
             More questions?
           </p>
-          <div className="flex items-center gap-3">
-            <p className="font-bold cursor-pointer text-[18px] underline underline-offset-4 decoration-gray-300">
-              Contact us
-            </p>
-            <div className="h-[40px] w-[40px] flex items-center bg-[#0425e8] justify-center rounded-full ">
-              <MdAlternateEmail color="white" size={20} />
+          <Link href={`mailto:${siteConfig.mailAddress}`}>
+            <div className="flex items-center gap-3">
+              <p className="font-bold cursor-pointer text-[18px] underline underline-offset-4 decoration-gray-300">
+                Contact us
+              </p>
+              <div className="h-[40px] w-[40px] flex items-center bg-[#0425e8] justify-center rounded-full ">
+                <MdAlternateEmail color="white" size={20} />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </section> */}
 

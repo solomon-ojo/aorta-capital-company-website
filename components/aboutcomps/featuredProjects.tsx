@@ -1,73 +1,67 @@
-import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { companies } from "@/data/objects";
+import Link from "next/link";
 
 export default function FeaturedProjectComp() {
-  const images = [
-    "/assets/company/nulgen2.png",
-    "/assets/company/viola2.jpg",
-    "/assets/company/teresamed.png",
-    "/assets/company/ezzra.jpg",
-    "/assets/company/molus.jpg",
-    "/assets/company/molus3.jpg",
-    "/assets/company/papperboy.jpg",
-    "/assets/company/molus5.jpg",
-    "/assets/company/yellowsun3.jpg",
-    "/assets/company/thesislab.png",
-    "/assets/company/mr_man.jpg",
-    "/assets/company/papperboy.jpg",
-    "/assets/company/molus3.jpg",
-    "/assets/company/viola2.jpg",
-  ];
+  const scrollContainerRef = useRef(null);
+  const scrollSpeed = 1;
 
-  const scrollVariants = {
-    animate: {
-      x: [0, -4000], // Scroll distance (400px * 10 images)
-      transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 60, // Speed of the scroll
-          ease: "linear",
-        },
-      },
-    },
-  };
+  useEffect(() => {
+    const scrollContainer: any = scrollContainerRef.current;
+
+    const autoScroll = () => {
+      if (
+        scrollContainer.scrollLeft >=
+        scrollContainer.scrollWidth - scrollContainer.offsetWidth
+      ) {
+        scrollContainer.scrollLeft = 0;
+      } else {
+        scrollContainer.scrollLeft += scrollSpeed;
+      }
+    };
+
+    // Set the interval for auto-scrolling
+    const scrollInterval = setInterval(autoScroll, 40);
+
+    return () => {
+      clearInterval(scrollInterval);
+    };
+  }, []);
 
   return (
     <section className="flex justify-center w-full">
       {/* Horizontal Scroll Container */}
-      <div className="relative overflow-scroll scrollbar-hide w-full">
-        <motion.div
-          className="flex gap-6"
-          variants={scrollVariants}
-          animate="animate"
-        >
-          {images.map((src, index) => (
-            <motion.div
-              key={index}
-              className="w-[240px] md:w-[400px]  h-[280px] md:h-[600px] flex-shrink-0 relative"
+      <div
+        className="relative overflow-x-scroll overflow-y-hidden scrollbar-hide w-full"
+        ref={scrollContainerRef}
+      >
+        <div className="flex gap-6">
+          {companies.concat(companies).map((data, index) => (
+            <Link
+              href={`/our-companies/${data.name.toLowerCase()}`}
+              key={`${data.name}-${index}`}
+              className=""
             >
-              <img
-                src={src}
-                alt="sknks"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
+              <div className="w-[260px] md:w-[400px] h-[350px] md:h-[600px] flex-shrink-0 relative">
+                <img
+                  src={data.imageUrl}
+                  alt={data.imageUrl}
+                  className="w-full h-full object-cover"
+                />
+                <div className="bg-[#00000092] flex items-center p-2 absolute bottom-0 h-[35%] md:h-[20%] w-full">
+                  <div>
+                    <h1 className="text-white font-testsignifier font-semibold text-[30px]">
+                      {data.name}
+                    </h1>
+                    <p className="text-white text-[14px] md:text-[16px]">
+                      {data.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Link>
           ))}
-
-          {/* Repeat the images to create the loop effect */}
-          {images.map((src, index) => (
-            <motion.div
-              key={index + images.length}
-              className="w-[240px] md:w-[400px] h-[280px] md:h-[600px] flex-shrink-0 relative"
-            >
-              <img
-                src={src}
-                alt="sknksss"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-          ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

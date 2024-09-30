@@ -190,7 +190,7 @@ body::-webkit-scrollbar {
 
 .about-hero-blue-bg {
   color: white;
-  width: 135px;
+  width: 170px;
   background-color: var(--about-hero-primary);
   padding: 11px 0;
   font-weight: 600;
@@ -200,6 +200,7 @@ body::-webkit-scrollbar {
 
 .about-hero-light-yellow-bg {
   background-color: #fcf9f0;
+  /* color: #00000092; Testing a color */
 }
 
 .about-hero-yellow-bg {
