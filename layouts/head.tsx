@@ -14,7 +14,7 @@ export const Head = ({ title }: Types) => {
       <meta content={siteConfig.description} property="og:description" />
       <meta content={siteConfig.description} name="description" />
       <meta property="og:title" content={siteConfig.name}/>
-      <meta property="og:image" content="/assets/about3.jpg"/>
+      <meta property="og:image" content="public/assets/about3.jpg"/>
 
       
       <meta
