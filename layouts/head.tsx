@@ -9,8 +9,8 @@ interface Types {
 export const Head = ({ title }: Types) => {
   return (
     <NextHead>
-      <title>{title ? title : siteConfig.name}</title>
-      <meta key="title" content={siteConfig.name} property="og:title" />
+      {/* <title>{title ? title : siteConfig.name}</title> */}
+      {/* <meta key="title" content={siteConfig.name} property="og:title" /> */}
       <meta content={siteConfig.description} property="og:description" />
       <meta content={siteConfig.description} name="description" />
       <meta property="og:title" content={siteConfig.name}/>
