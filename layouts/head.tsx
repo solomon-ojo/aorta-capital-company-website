@@ -13,6 +13,10 @@ export const Head = ({ title }: Types) => {
       <meta key="title" content={siteConfig.name} property="og:title" />
       <meta content={siteConfig.description} property="og:description" />
       <meta content={siteConfig.description} name="description" />
+      <meta property="og:title" content={siteConfig.name}/>
+      <meta property="og:image" content="/assets/about3.jpg"/>
+
+      
       <meta
         key="viewport"
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
