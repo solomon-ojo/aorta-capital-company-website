@@ -73,7 +73,7 @@ export const companies: CompaniesType[] = [
     imageUrl3: "/assets/company/ezzra.jpg",
     logo: "/assets/logo/logo.svg",
     url: "ezra.com",
-    path: "https://ezra.com",
+    path: "https://ezzra.vercel.app/",
     why: "Churches often struggle with organizing and accessing their vast amounts of digital resources. Ezra provides secure data storage and an AI-powered search bot tailored specifically for churches, enhancing church operations and strengthening community connections.",
     industry: ["Technology", "Artificial Intelligence", "Religion"],
     team: ["Solomon Ojo", "John Opalu", "Aminu Mohammed"],
