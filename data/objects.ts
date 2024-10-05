@@ -241,3 +241,102 @@ export const teams = [
     picture: "/assets/victor_ailemen.jpg",
   },
 ];
+
+export const PostObject = [
+  {
+    id: 0,
+    author: "Wole Johnson",
+    title: "10 Common Software Architectural Patterns in a nutshell",
+    description:
+      "Ever wondered how large enterprise scale systems are designed? Before major software development starts, we have to choose a",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+    created_at: "Sept 4, 24",
+    likes: "14k",
+    comment: "138",
+    post_img: "/assets/testimgimg.jpg",
+  },
+  {
+    id: 1,
+    author: "Grace James",
+    title: "Understanding RESTful APIs",
+    description:
+      "A quick guide to understanding RESTful APIs and their importance in modern web applications.",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e29026024e",
+    created_at: "Aug 29, 24",
+    likes: "8.2k",
+    comment: "92",
+    post_img: "/assets/about2.png",
+  },
+  {
+    id: 2,
+    author: "John Doe",
+    title: "Microservices: The Future of Scalable Systems",
+    description:
+      "Explore why microservices architecture is becoming the default for building scalable systems.",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e29026024f",
+    created_at: "Aug 21, 24",
+    likes: "22k",
+    comment: "215",
+    post_img: "/assets/about3.jpg",
+  },
+  {
+    id: 3,
+    author: "Anna Wright",
+    title: "How to Optimize Frontend Performance",
+    description:
+      "Frontend performance optimization techniques to ensure faster load times and a better user experience.",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260240",
+    created_at: "Sept 1, 24",
+    likes: "9.5k",
+    comment: "104",
+    post_img: "/assets/about4.jpg",
+  },
+  {
+    id: 4,
+    author: "Samuel Green",
+    title: "Machine Learning Basics for Beginners",
+    description:
+      "An introductory guide to machine learning and how it can be applied to various fields.",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260241",
+    created_at: "Sept 3, 24",
+    likes: "16k",
+    comment: "176",
+    post_img: "/assets/about5.jpg",
+  },
+  {
+    id: 5,
+    author: "Cynthia Lee",
+    title: "The Benefits of TypeScript in Large Projects",
+    description:
+      "Learn how TypeScript can help make large projects more manageable and reduce bugs.",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260242",
+    created_at: "Sept 2, 24",
+    likes: "12.8k",
+    comment: "145",
+    post_img: "/assets/about6.jpg",
+  },
+  {
+    id: 6,
+    author: "James Taylor",
+    title: "The Rise of Serverless Architectures",
+    description:
+      "Discover how serverless architectures are transforming the way we build and deploy applications.",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260243",
+    created_at: "Aug 30, 24",
+    likes: "11k",
+    comment: "132",
+    post_img: "/assets/about7.jpg",
+  },
+  {
+    id: 7,
+    author: "Emily White",
+    title: "The Importance of Cybersecurity in the Modern Era",
+    description:
+      "Why cybersecurity is crucial for businesses and individuals in the age of digital transformation.",
+    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260244",
+    created_at: "Sept 5, 24",
+    likes: "18k",
+    comment: "200",
+    post_img: "/assets/about8.jpg",
+  },
+];

@@ -33,6 +33,10 @@ export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
       title: "Team",
       path: "/team",
     },
+    {
+      title: "Blog",
+      path: "/blog",
+    },
   ];
 
   return (

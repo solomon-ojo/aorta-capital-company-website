@@ -38,6 +38,10 @@ export const NavbarDynamic = ({
       title: "Team",
       path: "/team",
     },
+    {
+      title: "Blog",
+      path: "/blog",
+    },
   ];
 
   return (
