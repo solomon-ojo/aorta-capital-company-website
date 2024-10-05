@@ -44,7 +44,11 @@ export const BlogPostComp = ({
         <h1 className="text-[20px] md:text-[28px] leading-6 sm:leading-9 font-lora font-bold">
           {title}
         </h1>
-        <p className="text-[13px] font-[300] opacity-80">{description}</p>
+        <p className="text-[13px] font-[300] opacity-80">
+          {description.length > 123
+            ? description.substring(0, 123) + "..."
+            : description}
+        </p>
 
         {/* Action */}
         <div className="mt-2 flex w-full items-center justify-between">
