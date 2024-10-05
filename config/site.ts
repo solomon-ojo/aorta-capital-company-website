@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Aorta Capital",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "We partner with bold, visionary African entrepreneurs to build extremly agile and resilient companies.",
   pathLinks: {
     home: "/",
   },

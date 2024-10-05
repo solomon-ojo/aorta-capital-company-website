@@ -195,16 +195,16 @@ const AboutPage = () => {
           <RightWithChildren img="/assets/about7.jpg">
             <div className="flex flex-col gap-8">
               <CardListComp
-                title="Data encryption"
-                description="We safeguard your accounts and personal information using proven, industry-standard 'at-rest' and 'in-transit' encryption."
+                title="Speed is an asset"
+                description="In today’s fast-paced world, speed is more than just a competitive advantage—it's a critical, indispensible asset."
               />
               <CardListComp
-                title="DDoS and web application security"
-                description="Moonfare uses industry-leading firewalls to defend against intrusions and our security team constantly monitors emerging threats and responds immediately."
+                title="Partnership gives speed"
+                description="When the right teams come together, they combine strengths, share resources, and accelerate growth. Collaboration eliminates roadblocks, streamlines decision-making, and creates faster pathways to success"
               />
               <CardListComp
-                title="Backups and recovery"
-                description="Our systems are continuously backed up across multiple sites to retain recovery capabilities in case of disasters or disruption."
+                title="Fail, recover, try again. Quickly!"
+                description="Failure isn’t the end—it's a step forward. Mistakes are inevitable, but they are valuable opportunities for growth if approached with resilience and speed. The key to success lies in how quickly you can recover, learn, and pivot"
               />
             </div>
           </RightWithChildren>
@@ -223,15 +223,15 @@ const AboutPage = () => {
               {/* Card */}
               <CardCol
                 icon={<MdOutlinePeopleAlt color="#0425e8" size={22} />}
-                title="Meet like-minded investors at Moonfare curated events."
+                title="Our diverse pool of professionals can build almost anything."
               />
               <CardCol
                 icon={<IoMdWifi color="#0425e8" size={22} />}
-                title="Hear from top GPs and the best minds in the business through our fund webinars."
+                title="You cannot do it all, but your team can."
               />
               <CardCol
                 icon={<MdOutlinePersonSearch color="#0425e8" size={22} />}
-                title="Become an ambassador and enjoy exclusive benefits"
+                title="Teamwork is the secret that makes common people achieve uncommon results."
               />
             </div>
           </div>
@@ -353,6 +353,17 @@ const AboutPage = () => {
           >
             <Link href="/team">
               <p className="capitalize">TEAM</p>
+            </Link>
+          </li>
+
+          {/* Blog */}
+          <li
+            className={`text-white w-full px-6 text-[13px] py-6 ${
+              router.pathname === "/blog" ? "bg-[#051b22]" : ""
+            }`}
+          >
+            <Link href="/blog">
+              <p className="capitalize">BLOG</p>
             </Link>
           </li>
         </ul>

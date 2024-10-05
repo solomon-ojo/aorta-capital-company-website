@@ -334,6 +334,18 @@ export default function CompanyDetails() {
               <p className="capitalize">TEAM</p>
             </Link>
           </li>
+
+          {/* Blog */}
+          <li className="py-5">
+            <Link
+              className={`text-white text-[13px] w-full ${
+                router.pathname === "/blog" ? "bg-[#051b22]" : ""
+              }`}
+              href="/blog"
+            >
+              <p className="capitalize">BLOG</p>
+            </Link>
+          </li>
         </ul>
       </div>
 

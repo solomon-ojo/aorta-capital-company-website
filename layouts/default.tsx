@@ -91,6 +91,18 @@ export default function DefaultLayout({
               <p className="capitalize">TEAM</p>
             </Link>
           </li>
+
+          {/* Blog */}
+          <li className="">
+            <Link
+              className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
+                router.pathname === "/blog" ? "bg-[#051b22]" : ""
+              }`}
+              href="/blog"
+            >
+              <p className="capitalize">BLOG</p>
+            </Link>
+          </li>
         </ul>
       </div>
 
