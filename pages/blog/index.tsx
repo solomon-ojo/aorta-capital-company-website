@@ -2,6 +2,7 @@ import { BlogPostComp } from "@/components/blogcomp/blogpostcomp";
 import { PagesHeader } from "@/components/pagesHeader";
 import { PostObject } from "@/data/objects";
 import DefaultLayout from "@/layouts/default";
+import Link from "next/link";
 
 export default function BlogPage() {
   return (
@@ -26,18 +27,22 @@ export default function BlogPage() {
           <div className="mb-5 flex flex-col items-center">
             <div className="w-full flex flex-col gap-8 md:max-w-[80%]">
               {PostObject.map((data) => (
-                <BlogPostComp
-                  id={data.id}
-                  title={data.title}
-                  avatar_src={data.avatar_src}
-                  created_at={data.created_at}
-                  post_img={data.post_img}
-                  description={data.description}
-                  author={data.author}
-                  likes={data.likes}
-                  comment={data.comment}
+                <Link
                   key={data.id}
-                />
+                  href={`/blog/${data.unique_id.toLowerCase()}`}
+                >
+                  <BlogPostComp
+                    id={data.id}
+                    title={data.title}
+                    avatar_src={data.avatar_src}
+                    created_at={data.created_at}
+                    post_img={data.post_img}
+                    description={data.description}
+                    author={data.author}
+                    likes={data.likes}
+                    comment={data.comment}
+                  />
+                </Link>
               ))}
             </div>
           </div>

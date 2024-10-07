@@ -31,10 +31,7 @@ export const BlogPostComp = ({
   post_img,
 }: PostTypes) => {
   return (
-    <Link
-      href={{}}
-      className="flex items-center justify-between pb-5 border-b border-gray-200 w-full"
-    >
+    <div className="flex items-center justify-between pb-5 border-b border-gray-200 w-full">
       {/* Left section (80%) */}
       <div className=" flex flex-col gap-3">
         <div className="flex items-center gap-2 basis-[75%] w-full flex-grow">
@@ -80,6 +77,6 @@ export const BlogPostComp = ({
           className="object-cover h-[80px] md:h-[100px] w-full"
         />
       </div>
-    </Link>
+    </div>
   );
 };

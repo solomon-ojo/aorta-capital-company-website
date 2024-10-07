@@ -14,6 +14,20 @@ interface CompaniesType {
   location: any;
 }
 
+interface BlogPostTypes {
+  id: number;
+  author: string;
+  title: string;
+  description: string;
+  avatar_src: string;
+  created_at: string;
+  likes: string;
+  comment: string;
+  post_img: string;
+  unique_id: string;
+  position: string;
+}
+
 export const companies: CompaniesType[] = [
   {
     name: "Nulgen",
@@ -242,7 +256,7 @@ export const teams = [
   },
 ];
 
-export const PostObject = [
+export const PostObject: BlogPostTypes[] = [
   {
     id: 0,
     author: "Wole Johnson",
@@ -254,6 +268,8 @@ export const PostObject = [
     likes: "14k",
     comment: "138",
     post_img: "/assets/testimgimg.jpg",
+    unique_id: "SDA21CZ",
+    position: "Marketing",
   },
   {
     id: 1,
@@ -266,6 +282,8 @@ export const PostObject = [
     likes: "8.2k",
     comment: "92",
     post_img: "/assets/about2.png",
+    unique_id: "SDP21CZ",
+    position: "Developer",
   },
   {
     id: 2,
@@ -278,6 +296,8 @@ export const PostObject = [
     likes: "22k",
     comment: "215",
     post_img: "/assets/about3.jpg",
+    unique_id: "SDA21CX",
+    position: "Architect",
   },
   {
     id: 3,
@@ -290,6 +310,8 @@ export const PostObject = [
     likes: "9.5k",
     comment: "104",
     post_img: "/assets/about4.jpg",
+    unique_id: "SDAIICZ",
+    position: "Frontend Engineer",
   },
   {
     id: 4,
@@ -302,6 +324,8 @@ export const PostObject = [
     likes: "16k",
     comment: "176",
     post_img: "/assets/about5.jpg",
+    unique_id: "SDA21LL",
+    position: "Data Scientist",
   },
   {
     id: 5,
@@ -314,6 +338,8 @@ export const PostObject = [
     likes: "12.8k",
     comment: "145",
     post_img: "/assets/about6.jpg",
+    unique_id: "MS721CZ",
+    position: "Software Engineer",
   },
   {
     id: 6,
@@ -326,6 +352,8 @@ export const PostObject = [
     likes: "11k",
     comment: "132",
     post_img: "/assets/about7.jpg",
+    unique_id: "SDA2PUW",
+    position: "Cloud Architect",
   },
   {
     id: 7,
@@ -338,5 +366,7 @@ export const PostObject = [
     likes: "18k",
     comment: "200",
     post_img: "/assets/about8.jpg",
+    unique_id: "SDA88TS",
+    position: "Security Analyst",
   },
 ];
