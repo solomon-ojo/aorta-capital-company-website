@@ -3,6 +3,7 @@ import { ParagraphComp } from "@/components/paragraphComp";
 import { PostObject } from "@/data/objects";
 import DefaultLayout from "@/layouts/default";
 import { Avatar } from "@nextui-org/avatar";
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { GiStarShuriken } from "react-icons/gi";
@@ -39,6 +40,16 @@ export default function BlogDetails() {
 
   return (
     <DefaultLayout>
+      <Head>
+        <title>{postobject.title}</title>
+        <meta property="og:title" content={postobject.title} />
+        <meta property="og:description" content={postobject.description} />
+        <meta property="og:image" content={postobject.post_img} />
+        <meta
+          property="og:url"
+          content={`https://www.aortacap.com/blog/${postobject.unique_id}`}
+        />
+      </Head>
       <section className="about-hero-light-yellow-bg flex h-full px-6 xl:px-0 flex-col items-center">
         <div className="w-full md:w-[700px] lg:w-[900px]">
           {/* Header */}
