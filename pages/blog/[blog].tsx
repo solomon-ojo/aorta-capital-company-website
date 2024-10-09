@@ -19,6 +19,31 @@ export default function BlogDetails() {
   if (!postobject) {
     return (
       <BlogLayout>
+        <Head>
+          <title>{postobject.title}</title>
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content={postobject.title} />
+          <meta property="og:description" content={postobject.description} />
+          <meta property="og:image" content={postobject.post_img} />
+          <meta
+            property="og:url"
+            content={`https://www.aortacap.com/blog/${postobject.unique_id}`}
+          />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:site_name" content="Aorta Capital" />
+
+          <meta
+            key="viewport"
+            content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+            name="viewport"
+          />
+          <link href="/favicon.ico" rel="icon" />
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+          />
+        </Head>
         <section className="about-hero-light-yellow-bg flex h-full px-6 xl:px-0 flex-col items-center">
           <div className="w-full md:w-[700px] lg:w-[900px]">
             {/* Header */}
@@ -127,7 +152,7 @@ export default function BlogDetails() {
 
             <div>
               <ParagraphComp>
-                When quizzed during a speech in his most recent national tour,
+                When quizzeds during a speech in his most recent national tour,
                 Obasanjo, Nigerian past president, made an intriguing statement
                 that offers great insight about his journey on how he rose to
                 become the president of Nigeria from a lowly, impoverished farm
