@@ -42,6 +42,7 @@ export default function BlogDetails() {
     <DefaultLayout>
       <Head>
         <title>{postobject.title}</title>
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={postobject.title} />
         <meta property="og:description" content={postobject.description} />
         <meta property="og:image" content={postobject.post_img} />
@@ -49,6 +50,9 @@ export default function BlogDetails() {
           property="og:url"
           content={`https://www.aortacap.com/blog/${postobject.unique_id}`}
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Aorta Capital" />
       </Head>
       <section className="about-hero-light-yellow-bg flex h-full px-6 xl:px-0 flex-col items-center">
         <div className="w-full md:w-[700px] lg:w-[900px]">
