@@ -15,9 +15,7 @@ export default function BlogDetails() {
   const router = useRouter();
   const { blog } = router.query;
   // Find the company details by name
-  const postobject: any = PostObject.find(
-    (c) => c.unique_id.toLowerCase() === blog
-  );
+  const postobject = PostObject.find((c) => c.unique_id.toLowerCase() === blog);
   if (!postobject) {
     return (
       <BlogLayout>
@@ -27,6 +25,9 @@ export default function BlogDetails() {
           <meta property="og:title" content="Blog Title" />
           <meta property="og:description" content="Blog Description" />
           <meta property="og:site_name" content="Aorta Capital" />
+          <meta property="og:image" content={"/assets/about1.jpg"} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
           <meta
             key="viewport"
             content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
