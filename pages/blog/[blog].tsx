@@ -15,7 +15,9 @@ export default function BlogDetails() {
   const router = useRouter();
   const { blog } = router.query;
   // Find the company details by name
-  const postobject = PostObject.find((c) => c.unique_id.toLowerCase() === blog);
+  const postobject: any = PostObject.find(
+    (c) => c.unique_id.toLowerCase() === blog
+  );
   if (!postobject) {
     return (
       <BlogLayout>
