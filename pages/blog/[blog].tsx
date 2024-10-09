@@ -22,19 +22,11 @@ export default function BlogDetails() {
     return (
       <BlogLayout>
         <Head>
-          <title>{postobject.title}</title>
+          <title>Blog Site</title>
           <meta property="og:type" content="article" />
-          <meta property="og:title" content={postobject.title} />
-          <meta property="og:description" content={postobject.description} />
-          <meta property="og:image" content={postobject.post_img} />
-          <meta
-            property="og:url"
-            content={`https://www.aortacap.com/blog/${postobject.unique_id}`}
-          />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
+          <meta property="og:title" content="Blog Title" />
+          <meta property="og:description" content="Blog Description" />
           <meta property="og:site_name" content="Aorta Capital" />
-
           <meta
             key="viewport"
             content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
