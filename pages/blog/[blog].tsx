@@ -128,7 +128,7 @@ export default function BlogDetails() {
 
             <div>
               <ParagraphComp>
-                When quizzed during a speech in his most recent national tour,
+                When quizzeds during a speech in his most recent national tour,
                 Obasanjo, Nigerian past president, made an intriguing statement
                 that offers great insight about his journey on how he rose to
                 become the president of Nigeria from a lowly, impoverished farm
