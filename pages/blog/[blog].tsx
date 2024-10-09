@@ -2,7 +2,6 @@ import { PagesHeader } from "@/components/pagesHeader";
 import { ParagraphComp } from "@/components/paragraphComp";
 import { PostObject } from "@/data/objects";
 import BlogLayout from "@/layouts/blog";
-import DefaultLayout from "@/layouts/default";
 import { Avatar } from "@nextui-org/avatar";
 import Head from "next/head";
 import Image from "next/image";
@@ -19,7 +18,7 @@ export default function BlogDetails() {
   const postobject = PostObject.find((c) => c.unique_id.toLowerCase() === blog);
   if (!postobject) {
     return (
-      <DefaultLayout>
+      <BlogLayout>
         <section className="about-hero-light-yellow-bg flex h-full px-6 xl:px-0 flex-col items-center">
           <div className="w-full md:w-[700px] lg:w-[900px]">
             {/* Header */}
@@ -35,7 +34,7 @@ export default function BlogDetails() {
             <span className="h-[2px] bg-black w-4 block my-10"></span>
           </div>
         </section>
-      </DefaultLayout>
+      </BlogLayout>
     );
   }
 
@@ -128,7 +127,7 @@ export default function BlogDetails() {
 
             <div>
               <ParagraphComp>
-                When quizzeds during a speech in his most recent national tour,
+                When quizzed during a speech in his most recent national tour,
                 Obasanjo, Nigerian past president, made an intriguing statement
                 that offers great insight about his journey on how he rose to
                 become the president of Nigeria from a lowly, impoverished farm
