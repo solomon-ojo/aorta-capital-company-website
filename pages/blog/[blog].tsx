@@ -1,6 +1,7 @@
 import { PagesHeader } from "@/components/pagesHeader";
 import { ParagraphComp } from "@/components/paragraphComp";
 import { PostObject } from "@/data/objects";
+import BlogLayout from "@/layouts/blog";
 import DefaultLayout from "@/layouts/default";
 import { Avatar } from "@nextui-org/avatar";
 import Head from "next/head";
@@ -39,7 +40,7 @@ export default function BlogDetails() {
   }
 
   return (
-    <DefaultLayout>
+    <BlogLayout>
       <Head>
         <title>{postobject.title}</title>
         <meta property="og:type" content="article" />
@@ -53,6 +54,17 @@ export default function BlogDetails() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Aorta Capital" />
+
+        <meta
+          key="viewport"
+          content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"
+        />
+        <link href="/favicon.ico" rel="icon" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
       </Head>
       <section className="about-hero-light-yellow-bg flex h-full px-6 xl:px-0 flex-col items-center">
         <div className="w-full md:w-[700px] lg:w-[900px]">
@@ -195,6 +207,6 @@ export default function BlogDetails() {
           <span className="h-[2px] bg-black w-4 block my-10"></span>
         </div>
       </section>
-    </DefaultLayout>
+    </BlogLayout>
   );
 }
