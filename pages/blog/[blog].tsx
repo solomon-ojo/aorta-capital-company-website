@@ -104,6 +104,7 @@ export default function BlogDetails() {
               <Image
                 src={postobject.post_img}
                 layout="fill"
+                objectFit="cover"
                 quality={40}
                 alt={postobject.title}
               />
