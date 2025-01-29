@@ -245,14 +245,14 @@ export const teams = [
     picture: "/assets/biola_williams.jpg",
   },
   {
-    name: "Blossom Williams",
+    name: "Victor Ailemen",
     linkedin: "https://linked.com/emilydavis",
-    picture: "/assets/blossom_anukposi.jpg",
+    picture: "/assets/victor_ailemen.jpg",
   },
   {
-    name: "Victor Ailemen",
+    name: "Sopuruchi Rufus",
     linkedin: "https://linked.com/jessicataylor",
-    picture: "/assets/victor_ailemen.jpg",
+    picture: "/assets/ruchi.jpg",
   },
 ];
 
