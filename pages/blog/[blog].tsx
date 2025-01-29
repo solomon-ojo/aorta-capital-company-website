@@ -116,12 +116,7 @@ export default function BlogDetails() {
                 <p className="text-[12px] font-[300] opacity-90">
                   {postobject.created_at}
                 </p>
-                <div className="flex items-center gap-1">
-                  <RiChat3Fill size={16} className="text-gray-600" />
-                  <p className="text-[13px] font-[300] opacity-90">
-                    {postobject.comment}
-                  </p>
-                </div>
+
                 <div className="flex items-center gap-1">
                   <PiHandsClappingBold size={16} className="text-gray-600" />
                   <p className="text-[13px] font-[300] opacity-90">
@@ -146,80 +141,32 @@ export default function BlogDetails() {
             </div>
 
             <div>
-              <ParagraphComp>
-                When quizzed during a speech in his most recent national tour,
-                Obasanjo, Nigerian past president, made an intriguing statement
-                that offers great insight about his journey on how he rose to
-                become the president of Nigeria from a lowly, impoverished farm
-                boy in Ogun state, Nigeria.
+            <ParagraphComp>
+                  {postobject.paragraph_6}
               </ParagraphComp>
 
               <ParagraphComp>
-                “I joined the military” he said. “Shortly after, Nigeria gained
-                independence. Then, suddenly, there was an even ground to play
-                on”.
+                  {postobject.paragraph_1}
               </ParagraphComp>
 
               <ParagraphComp>
-                <span className="font-semibold">
-                  “...suddenly, there was an even ground to play on”
-                </span>
+              {postobject.paragraph_2}
               </ParagraphComp>
 
               <ParagraphComp>
-                This is an incredibly insightful statement to which a discerning
-                mind ought to pay very close attention.
+                {postobject.paragraph_3}
               </ParagraphComp>
 
               <ParagraphComp>
-                To Obasanjo and his contemporaries in their time, the army was
-                the even ground providence provided. It was the even ground that
-                erased and removed all societal and aristocratic blockades set
-                in place to frustrate and keep the ordinary man ordinary. The
-                army was what provided an even ground for their generation to
-                play on. An even ground where what mattered was abilities and
-                capabilities; not statuses and connections.
+                {postobject.paragraph_4}
               </ParagraphComp>
 
               <ParagraphComp>
-                Today, in our own generation, that even ground is{" "}
-                <span className="font-semibold">technology.</span>
+                {postobject.paragraph_5}
               </ParagraphComp>
 
-              <ParagraphComp>
-                Technology has removed all obstacles and barricades that was
-                hitherto set by the ruling class to hamper the ordinary man’s
-                effort or ascension.
-              </ParagraphComp>
-
-              <ParagraphComp>
-                Today, anyone, anywhere, can pick up a computer, put himself
-                under strict training, and emerge after a few years, with skills
-                that will put him on par with any other “privileged” person of
-                our society.
-              </ParagraphComp>
-
-              <ParagraphComp>
-                What joining the army gave Obasanjo and his ilk in their days,
-                technology has given to us now.
-              </ParagraphComp>
-
-              <ParagraphComp>
-                The question is: what will we do with it?
-              </ParagraphComp>
-              <ParagraphComp>
-                Aorta’s goal is simple: To build the Africa we desire, by
-                Africans, owned by Africans, and independent of the
-                inefficiencies and inconsistencies of the government. Harnessing
-                the limitless capabilities afforded us by recent advancement in
-                technologies, and the colossal resources of the crowd.
-              </ParagraphComp>
-
-              <ParagraphComp>
-                <span className="font-semibold">
-                  We are not hoping for a better future, we are building it.
-                </span>
-              </ParagraphComp>
+  
+  
             </div>
           </div>
 

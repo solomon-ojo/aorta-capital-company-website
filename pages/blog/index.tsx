@@ -40,7 +40,6 @@ export default function BlogPage() {
                     description={data.description}
                     author={data.author}
                     likes={data.likes}
-                    comment={data.comment}
                   />
                 </Link>
               ))}

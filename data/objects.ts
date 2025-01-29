@@ -22,10 +22,16 @@ interface BlogPostTypes {
   avatar_src: string;
   created_at: string;
   likes: string;
-  comment: string;
   post_img: string;
   unique_id: string;
   position: string;
+  paragraph_1: string;
+  paragraph_2: string;
+  paragraph_3: string;
+  paragraph_4: string;
+  paragraph_5: string;
+  paragraph_6: string;
+  
 }
 
 export const companies: CompaniesType[] = [
@@ -55,7 +61,7 @@ export const companies: CompaniesType[] = [
     imageUrl3: "/assets/company/hexis.jpg",
     logo: "/assets/logo/logo.svg",
     url: "viola.com",
-    path: "https://viola.com",
+    path: "https://violaed.com",
     why: "High school students often struggle to find meaningful internships and job experiences that provide them with practical skills and career insights. Without these opportunities, students enter the workforce or higher education underprepared and without a clear direction for their future. Viola’s specialized job board connects high school students with tailored internship and work experience opportunities, designed to help them explore career paths, gain real-world skills, and build confidence for their future. By partnering with forward-thinking companies, we ensure students have access to early career-building experiences, setting them up for long-term success.",
     industry: ["Technology", "Artificial Intelligence", "HR"],
     team: ["Deborah Oleg", "Biola Williams", "Seun Emmanuel"],
@@ -259,114 +265,350 @@ export const teams = [
 export const PostObject: BlogPostTypes[] = [
   {
     id: 0,
-    author: "Wole Johnson",
-    title: "10 Common Software Architectural Patterns in a nutshell",
+    author: "Solomon Ojo",
+    title: "The Future of Venture Capital: What’s Changing in 2025?",
     description:
-      "Ever wondered how large enterprise scale systems are designed? Before major software development starts, we have to choose a",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-    created_at: "Sept 4, 24",
-    likes: "14k",
-    comment: "138",
-    post_img: "/assets/testimgimg.jpg",
-    unique_id: "SDA21CZ",
-    position: "Marketing",
+      "As 2025 unfolds, the venture capital landscape is experiencing\
+       a profound transformation driven by technological innovation and\
+        shifting market dynamics. The traditional investment paradigm is\
+         rapidly evolving, creating new opportunities and challenges for\
+          investors and entrepreneurs alike",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "147",
+    post_img: "/assets/blog/blog_img1.jpg",
+    unique_id: "SDA21CZ1",
+    position: "Media",
+    paragraph_1: "AI: The Investment Powerhouse:\
+      Artificial Intelligence continues to dominate\
+      venture capital investments, with the market \
+      projected to grow exponentially and reach over \
+      $500 billion. Startups developing targeted \
+      AI solutions are attracting significant attention,\
+      with investors conducting deeper technical assessments\
+      and prioritizing ethical technological development. The focus\
+      has shifted from broad technological applications to highly \
+      specialized machine learning solutions that address specific \
+      industry challenges.",
+    paragraph_2: "Specialized Funding Emerges:\
+      The traditional VC model is transforming, with smaller, more focused\
+      funds becoming increasingly prominent. These boutique ventures are \
+      characterized by strategic investments, deep industry expertise, and \
+      more intimate relationships with founders. Unlike previous years, these \
+      funds are not simply providing capital, but acting as true strategic \
+      partners who offer comprehensive support, industry connections, and \
+      targeted guidance.",
+    paragraph_3: "Emerging Investment Frontiers:\
+      Two sectors are capturing substantial venture capital interest\
+      in 2025. Healthcare innovation has become a critical investment area,\
+      with digital health solutions, personalized medicine technologies, \
+      and AI-driven medical diagnostics leading transformative changes. \
+      Simultaneously, green technologies have gained significant momentum, \
+      with investors prioritizing sustainable infrastructure, clean energy \
+      solutions, and innovative carbon capture technologies.",
+    paragraph_4: "Democratization of Investment:\
+      Venture capital is becoming remarkably more accessible \
+      through advanced technological platforms. Equity crowdfunding, \
+      tokenized investment options, and reduced entry barriers are allowing\
+      a broader range of investors to participate in funding innovative \
+      startups. This democratization is breaking down traditional investment\
+      walls and introducing diverse perspectives into the funding ecosystem.",
+    paragraph_5: "Future Outlook:\
+    Successful venture capital firms in 2025 are distinguished by their ability\
+     to embrace technological innovation, develop specialized investment strategies\
+    , and maintain exceptional flexibility. The most effective investors are those \
+     who can rapidly adapt to changing market conditions while maintaining a long-term\
+    strategic vision.",
+    paragraph_6: "As 2025 unfolds, the venture capital landscape is experiencing\
+       a profound transformation driven by technological innovation and\
+        shifting market dynamics. The traditional investment paradigm is\
+         rapidly evolving, creating new opportunities and challenges for\
+          investors and entrepreneurs alike.",
+
+
   },
   {
     id: 1,
-    author: "Grace James",
-    title: "Understanding RESTful APIs",
+    author: "Solomon Ojo",
+    title: "AI in VC: How We’re Using Data to Make Smarter Investments",
     description:
-      "A quick guide to understanding RESTful APIs and their importance in modern web applications.",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e29026024e",
-    created_at: "Aug 29, 24",
-    likes: "8.2k",
-    comment: "92",
-    post_img: "/assets/about2.png",
-    unique_id: "SDP21CZ",
-    position: "Developer",
+      "Venture capital has always been an industry driven by intuition, \
+      relationships, and market insights. But as technology advances, artificial\
+      intelligence is transforming how VCs evaluate, invest in, and support startups",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "122",
+    post_img: "/assets/blog/blog_chip.jpg",
+    unique_id: "SDA21CZ",
+    position: "Media",
+    paragraph_1: "Venture capital has always been an industry driven by intuition, \
+      relationships, and market insights. But as technology advances, artificial\
+      intelligence is transforming how VCs evaluate, invest in, and support startups.\
+      At Aorta Capital, we are leveraging AI-driven data analytics to make more informed and \
+      efficient investment decisions",
+    paragraph_2: "The traditional approach to venture investing often relies\
+     on networks, gut instincts, and historical trends. While these elements \
+     remain valuable, AI enables us to go beyond intuition by analyzing vast \
+     amounts of data in real time. From sourcing promising startups to \
+     predicting market shifts, AI helps us identify opportunities that \
+     might be overlooked through conventional methods",
+    paragraph_3: "Beyond sourcing, AI enhances our due diligence process.\
+     Instead of relying solely on financial statements and founder pitches,\
+      we use predictive analytics to assess a startup’s likelihood of success.\
+       Sentiment analysis tools evaluate consumer and media perception, \
+       while machine learning models compare startups to historical patterns\
+        of successful (and failed) ventures. These insights help us mitigate \
+        risk and make more data-driven decisions",
+    paragraph_4: " AI also plays a role post-investment. We support portfolio companies \
+    by providing them with AI-driven market insights, helping them optimize pricing \
+    strategies, customer acquisition efforts, and operational efficiency. This ensures\
+     that our investments are not just well-placed but also well-supported for long-term\
+      growth.",
+    paragraph_5: "While AI will never replace human expertise in venture capital, \
+    it is becoming an indispensable tool for smarter, faster, and more \
+    efficient investing. As we continue refining our approach, the \
+    combination of data and experience will shape the next generation \
+    of successful startups.",
+    paragraph_6:""
+
+
   },
   {
     id: 2,
-    author: "John Doe",
-    title: "Microservices: The Future of Scalable Systems",
+    author: "Solomon Ojo",
+    title: "Lessons from Silicon Valley: What Africa’s VCs Can Learn",
     description:
-      "Explore why microservices architecture is becoming the default for building scalable systems.",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e29026024f",
-    created_at: "Aug 21, 24",
-    likes: "22k",
-    comment: "215",
-    post_img: "/assets/about3.jpg",
-    unique_id: "SDA21CX",
-    position: "Architect",
+      "Silicon Valley has long been the epicenter of global venture capital, producing\
+       some of the world’s most successful startups. While Africa’s startup ecosystem\
+        is unique in its challenges and opportunities, there are key lessons from Silicon\
+         Valley that African VCs can adopt to build a more dynamic and sustainable investment\
+          landscape",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "167",
+    post_img: "/assets/blog/sil.jpeg",
+    unique_id: "SDA21CZ2",
+    position: "Media",
+    paragraph_1:"Silicon Valley has long been the epicenter of global venture capital, producing\
+    some of the world’s most successful startups. While Africa’s startup ecosystem\
+     is unique in its challenges and opportunities, there are key lessons from Silicon\
+      Valley that African VCs can adopt to build a more dynamic and sustainable investment\
+       landscape",
+    paragraph_2: "One of the biggest strengths of Silicon Valley is its risk-taking culture.\
+     Investors understand that most startups will fail, but they also know that a single \
+     successful investment can generate outsized returns. In contrast, many African VCs \
+     tend to be overly cautious, often seeking profitability too early. While financial \
+     sustainability is important, early-stage startups need room to experiment, pivot, \
+     and grow before profitability becomes a primary focus.",
+    paragraph_3: "Another key lesson is ecosystem collaboration. In Silicon Valley, investors, \
+    accelerators, and founders form a tightly connected network that shares knowledge, talent, \
+    and resources. African VCs can benefit from a more open, collaborative approach rather than\
+     operating in silos. By fostering stronger networks between investors, corporations, \
+     universities, and governments, Africa can build a more supportive environment for startups\
+    to thrive.",
+    paragraph_4: "Speed is also a defining factor in Silicon Valley’s success. \
+    Investment decisions are made quickly, and capital is deployed efficiently. \
+    In Africa, lengthy due diligence processes and slow funding cycles can hinder\
+     startup momentum. While careful assessment is necessary, African VCs must strike a \
+     balance between thorough evaluation and the agility required to keep up with fast-moving\
+      markets.",
+    paragraph_5: "Beyond capital, Silicon Valley VCs actively support their portfolio companies\
+     with mentorship, strategic connections, and operational guidance. African VCs should adopt\
+      this hands-on approach by offering more than just funding. Helping founders navigate \
+      regulatory challenges, access international markets, and scale effectively will increase \
+      the likelihood of long-term success.",
+    paragraph_6: "Finally, storytelling plays a significant role in Silicon Valley. Startups\
+     that craft compelling narratives attract investors, customers, and top talent. African \
+     startups must refine how they pitch their vision, while VCs can help them frame their \
+     growth potential in a way that resonates with global investors.\
+     While Africa’s venture landscape has its own identity, embracing these \
+     lessons from Silicon Valley can accelerate its growth. By fostering risk-taking,\
+      collaboration, speed, hands-on support, and powerful storytelling, African VCs can\
+       create a thriving ecosystem that produces world-class startups.",
+
+    
   },
   {
     id: 3,
-    author: "Anna Wright",
-    title: "How to Optimize Frontend Performance",
+    author: "Solomon Ojo",
+    title: "Why Product-Market Fit Matters More Than Your Business Model (At First)",
     description:
-      "Frontend performance optimization techniques to ensure faster load times and a better user experience.",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260240",
-    created_at: "Sept 1, 24",
-    likes: "9.5k",
-    comment: "104",
-    post_img: "/assets/about4.jpg",
-    unique_id: "SDAIICZ",
-    position: "Frontend Engineer",
+      "Many founders spend countless hours perfecting their business model—pricing strategies,\
+       revenue streams, and cost structures—before their product has even found a market. \
+       While a strong business model is crucial for long-term success, in the early stages,\
+        nothing matters more than achieving product-market fit (PMF)",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "188",
+    post_img: "/assets/blog/product.jpg",
+    unique_id: "SDA21CZ3",
+    position: "Media",
+    paragraph_1:"Many founders spend countless hours perfecting their business model—pricing strategies,\
+    revenue streams, and cost structures—before their product has even found a market. \
+    While a strong business model is crucial for long-term success, in the early stages,\
+     nothing matters more than achieving product-market fit (PMF)",
+    paragraph_2: "Product-market fit occurs when a startup creates a product that solves\
+     a real problem for a specific audience, and customers are willing to pay for it. \
+     Without PMF, even the most sophisticated business model will fail because there \
+     is simply no demand. Investors don’t back startups just because they have a \
+     well-structured financial plan; they invest in companies that have clear evidence \
+     of traction and customer love.",
+    paragraph_3: "The best indicator of PMF is organic demand—customers using and recommending\
+     the product without aggressive marketing. If a startup constantly struggles to acquire and\
+      retain users, tweaking revenue models won’t solve the underlying issue. Instead of \
+      focusing on monetization too early, founders should obsess over user feedback, \
+      iterate on their product, and ensure it delivers real value.",
+    paragraph_4: "Some of the world’s most successful startups pivoted multiple times\
+     before figuring out PMF. Slack started as a gaming company before realizing its \
+     internal messaging tool had massive potential. Airbnb initially struggled to get\
+      hosts but refined its approach to meet market demand. Their business models\
+       evolved after they confirmed that users truly wanted their product.",
+    paragraph_5: "Once PMF is achieved, refining the business model becomes much easier.\
+     Pricing can be tested, revenue streams optimized, and operational efficiencies introduced. \
+     But skipping the PMF stage and focusing prematurely on monetization often leads to wasted \
+     time, lost resources, and eventual failure.",
+    paragraph_6: "For early-stage founders, the priority should be clear: build something people\
+     genuinely need and love. The business model can wait—product-market fit cannot.",
+
   },
   {
     id: 4,
-    author: "Samuel Green",
-    title: "Machine Learning Basics for Beginners",
+    author: "Solomon",
+    title: "Why Lagos Is Becoming Nigeria’s Hottest Startup Hub",
     description:
-      "An introductory guide to machine learning and how it can be applied to various fields.",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260241",
-    created_at: "Sept 3, 24",
-    likes: "16k",
-    comment: "176",
-    post_img: "/assets/about5.jpg",
-    unique_id: "SDA21LL",
-    position: "Data Scientist",
+      "Lagos has emerged as Nigeria’s most vibrant startup hub, attracting entrepreneurs, \
+      investors, and global tech giants. With a fast-growing digital economy, a thriving \
+      talent pool, and increasing venture capital interest, the city is cementing its \
+      reputation as the heart of Africa’s innovation ecosystem",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "147",
+    post_img: "/assets/blog/lagos.webp",
+    unique_id: "SDA21CZ4",
+    position: "Media",
+    paragraph_1: "Lagos has emerged as Nigeria’s most vibrant startup hub, attracting \
+    entrepreneurs, investors, and global tech giants. With a fast-growing digital economy, \
+    a thriving talent pool, and increasing venture capital interest, the city is cementing \
+    its reputation as the heart of Africa’s innovation ecosystem.",
+    paragraph_2: "One of the key drivers of Lagos’ startup success is its sheer market size.\
+     With over 20 million residents, it offers a massive consumer base eager for tech-driven \
+     solutions. Startups in fintech, e-commerce, logistics, and edtech are scaling rapidly \
+     because they are solving real problems for millions of people. Companies like Flutterwave,\
+      Paystack, and Opay have thrived by tapping into Lagos’ demand for seamless financial\
+       transactions.",
+    paragraph_3: "Another factor is the availability of talent. Lagos is home to some of Nigeria’s best\
+      universities and coding academies, producing a steady stream of software developers, engineers, and \
+      business minds. Tech communities such as Andela, Decagon, and numerous startup incubators are equipping young professionals\
+       with the skills needed to build globally competitive startups.",
+    paragraph_4: "Venture capital interest has also skyrocketed. Local and international investors are pouring\
+     funds into Lagos-based startups, recognizing the city’s potential as a gateway to Africa’s digital economy.\
+      In recent years, companies like Paystack’s $200M acquisition by Stripe and Flutterwave’s unicorn valuation have\
+       proven that Lagos-based startups can achieve global success.",
+    paragraph_5: "The city’s entrepreneurial culture plays a significant role. Lagos is a place where resilience\
+     and innovation thrive. Founders are accustomed to navigating infrastructural challenges, regulatory hurdles, and\
+      economic fluctuations. This ability to adapt and find creative solutions makes Lagos startups particularly attractive to investors.",
+    paragraph_6: "Despite challenges like power shortages, regulatory uncertainties, and infrastructural gaps, Lagos continues \
+    to rise as a major tech hub. With increasing government support, deeper capital inflows, and a relentless entrepreneurial spirit, \
+    Lagos is positioning itself as not just Nigeria’s but Africa’s startup capital.",
+
   },
   {
     id: 5,
-    author: "Cynthia Lee",
-    title: "The Benefits of TypeScript in Large Projects",
+    author: "Ruchi Rufus",
+    title: "The Future of Venture Capital: What’s Changing in 2025?",
     description:
-      "Learn how TypeScript can help make large projects more manageable and reduce bugs.",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260242",
-    created_at: "Sept 2, 24",
-    likes: "12.8k",
-    comment: "145",
-    post_img: "/assets/about6.jpg",
-    unique_id: "MS721CZ",
-    position: "Software Engineer",
+      "As we navigate through 2025, the venture capital landscape is undergoing a significant transformation, shaped by technological advancements, shifting market dynamics, and evolving investor preferences.",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "219",
+    post_img: "/assets/blog/blog_img1.jpg",
+    unique_id: "SDA21CZ5",
+    position: "Media",
+    paragraph_1: "When quizzed during a speech in his most recent national tour,\
+                Obasanjo, Nigerian past president, made an intriguing statement\
+                that offers great insight about his journey on how he rose to\
+                become the president of Nigeria from a lowly, impoverished farm\
+                boy in Ogun state, Nigeria.",
+    paragraph_2: " 'I joined the military' he said. “Shortly after, Nigeria gained\
+                independence. Then, suddenly, there was an even ground to play\
+                on”.",
+    paragraph_3: "“...suddenly, there was an even ground to play on”",
+    paragraph_4: " This is an incredibly insightful statement to which a discerning\
+                mind ought to pay very close attention.",
+    paragraph_5: "To Obasanjo and his contemporaries in their time, the army was\
+                the even ground providence provided. It was the even ground that\
+                erased and removed all societal and aristocratic blockades set\
+                in place to frustrate and keep the ordinary man ordinary. The\
+                army was what provided an even ground for their generation to\
+                play on. An even ground where what mattered was abilities and\
+                capabilities; not statuses and connections.",
+    paragraph_6: "",
+
   },
   {
     id: 6,
-    author: "James Taylor",
-    title: "The Rise of Serverless Architectures",
+    author: "Ruchi Rufus",
+    title: "The Future of Venture Capital: What’s Changing in 2025?",
     description:
-      "Discover how serverless architectures are transforming the way we build and deploy applications.",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260243",
-    created_at: "Aug 30, 24",
-    likes: "11k",
-    comment: "132",
-    post_img: "/assets/about7.jpg",
-    unique_id: "SDA2PUW",
-    position: "Cloud Architect",
+      "As we navigate through 2025, the venture capital landscape is undergoing a significant transformation, shaped by technological advancements, shifting market dynamics, and evolving investor preferences.",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "178",
+    post_img: "/assets/blog/blog_img1.jpg",
+    unique_id: "SDA21CZ6",
+    position: "Media",
+    paragraph_1: "When quizzed during a speech in his most recent national tour,\
+                Obasanjo, Nigerian past president, made an intriguing statement\
+                that offers great insight about his journey on how he rose to\
+                become the president of Nigeria from a lowly, impoverished farm\
+                boy in Ogun state, Nigeria.",
+    paragraph_2: " 'I joined the military' he said. “Shortly after, Nigeria gained\
+                independence. Then, suddenly, there was an even ground to play\
+                on”.",
+    paragraph_3: "“...suddenly, there was an even ground to play on”",
+    paragraph_4: " This is an incredibly insightful statement to which a discerning\
+                mind ought to pay very close attention.",
+    paragraph_5: "To Obasanjo and his contemporaries in their time, the army was\
+                the even ground providence provided. It was the even ground that\
+                erased and removed all societal and aristocratic blockades set\
+                in place to frustrate and keep the ordinary man ordinary. The\
+                army was what provided an even ground for their generation to\
+                play on. An even ground where what mattered was abilities and\
+                capabilities; not statuses and connections.",
+    paragraph_6: "",
+
   },
   {
     id: 7,
-    author: "Emily White",
-    title: "The Importance of Cybersecurity in the Modern Era",
+    author: "Ruchi Rufus",
+    title: "The Future of Venture Capital: What’s Changing in 2025?",
     description:
-      "Why cybersecurity is crucial for businesses and individuals in the age of digital transformation.",
-    avatar_src: "https://i.pravatar.cc/150?u=a042581f4e290260244",
-    created_at: "Sept 5, 24",
-    likes: "18k",
-    comment: "200",
-    post_img: "/assets/about8.jpg",
-    unique_id: "SDA88TS",
-    position: "Security Analyst",
+      "As we navigate through 2025, the venture capital landscape is undergoing a significant transformation, shaped by technological advancements, shifting market dynamics, and evolving investor preferences.",
+    avatar_src: "/assets/solomon_ojo.jpg",
+    created_at: "Jan 29, 25",
+    likes: "177",
+    post_img: "/assets/blog/blog_img1.jpg",
+    unique_id: "SDA21CZ7",
+    position: "Media",
+    paragraph_1: "When quizzed during a speech in his most recent national tour,\
+                Obasanjo, Nigerian past president, made an intriguing statement\
+                that offers great insight about his journey on how he rose to\
+                become the president of Nigeria from a lowly, impoverished farm\
+                boy in Ogun state, Nigeria.",
+    paragraph_2: " 'I joined the military' he said. “Shortly after, Nigeria gained\
+                independence. Then, suddenly, there was an even ground to play\
+                on”.",
+    paragraph_3: "“...suddenly, there was an even ground to play on”",
+    paragraph_4: " This is an incredibly insightful statement to which a discerning\
+                mind ought to pay very close attention.",
+    paragraph_5: "To Obasanjo and his contemporaries in their time, the army was\
+                the even ground providence provided. It was the even ground that\
+                erased and removed all societal and aristocratic blockades set\
+                in place to frustrate and keep the ordinary man ordinary. The\
+                army was what provided an even ground for their generation to\
+                play on. An even ground where what mattered was abilities and\
+                capabilities; not statuses and connections.",
+    paragraph_6: "",
+
   },
 ];

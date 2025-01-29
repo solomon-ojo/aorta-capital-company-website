@@ -15,7 +15,6 @@ type PostTypes = {
   avatar_src: string;
   created_at: string;
   likes: string;
-  comment: string;
   post_img: string;
 };
 
@@ -27,7 +26,6 @@ export const BlogPostComp = ({
   avatar_src,
   created_at,
   likes,
-  comment,
   post_img,
 }: PostTypes) => {
   return (
@@ -52,10 +50,6 @@ export const BlogPostComp = ({
           <div className="flex items-center gap-4 basis-[100%] w-full">
             <GiStarShuriken color="#FFC016" size={18} />
             <p className="text-[12px] font-[300] opacity-90">{created_at}</p>
-            <div className="flex items-center gap-1">
-              <RiChat3Fill size={16} className="text-gray-600" />
-              <p className="text-[13px] font-[300] opacity-90">{comment}</p>
-            </div>
             <div className="flex items-center gap-1">
               <PiHandsClappingBold size={16} className="text-gray-600" />
               <p className="text-[13px] font-[300] opacity-90">{likes}</p>
