@@ -141,9 +141,6 @@ export default function BlogDetails() {
             </div>
 
             <div>
-            <ParagraphComp>
-                  {postobject.paragraph_6}
-              </ParagraphComp>
 
               <ParagraphComp>
                   {postobject.paragraph_1}
@@ -163,6 +160,10 @@ export default function BlogDetails() {
 
               <ParagraphComp>
                 {postobject.paragraph_5}
+              </ParagraphComp>
+
+              <ParagraphComp>
+                  {postobject.paragraph_6}
               </ParagraphComp>
 
   

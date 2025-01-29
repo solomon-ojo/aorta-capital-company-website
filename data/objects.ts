@@ -279,7 +279,12 @@ export const PostObject: BlogPostTypes[] = [
     post_img: "/assets/blog/blog_img1.jpg",
     unique_id: "SDA21CZ1",
     position: "Media",
-    paragraph_1: "AI: The Investment Powerhouse:\
+    paragraph_1: "As 2025 unfolds, the venture capital landscape is experiencing\
+    a profound transformation driven by technological innovation and\
+     shifting market dynamics. The traditional investment paradigm is\
+      rapidly evolving, creating new opportunities and challenges for\
+       investors and entrepreneurs alike.",
+    paragraph_2: "AI: The Investment Powerhouse:\
       Artificial Intelligence continues to dominate\
       venture capital investments, with the market \
       projected to grow exponentially and reach over \
@@ -290,7 +295,7 @@ export const PostObject: BlogPostTypes[] = [
       has shifted from broad technological applications to highly \
       specialized machine learning solutions that address specific \
       industry challenges.",
-    paragraph_2: "Specialized Funding Emerges:\
+    paragraph_3: "Specialized Funding Emerges:\
       The traditional VC model is transforming, with smaller, more focused\
       funds becoming increasingly prominent. These boutique ventures are \
       characterized by strategic investments, deep industry expertise, and \
@@ -298,7 +303,7 @@ export const PostObject: BlogPostTypes[] = [
       funds are not simply providing capital, but acting as true strategic \
       partners who offer comprehensive support, industry connections, and \
       targeted guidance.",
-    paragraph_3: "Emerging Investment Frontiers:\
+    paragraph_4: "Emerging Investment Frontiers:\
       Two sectors are capturing substantial venture capital interest\
       in 2025. Healthcare innovation has become a critical investment area,\
       with digital health solutions, personalized medicine technologies, \
@@ -306,24 +311,19 @@ export const PostObject: BlogPostTypes[] = [
       Simultaneously, green technologies have gained significant momentum, \
       with investors prioritizing sustainable infrastructure, clean energy \
       solutions, and innovative carbon capture technologies.",
-    paragraph_4: "Democratization of Investment:\
+    paragraph_5: "Democratization of Investment:\
       Venture capital is becoming remarkably more accessible \
       through advanced technological platforms. Equity crowdfunding, \
       tokenized investment options, and reduced entry barriers are allowing\
       a broader range of investors to participate in funding innovative \
       startups. This democratization is breaking down traditional investment\
       walls and introducing diverse perspectives into the funding ecosystem.",
-    paragraph_5: "Future Outlook:\
+    paragraph_6: "Future Outlook:\
     Successful venture capital firms in 2025 are distinguished by their ability\
      to embrace technological innovation, develop specialized investment strategies\
     , and maintain exceptional flexibility. The most effective investors are those \
      who can rapidly adapt to changing market conditions while maintaining a long-term\
     strategic vision.",
-    paragraph_6: "As 2025 unfolds, the venture capital landscape is experiencing\
-       a profound transformation driven by technological innovation and\
-        shifting market dynamics. The traditional investment paradigm is\
-         rapidly evolving, creating new opportunities and challenges for\
-          investors and entrepreneurs alike.",
 
 
   },
@@ -514,101 +514,142 @@ export const PostObject: BlogPostTypes[] = [
   },
   {
     id: 5,
-    author: "Ruchi Rufus",
-    title: "The Future of Venture Capital: What’s Changing in 2025?",
+    author: "Omobolaji Doro",
+    title: "The Advantages of Investing in Real Estate",
     description:
-      "As we navigate through 2025, the venture capital landscape is undergoing a significant transformation, shaped by technological advancements, shifting market dynamics, and evolving investor preferences.",
+      "Real estate has long been regarded as one of the most stable and rewarding\
+       investment options. Unlike stocks or cryptocurrencies, which can be highly \
+       volatile, real estate offers a tangible asset with the potential for consistent\
+        appreciation and income generation. Investors worldwide turn to real estate for \
+        its ability to build long-term wealth while serving as a hedge against inflation",
     avatar_src: "/assets/solomon_ojo.jpg",
     created_at: "Jan 29, 25",
     likes: "219",
-    post_img: "/assets/blog/blog_img1.jpg",
+    post_img: "/assets/blog/real_estate.jpg",
     unique_id: "SDA21CZ5",
     position: "Media",
-    paragraph_1: "When quizzed during a speech in his most recent national tour,\
-                Obasanjo, Nigerian past president, made an intriguing statement\
-                that offers great insight about his journey on how he rose to\
-                become the president of Nigeria from a lowly, impoverished farm\
-                boy in Ogun state, Nigeria.",
-    paragraph_2: " 'I joined the military' he said. “Shortly after, Nigeria gained\
-                independence. Then, suddenly, there was an even ground to play\
-                on”.",
-    paragraph_3: "“...suddenly, there was an even ground to play on”",
-    paragraph_4: " This is an incredibly insightful statement to which a discerning\
-                mind ought to pay very close attention.",
-    paragraph_5: "To Obasanjo and his contemporaries in their time, the army was\
-                the even ground providence provided. It was the even ground that\
-                erased and removed all societal and aristocratic blockades set\
-                in place to frustrate and keep the ordinary man ordinary. The\
-                army was what provided an even ground for their generation to\
-                play on. An even ground where what mattered was abilities and\
-                capabilities; not statuses and connections.",
-    paragraph_6: "",
+    paragraph_1: "Real estate has long been regarded as one of the most stable and rewarding\
+    investment options. Unlike stocks or cryptocurrencies, which can be highly \
+    volatile, real estate offers a tangible asset with the potential for consistent\
+     appreciation and income generation. Investors worldwide turn to real estate for \
+     its ability to build long-term wealth while serving as a hedge against inflation",
+    paragraph_2: "One of the key advantages of real estate is its ability to generate\
+     passive income. Rental properties provide a steady stream of cash flow, making real\
+      estate an attractive investment for those seeking financial stability. Unlike many\
+       other investments that rely solely on market fluctuations, rental income remains \
+       relatively predictable, providing security even during economic downturns.",
+    paragraph_3: "Appreciation is another reason why real estate remains a favored asset \
+    class. Property values tend to rise over time, driven by factors such as urban development,\
+     population growth, and increasing demand. In rapidly growing cities, investors often see\
+      significant returns as property prices soar. Even in more mature markets, real estate\
+       typically appreciates at a steady rate, ensuring long-term value retention.",
+    paragraph_4: "Leverage plays a crucial role in real estate investing. Unlike stocks, \
+    which usually require full upfront payments, real estate allows investors to use borrowed \
+    capital to acquire properties. With mortgage financing, investors can control a valuable asset\
+     with a fraction of the total cost, amplifying potential returns. As property values increase, \
+     equity builds up, creating an opportunity for refinancing or reinvestment.",
+    paragraph_5: "Another compelling advantage of real estate is its ability to serve \
+    as an inflation hedge. As the cost of living rises, so do property values and rental \
+    income. Unlike cash holdings that lose purchasing power over time, real estate maintains\
+     its value and often outperforms inflation, protecting investors from economic uncertainty.",
+    paragraph_6: "Real estate investment is not without risks, including market fluctuations and \
+    maintenance costs. However, with proper research and strategic planning, it remains one of the most\
+    reliable ways to create wealth. Whether through rental income, appreciation, or leverage, real estate \
+    offers unique benefits that few other investments can match.",
 
   },
   {
     id: 6,
-    author: "Ruchi Rufus",
-    title: "The Future of Venture Capital: What’s Changing in 2025?",
+    author: "Omobolaji Doro",
+    title: "Diversifying Your Portfolio with Real Estate Investments",
     description:
-      "As we navigate through 2025, the venture capital landscape is undergoing a significant transformation, shaped by technological advancements, shifting market dynamics, and evolving investor preferences.",
+      "Diversification is a fundamental principle of smart investing, helping to\
+       minimize risk and enhance long-term returns. While stocks, bonds, and mutual\
+        funds are traditional portfolio components, real estate offers a powerful way\
+         to add stability and income generation. By incorporating real estate investments,\
+         investors can achieve a well-rounded portfolio that performs well across different\
+          market conditions.",
     avatar_src: "/assets/solomon_ojo.jpg",
     created_at: "Jan 29, 25",
     likes: "178",
-    post_img: "/assets/blog/blog_img1.jpg",
+    post_img: "/assets/about6.jpg",
     unique_id: "SDA21CZ6",
     position: "Media",
-    paragraph_1: "When quizzed during a speech in his most recent national tour,\
-                Obasanjo, Nigerian past president, made an intriguing statement\
-                that offers great insight about his journey on how he rose to\
-                become the president of Nigeria from a lowly, impoverished farm\
-                boy in Ogun state, Nigeria.",
-    paragraph_2: " 'I joined the military' he said. “Shortly after, Nigeria gained\
-                independence. Then, suddenly, there was an even ground to play\
-                on”.",
-    paragraph_3: "“...suddenly, there was an even ground to play on”",
-    paragraph_4: " This is an incredibly insightful statement to which a discerning\
-                mind ought to pay very close attention.",
-    paragraph_5: "To Obasanjo and his contemporaries in their time, the army was\
-                the even ground providence provided. It was the even ground that\
-                erased and removed all societal and aristocratic blockades set\
-                in place to frustrate and keep the ordinary man ordinary. The\
-                army was what provided an even ground for their generation to\
-                play on. An even ground where what mattered was abilities and\
-                capabilities; not statuses and connections.",
+    paragraph_1: "Diversification is a fundamental principle of smart investing, helping to\
+       minimize risk and enhance long-term returns. While stocks, bonds, and mutual\
+        funds are traditional portfolio components, real estate offers a powerful way\
+         to add stability and income generation. By incorporating real estate investments,\
+         investors can achieve a well-rounded portfolio that performs well across different\
+          market conditions.",
+    paragraph_2: "One of the key benefits of real estate diversification is its low correlation\
+     with the stock market. When stock prices fluctuate due to economic downturns or geopolitical\
+      uncertainties, real estate values tend to remain stable or even appreciate over time. This\
+       makes real estate an excellent hedge against market volatility, ensuring that a portfolio \
+       remains resilient even in unpredictable financial climates.",
+    paragraph_3: "Real estate also provides a reliable income stream through rental properties. \
+    Unlike stocks, which primarily generate returns through capital appreciation, real estate investments\
+     produce consistent cash flow. Rental income can serve as a buffer during periods of economic uncertainty, \
+     helping investors maintain financial security even when other assets underperform.\
+     Another advantage of real estate diversification is the potential for long-term appreciation.\
+      While market conditions may fluctuate, well-located properties tend to increase in value over time.\
+       This appreciation builds equity, allowing investors to leverage their assets for further expansion.\
+    Through strategic acquisitions and property management, real estate can become a powerful wealth-building\
+     tool within a diversified portfolio.",
+    paragraph_4: "Tax advantages further enhance real estate’s appeal as a diversification tool.\
+     Investors can benefit from deductions on mortgage interest, property depreciation, and maintenance\
+      expenses, reducing taxable income and improving overall returns. With proper planning, real estate\
+       investments can provide both immediate financial benefits and long-term wealth preservation.",
+    paragraph_5: "By integrating real estate into a diversified portfolio, investors create a more balanced,\
+     resilient financial strategy. With steady income, appreciation potential, and market stability, real estate\
+      remains a powerful asset class for long-term success.",
     paragraph_6: "",
 
   },
   {
     id: 7,
-    author: "Ruchi Rufus",
-    title: "The Future of Venture Capital: What’s Changing in 2025?",
+    author: "Solomon Ojo",
+    title: "What We Look for in a Founding Team – Beyond the Pitch Deck",
     description:
-      "As we navigate through 2025, the venture capital landscape is undergoing a significant transformation, shaped by technological advancements, shifting market dynamics, and evolving investor preferences.",
+      "A compelling pitch deck can capture our attention, but what truly determines\
+       whether we invest in a startup is the founding team behind it. At Aorta Capital, \
+       we believe that great companies are built by exceptional founders, and our evaluation\
+        goes far beyond the slides in a presentation. While market opportunity, \
+        product differentiation, and financial projections matter, the team’s ability \
+        to execute is what ultimately drives success",
     avatar_src: "/assets/solomon_ojo.jpg",
     created_at: "Jan 29, 25",
     likes: "177",
-    post_img: "/assets/blog/blog_img1.jpg",
+    post_img: "/assets/about2.png",
     unique_id: "SDA21CZ7",
     position: "Media",
-    paragraph_1: "When quizzed during a speech in his most recent national tour,\
-                Obasanjo, Nigerian past president, made an intriguing statement\
-                that offers great insight about his journey on how he rose to\
-                become the president of Nigeria from a lowly, impoverished farm\
-                boy in Ogun state, Nigeria.",
-    paragraph_2: " 'I joined the military' he said. “Shortly after, Nigeria gained\
-                independence. Then, suddenly, there was an even ground to play\
-                on”.",
-    paragraph_3: "“...suddenly, there was an even ground to play on”",
-    paragraph_4: " This is an incredibly insightful statement to which a discerning\
-                mind ought to pay very close attention.",
-    paragraph_5: "To Obasanjo and his contemporaries in their time, the army was\
-                the even ground providence provided. It was the even ground that\
-                erased and removed all societal and aristocratic blockades set\
-                in place to frustrate and keep the ordinary man ordinary. The\
-                army was what provided an even ground for their generation to\
-                play on. An even ground where what mattered was abilities and\
-                capabilities; not statuses and connections.",
-    paragraph_6: "",
+    paragraph_1: "A compelling pitch deck can capture our attention, but what truly determines\
+       whether we invest in a startup is the founding team behind it. At Aorta Capital, \
+       we believe that great companies are built by exceptional founders, and our evaluation\
+        goes far beyond the slides in a presentation. While market opportunity, \
+        product differentiation, and financial projections matter, the team’s ability \
+        to execute is what ultimately drives success",
+    paragraph_2: "One of the first things we assess is the founders' clarity of vision.\
+     A strong founding team doesn’t just have an idea; they deeply understand the problem \
+     they are solving and can articulate why their solution is the best approach. \
+     This clarity is essential because the startup journey is filled with challenges,\
+      and only those with a well-defined mission can navigate them effectively.",
+    paragraph_3: "Beyond vision, we look for resilience. Startups rarely follow a \
+    straight path to success, and setbacks are inevitable. Founders who can adapt, pivot,\
+     and push forward despite failures are far more likely to build enduring companies. We\
+      pay close attention to their past experiences—how they have handled adversity, whether \
+      they have learned from failures, and how they approach problem-solving under pressure.",
+    paragraph_4: "Another key trait we look for is team chemistry. A startup’s early success\
+     depends on how well the founding team collaborates. Misalignment in goals, leadership conflicts,\
+      or an inability to delegate can be fatal to a young company. We seek teams with complementary\
+       skill sets, mutual trust, and a shared commitment to the company’s long-term success.",
+    paragraph_5: "Finally, we evaluate a founder’s ability to attract talent and build a strong\
+     network. Great leaders inspire others, and a startup’s growth depends on its ability to recruit\
+      top talent, secure strategic partnerships, and gain customer trust. A strong founding team is \
+      one that others believe in—not just investors, but employees, advisors, and customers.",
+    paragraph_6: "While a pitch deck provides a snapshot of a startup’s potential, the real\
+     investment decision comes down to the people behind it. Passion, resilience, teamwork, \
+     and leadership are what truly separate the best founders from the rest. These are the\
+      qualities that convince us a team has what it takes to build something extraordinary.",
 
   },
 ];
