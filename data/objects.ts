@@ -274,7 +274,7 @@ export const PostObject: BlogPostTypes[] = [
          rapidly evolving, creating new opportunities and challenges for\
           investors and entrepreneurs alike",
     avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    created_at: "Jan 29, 2025",
     likes: "147",
     post_img: "/assets/blog/blog_img1.jpg",
     unique_id: "SDA21CZ1",
@@ -336,7 +336,7 @@ export const PostObject: BlogPostTypes[] = [
       relationships, and market insights. But as technology advances, artificial\
       intelligence is transforming how VCs evaluate, invest in, and support startups",
     avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    created_at: "Jan 16, 2025",
     likes: "122",
     post_img: "/assets/blog/blog_chip.jpg",
     unique_id: "SDA21CZ",
@@ -384,7 +384,7 @@ export const PostObject: BlogPostTypes[] = [
          Valley that African VCs can adopt to build a more dynamic and sustainable investment\
           landscape",
     avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    created_at: "Jan 16, 2025",
     likes: "167",
     post_img: "/assets/blog/sil.jpeg",
     unique_id: "SDA21CZ2",
@@ -438,7 +438,7 @@ export const PostObject: BlogPostTypes[] = [
        While a strong business model is crucial for long-term success, in the early stages,\
         nothing matters more than achieving product-market fit (PMF)",
     avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    created_at: "Jan 15, 2025",
     likes: "188",
     post_img: "/assets/blog/product.jpg",
     unique_id: "SDA21CZ3",
@@ -473,7 +473,7 @@ export const PostObject: BlogPostTypes[] = [
   },
   {
     id: 4,
-    author: "Solomon",
+    author: "Solomon Ojo",
     title: "Why Lagos Is Becoming Nigeria’s Hottest Startup Hub",
     description:
       "Lagos has emerged as Nigeria’s most vibrant startup hub, attracting entrepreneurs, \
@@ -481,7 +481,7 @@ export const PostObject: BlogPostTypes[] = [
       talent pool, and increasing venture capital interest, the city is cementing its \
       reputation as the heart of Africa’s innovation ecosystem",
     avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    created_at: "Jan 13, 2025",
     likes: "147",
     post_img: "/assets/blog/lagos.webp",
     unique_id: "SDA21CZ4",
@@ -522,8 +522,8 @@ export const PostObject: BlogPostTypes[] = [
        volatile, real estate offers a tangible asset with the potential for consistent\
         appreciation and income generation. Investors worldwide turn to real estate for \
         its ability to build long-term wealth while serving as a hedge against inflation",
-    avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    avatar_src: "/assets/biola_williams.jpg",
+    created_at: "Jan 11, 2025",
     likes: "219",
     post_img: "/assets/blog/real_estate.jpg",
     unique_id: "SDA21CZ5",
@@ -569,8 +569,8 @@ export const PostObject: BlogPostTypes[] = [
          to add stability and income generation. By incorporating real estate investments,\
          investors can achieve a well-rounded portfolio that performs well across different\
           market conditions.",
-    avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    avatar_src: "/assets/biola_williams.jpg",
+    created_at: "Jan 10, 2025",
     likes: "178",
     post_img: "/assets/about6.jpg",
     unique_id: "SDA21CZ6",
@@ -617,7 +617,7 @@ export const PostObject: BlogPostTypes[] = [
         product differentiation, and financial projections matter, the team’s ability \
         to execute is what ultimately drives success",
     avatar_src: "/assets/solomon_ojo.jpg",
-    created_at: "Jan 29, 25",
+    created_at: "Jan 07, 2025",
     likes: "177",
     post_img: "/assets/about2.png",
     unique_id: "SDA21CZ7",
