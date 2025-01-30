@@ -339,7 +339,7 @@ export const PostObject: BlogPostTypes[] = [
     created_at: "Jan 16, 2025",
     likes: "122",
     post_img: "/assets/blog/blog_chip.jpg",
-    unique_id: "SDA21CZ",
+    unique_id: "SDA21CZ0",
     position: "Media",
     paragraph_1: "Venture capital has always been an industry driven by intuition, \
       relationships, and market insights. But as technology advances, artificial\
