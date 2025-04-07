@@ -9,11 +9,10 @@ type Types = {
 const IconComponent = () => {
   return (
     <div>
-      <IoMdCheckmarkCircleOutline size={24} color="#0425e8" />
+      {React.createElement(IoMdCheckmarkCircleOutline, { size: 24, color: "#0425e8" })}
     </div>
   );
 };
-
 
 export const CardListComp = ({ title, description }: Types) => {
   return (
