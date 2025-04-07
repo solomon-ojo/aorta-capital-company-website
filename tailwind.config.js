@@ -29,6 +29,7 @@ module.exports = {
         light: {
           colors: {
             herobg: siteConfig.siteColors.heroBg,
+            footer: ' #803E5C',
           },
         },
         dark: {
