@@ -11,7 +11,7 @@ export const CardListComp = ({ title, description }: Types) => {
       {/* icon */}
       <div className="h-10 w-10 shrink-0 flex items-center justify-center rounded-full about-hero-light-yellow-bg">
         <>
-        <IoMdCheckmarkCircleOutline size={24} color="#0425e8" />
+        {/* <IoMdCheckmarkCircleOutline size={24} color="#0425e8" /> */}
         </>
       </div> 
       <div className="flex flex-col gap-1">
