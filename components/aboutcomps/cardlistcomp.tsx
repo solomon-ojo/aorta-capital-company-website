@@ -1,8 +1,17 @@
+import React from "react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 type Types = {
   title: string;
   description: string;
+};
+
+const IconComponent = () => {
+  return (
+    <div>
+      <IoMdCheckmarkCircleOutline size={24} color="#0425e8" />
+    </div>
+  );
 };
 
 export const CardListComp = ({ title, description }: Types) => {
@@ -11,7 +20,7 @@ export const CardListComp = ({ title, description }: Types) => {
       {/* icon */}
       <div className="h-10 w-10 shrink-0 flex items-center justify-center rounded-full about-hero-light-yellow-bg">
         <>
-        {/* <IoMdCheckmarkCircleOutline size={24} color="#0425e8" /> */}
+        <IconComponent /> 
         </>
       </div> 
       <div className="flex flex-col gap-1">
