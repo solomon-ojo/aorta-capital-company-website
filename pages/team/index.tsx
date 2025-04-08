@@ -52,7 +52,7 @@ export default function TeamsPage() {
                 </div>
                 <p className="mb-2 font-light font-lora mt-1">{v.name}</p>
                 <Link href={`mailto:${siteConfig.mailAddress}`}>
-                  <button className="md:hidden text-[14px] w-full mb-4 border border-black hover:border-[#4fe18b] hover:text-[#4fe18b] py-2">
+                  <button className="md:hidden text-[14px] w-full mb-4 border border-black hover:border-[#ff914d] hover:text-[#ff914d]  py-2">
                     Contact
                   </button>
                 </Link>
