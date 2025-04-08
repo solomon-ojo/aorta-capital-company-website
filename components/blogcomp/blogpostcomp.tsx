@@ -18,6 +18,13 @@ type PostTypes = {
   post_img: string;
 };
 
+const StarShurikenIcon = GiStarShuriken as React.FC<React.SVGProps<SVGSVGElement>>;
+const HandsClappingIcon = PiHandsClappingBold as React.FC<React.SVGProps<SVGSVGElement>>;
+const BookmarkAddIcon = MdOutlineBookmarkAdd as React.FC<React.SVGProps<SVGSVGElement>>;
+
+
+
+
 export const BlogPostComp = ({
   id,
   author,
@@ -48,13 +55,13 @@ export const BlogPostComp = ({
         {/* Action */}
         <div className="mt-2 flex w-full items-center justify-between">
           <div className="flex items-center gap-4 basis-[100%] w-full">
-            <GiStarShuriken color="#FFC016" size={18} />
+            <StarShurikenIcon color="#FFC016" width={18} height={18} />
             <p className="text-[12px] font-[300] opacity-90">{created_at}</p>
             <div className="flex items-center gap-1">
-              <PiHandsClappingBold size={16} className="text-gray-600" />
+              <HandsClappingIcon width={16} height={16} className="text-gray-600"/>
               <p className="text-[13px] font-[300] opacity-90">{likes}</p>
             </div>
-            <MdOutlineBookmarkAdd size={16} className="text-gray-600" />
+            <BookmarkAddIcon width={16} height={16} className="text-gray-600" />
           </div>
         </div>
       </div>
