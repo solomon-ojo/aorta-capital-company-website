@@ -22,6 +22,10 @@ const AboutPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentHero, setCurrentHero] = useState(0);
 
+const PeopleIcon = MdOutlinePeopleAlt as React.FC<React.SVGProps<SVGSVGElement>>;
+const IconWifi = IoMdWifi as React.FC<React.SVGProps<SVGSVGElement>>;
+const IconPersonSearch= MdOutlinePersonSearch as React.FC<React.SVGProps<SVGSVGElement>>;
+
   // Function to toggle the menu
   const toggleMenu = () => {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -222,15 +226,15 @@ const AboutPage = () => {
             <div className="flex w-full px-3 flex-col gap-8 md:gap-0 md:flex-row max-w-[1200px] items-center justify-between">
               {/* Card */}
               <CardCol
-                icon={<MdOutlinePeopleAlt color="#0425e8" size={22} />}
+                icon={<PeopleIcon color="#0425e8" style={{ width: 22, height: 22 }} />}
                 title="Our diverse pool of professionals can build almost anything."
               />
               <CardCol
-                icon={<IoMdWifi color="#0425e8" size={22} />}
+                icon={<IconWifi color="#0425e8" style={{ width: 22, height: 22 }}/>}
                 title="You cannot do it all, but your team can."
               />
               <CardCol
-                icon={<MdOutlinePersonSearch color="#0425e8" size={22} />}
+                icon={<IconPersonSearch color="#0425e8" style={{ width: 22, height: 22 }} />}
                 title="Teamwork is the secret that makes common people achieve uncommon results."
               />
             </div>

@@ -12,6 +12,8 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { Head } from "@/layouts/head";
 import { title } from "@/components/primitives";
 
+const ArrowIcon = MdArrowRightAlt as React.FC<React.SVGProps<SVGSVGElement>>;
+
 export default function CompanyDetails() {
   // Hooks
   const router = useRouter();
@@ -188,11 +190,12 @@ export default function CompanyDetails() {
                 <p className="font-lato text-[16px] font-semibold text-white">
                   READ
                 </p>
-                <MdArrowRightAlt
+                <ArrowIcon
                   className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                   color="white"
-                  size={24}
+                  width={24} height={24}
                 />
+              
               </div>
 
               {/* Bottom text content */}
@@ -223,11 +226,11 @@ export default function CompanyDetails() {
                   <p className="font-lato text-[16px] font-semibold text-white">
                     READ
                   </p>
-                  <MdArrowRightAlt
-                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                    color="white"
-                    size={24}
-                  />
+                  <ArrowIcon
+                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                  color="white"
+                  width={24} height={24}
+                   />
                 </div>
 
                 {/* Bottom text content */}
@@ -256,11 +259,11 @@ export default function CompanyDetails() {
                   <p className="font-lato text-[16px] font-semibold text-white">
                     READ
                   </p>
-                  <MdArrowRightAlt
-                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                    color="white"
-                    size={24}
-                  />
+                  <ArrowIcon
+                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                  color="white"
+                  width={24} height={24}
+                />
                 </div>
 
                 {/* Bottom text content */}
