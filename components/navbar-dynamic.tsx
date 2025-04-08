@@ -14,6 +14,8 @@ interface NavbarProps {
   hideBottomBorder?: boolean;
 }
 
+const MenuIcon = VscMenu as React.FC<React.SVGProps<SVGSVGElement>>;
+
 export const NavbarDynamic = ({
   toggleMenu,
   hideBottomBorder,
@@ -58,9 +60,9 @@ export const NavbarDynamic = ({
       </Link>
 
       <div role="presentation" onClick={toggleMenu} className="">
-        <VscMenu
+        <MenuIcon
           className={`cursor-pointer ${openState ? "text-white" : "text-black"} flex md:hidden`}
-          size={25}
+          style={{ width: 25, height: 25 }}
         />
       </div>
 
