@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import React from "react";
 import { VscMenu } from "react-icons/vsc";
 
 interface LinkType {
