@@ -14,6 +14,8 @@ interface NavbarProps {
   openState: boolean;
 }
 
+const MenuIcon = VscMenu as React.FC<React.SVGProps<SVGSVGElement>>;
+
 export const AboutNavbar = ({ toggleMenu, openState }: NavbarProps) => {
   const router = useRouter();
 
@@ -56,10 +58,9 @@ export const AboutNavbar = ({ toggleMenu, openState }: NavbarProps) => {
         onClick={toggleMenu}
         className="top-4 fixed right-6"
       >
-        <VscMenu
+        <MenuIcon
           className={`cursor-pointer ${openState ? "text-white" : "text-black"} flex md:hidden`}
-          size={25}
-        />
+          width={25} height={25}/>
       </div>
 
       <ul className="hidden md:flex gap-7">
