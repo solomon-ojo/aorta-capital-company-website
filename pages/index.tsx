@@ -23,7 +23,7 @@ export default function IndexPage() {
 
         {/* Right div with text content */}
         <div className="flex-1 bg-white flex items-center">
-          <div className="px-6 md:pl-[95px] mt-[55px] lg:mt-[100px] w-full md:max-w-[78%] lg:max-w-[85%] xl:max-w-[78%]">
+          <div className="px-6 md:pl-[95px] mt-[55px] mb-[40px] lg:mb-[0px]  lg:mt-[100px] w-full md:max-w-[78%] lg:max-w-[85%] xl:max-w-[78%]">
             <h1 className="font-lora home-text-color text-[24px] xl:text-[34px] font-normal leading-[30px] xl:leading-[44px]">
               The future is built <br /> not hoped for.
             </h1>
