@@ -39,7 +39,7 @@ export const companies: CompaniesType[] = [
     name: "Nulgen",
     description: "AI Powered e-learning platform and career companion",
     details:
-      "Nulgen empowers learners through a free, AI-driven eLearning platform, offering personalized courses and interactive experiences, utilizing open-source content to enhance skills and knowledge anytime, anywhere.",
+      "Nulgen empowers learners through a free, AI-driven eLearning platform",
     imageUrl: "/assets/company/nulgen2.png",
     imageUrl2: "/assets/company/nulgen.png",
     imageUrl3: "/assets/company/nulgen2.jpg",
@@ -55,7 +55,7 @@ export const companies: CompaniesType[] = [
     name: "Viola",
     description: "Internship and job experience for high school students",
     details:
-      "Viola connects high school students with valuable internship and job experience opportunities, helping them gain real-world skills and build their career paths early. We specialize in bridging the gap between education and the workforce, offering students a head start in exploring their passions and preparing for the future.",
+      "Viola connects high school students with valuable internship and job experience opportunities.",
     imageUrl: "/assets/company/viola2.jpg",
     imageUrl2: "/assets/company/viola1.png",
     imageUrl3: "/assets/company/hexis.jpg",
@@ -87,7 +87,7 @@ export const companies: CompaniesType[] = [
     name: "Ezra",
     description: "Church database and AI Bot",
     details:
-      "Ezra offers secure data storage and AI-powered search solutions tailored for churches. We help organizations manage and access their digital resources with ease, allowing members and leaders to quickly find answers to important queries through an intelligent, church-specific search bot.",
+      "Ezra offers secure data storage and AI-powered search solutions tailored for churches.",
     imageUrl: "/assets/company/ezzra2.jpg",
     imageUrl2: "/assets/company/yellowsun3.jpg",
     imageUrl3: "/assets/company/ezzra.jpg",
@@ -103,7 +103,7 @@ export const companies: CompaniesType[] = [
     name: "Molus",
     description: "International shipping, optimized with Machine Learning",
     details:
-      "Molus leverages advanced machine learning to optimize international shipping processes, ensuring faster, more efficient, and cost-effective global logistics. By analyzing vast amounts of shipping data, we provide intelligent solutions that improve route planning, reduce delays, and streamline supply chain operations for businesses worldwide.",
+      "Molus leverages advanced machine learning to optimize international shipping processes",
     imageUrl: "/assets/company/molus.jpg",
     imageUrl2: "/assets/company/molus3.jpg",
     imageUrl3: "/assets/company/molus4.jpg",
@@ -119,7 +119,7 @@ export const companies: CompaniesType[] = [
     name: "Papperboy",
     description: "Seamless payment processing for eCommerce businesses",
     details:
-      "Papperboy specializes in seamless payment processing solutions for eCommerce businesses. We empower online retailers with secure, efficient, and user-friendly payment options, ensuring a smooth checkout experience for customers.",
+      "Papperboy specializes in seamless payment processing solutions for eCommerce businesses. ",
     imageUrl: "/assets/company/papperboy.jpg",
     imageUrl2: "/assets/company/molus5.jpg",
     imageUrl3: "/assets/company/papperboy2.png",
@@ -135,7 +135,7 @@ export const companies: CompaniesType[] = [
     name: "Wasabi",
     description: "AI Legal assistant",
     details:
-      "Wasabi AI assistant is designed to enhance efficiency, accuracy, and productivity. By streamlining legal workflows and providing instant access to legal information and advice, it helps lawyers draft contracts, research legal topics, and more, saving time and resources.",
+      "Wasabi AI assistant is designed to enhance efficiency, accuracy, and productivity. ",
     imageUrl: "/assets/company/wasabi.jpg",
     imageUrl2: "/assets/company/getwasabi.jpg",
     imageUrl3: "/assets/company/ezzra.jpg",
@@ -151,13 +151,13 @@ export const companies: CompaniesType[] = [
     name: "Bourgeon",
     description: "Startup studio tailored for founders",
     details:
-      "Bourgeon is a startup studio that partners with exceptional founders to build groundbreaking companies. We provide the resources, expertise, and network needed to accelerate growth and achieve lasting success.",
+      "Bourgeon is a startup studio that partners with exceptional founders to build groundbreaking companies. ",
     imageUrl: "/assets/company/bourgeon2.png",
     imageUrl2: "/assets/company/bourgeon4.jpg",
     imageUrl3: "/assets/company/bourgeon5.png",
     logo: "/assets/logo/logo.svg",
     url: "bourgeon.com",
-    path: "https://bourgeon.com",
+    path: "https://bourgeon.co",
     why: "Aspiring entrepreneurs often face significant challenges, such as lack of funding, industry knowledge, and the complexity of scaling startups, which often lead to failure before reaching the market. Bourgeon addresses these challenges by offering a comprehensive support system, including funding, mentorship, and resources to refine business concepts and successfully launch ventures. Our focus on collaboration and agility empowers founders to overcome obstacles and achieve sustainable growth.",
     industry: ["Technology", "Business Development", "Software"],
     team: ["Solomon Ojo", "Biola Williams", "Precious Fadipe"],
@@ -167,7 +167,7 @@ export const companies: CompaniesType[] = [
     name: "Yellowsun",
     description: "Remote freelance jobs for African talents",
     details:
-      "Yellowsun connects African talents with remote freelance opportunities, empowering skilled professionals to work from anywhere while tapping into the global market. The mission is to bridge the gap between talented individuals and employers seeking diverse, remote talent, fostering economic growth and opportunity across the continent.",
+      "Yellowsun connects African talents with remote freelance opportunities",
     imageUrl: "/assets/company/yellowsun3.jpg",
     imageUrl2: "/assets/company/hexis.jpg",
     imageUrl3: "/assets/company/yellowsun.png",
@@ -183,7 +183,7 @@ export const companies: CompaniesType[] = [
     name: "Thesislab",
     description: "AI Thesis writer and collaborative platform",
     details:
-      "Thesislab is an AI-powered platform designed to help students, researchers, and academics create well-structured, comprehensive theses and research papers. The platform provides an intelligent writing assistant, collaboration tools, and access to research databases, streamlining the writing process and enhancing academic output.",
+      "Thesislab is an AI-powered platform designed to help students, researchers, and academics create well-structured, comprehensive theses and research papers. ",
     imageUrl: "/assets/company/thesislab.png",
     imageUrl2: "/assets/company/thesislab1.png",
     imageUrl3: "/assets/company/thesislab2.jpg",
@@ -199,7 +199,7 @@ export const companies: CompaniesType[] = [
     name: "MrMan",
     description: "Generative AI for WestAfrica",
     details:
-      "Specializes in developing generative AI solutions tailored for the West African market. By harnessing cutting-edge technology, we create innovative applications that address local challenges and enhance various sectors, including education, agriculture, and healthcare. Our mission is to empower communities with AI-driven tools that promote growth, creativity, and sustainable development across the region.",
+      "Specializes in developing generative AI solutions tailored for the West African market. ",
     imageUrl: "/assets/company/mr_man.jpg",
     imageUrl2: "/assets/company/mr_man1.png",
     imageUrl3: "/assets/company/mr_man2.png",
@@ -215,7 +215,7 @@ export const companies: CompaniesType[] = [
     name: "Hexis",
     description: "AI powered school and learning management platform",
     details:
-      "Hexis AI-powered school and learning management platform revolutionizes education by integrating advanced technology to enhance teaching and learning experiences. The platform empowers educators, students, and parents to collaborate effectively.",
+      "Hexis AI-powered school and learning management platform revolutionizes education by integrating advanced technology to enhance teaching and learning experiences.",
     imageUrl: "/assets/company/hexis.jpg",
     imageUrl2: "/assets/company/hexsis1.jpg",
     imageUrl3: "/assets/company/hexis2.png",

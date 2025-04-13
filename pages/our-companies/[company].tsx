@@ -42,7 +42,7 @@ export default function CompanyDetails() {
   }
 
   return (
-    <div className="about-hero-light-yellow-bg  flex relative flex-col lg:gap-16 h-[100svh]">
+    <div className="about-hero-light-yellow-bg flex relative flex-col lg:gap-16 min-h-screen">
       <Head title={siteConfig.name + " / " + companyObject.name} />
       {/* Navbar */}
       <div className="px-6 lg:px-11 sticky top-0 about-hero-light-yellow-bg z-20">
@@ -70,7 +70,7 @@ export default function CompanyDetails() {
           </Link> */}
 
           <Link
-            href={companyObject.path || "/"}
+            href={companyObject.path}
             className=""
             target="_blank"
             rel="noopener noreferrer"
@@ -82,42 +82,20 @@ export default function CompanyDetails() {
           </p>
 
           {/* Connect */}
-          <div>
+        
             <span className="h-[1px] bg-gray-500 w-[70px] block"></span>
             <div className="my-7 flex items-center gap-4">
-              <button className="h-[40px] text-white rounded-full text-sm transition-all duration-350 hover:text-black border border-black hover:bg-transparent bg-black px-[25px]">
-                {companyObject.url}
-              </button>
-              <div className="h-[40px] shrink-0 w-[40px] flex items-center justify-center border border-black rounded-full">
-                <NextImage
-                  width={20}
-                  height={20}
-                  src={"/assets/logo/x.svg"}
-                  alt={`${companyObject.name}`}
-                />
-              </div>
-              <div className="h-[40px] shrink-0 w-[40px] flex items-center justify-center border border-black rounded-full">
-                <NextImage
-                  width={20}
-                  height={20}
-                  src={"/assets/logo/linkedin.svg"}
-                  alt={`${companyObject.name}`}
-                />
-              </div>
-              <div className="h-[40px] shrink-0 w-[40px] flex items-center justify-center border border-black rounded-full">
-                <NextImage
-                  width={20}
-                  height={20}
-                  src={"/assets/logo/instagram.svg"}
-                  alt={`${companyObject.name}`}
-                />
-              </div>
+              <Link
+              href={companyObject.path ? companyObject.path : "/"}
+              className="h-[40px] lg:w-[200px] flex items-center justify-center text-white rounded-full text-sm transition-all duration-350 hover:text-black border border-black hover:bg-transparent bg-black px-[25px]"
+              target="_blank"
+              rel="noopener noreferrer"
+              > 
+              {companyObject.url}             
+              </Link>
             </div>
-            <span className="h-[1px] bg-gray-500 w-[70px] block"></span>
-          </div>
-
-          {/* Animated Button */}
-          <AnimatedButtonDynamic title="Consumer" />
+            
+         
         </div>
 
         {/* Right Section */}
@@ -171,40 +149,7 @@ export default function CompanyDetails() {
 
           <div className="flex flex-col gap-6">
             {/* Single Company Image */}
-            <div className="cursor-pointer relative w-full pb-[100%] overflow-hidden shadow-lg group">
-              {/* Background Image */}
-              <NextImage
-                src={companyObject.imageUrl}
-                alt={"company image"}
-                layout="fill"
-                objectFit="cover"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL="/assets/dessert.jpeg"
-                quality={25}
-                className="absolute inset-0"
-              />
 
-              {/* Read more and arrow */}
-              <div className="absolute flex items-center right-5 top-5">
-                <p className="font-lato text-[16px] font-semibold text-white">
-                  READ
-                </p>
-                <ArrowIcon
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                  color="white"
-                  width={24} height={24}
-                />
-              
-              </div>
-
-              {/* Bottom text content */}
-              <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
-                <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[30px] font-bold text-white">
-                  {companyObject.description}
-                </p>
-              </div>
-            </div>
 
             {/* Double Company Image that will be single on small screens */}
             <div className="flex flex-col md:flex-row gap-6 ">
@@ -222,23 +167,10 @@ export default function CompanyDetails() {
                   className="absolute inset-0"
                 />
                 {/* Read more and arrow */}
-                <div className="absolute flex items-center right-5 top-5">
-                  <p className="font-lato text-[16px] font-semibold text-white">
-                    READ
-                  </p>
-                  <ArrowIcon
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                  color="white"
-                  width={24} height={24}
-                   />
-                </div>
+
 
                 {/* Bottom text content */}
-                <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
-                  <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
-                    More About {companyObject.name}
-                  </p>
-                </div>
+
               </div>
 
               {/* Second Image */}
@@ -255,23 +187,10 @@ export default function CompanyDetails() {
                   className="absolute inset-0"
                 />
                 {/* Read more and arrow */}
-                <div className="absolute flex items-center right-5 top-5">
-                  <p className="font-lato text-[16px] font-semibold text-white">
-                    READ
-                  </p>
-                  <ArrowIcon
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                  color="white"
-                  width={24} height={24}
-                />
-                </div>
+
 
                 {/* Bottom text content */}
-                <div className="absolute bottom-0 bg-black w-full h-[100px] justify-center bg-opacity-50 flex flex-col items-center text-center">
-                  <p className="max-w-[70%] lg:max-w-[55%] leading-[27px] font-lato text-[20px] lg:text-[24px] font-bold text-white">
-                    More About {companyObject.name}
-                  </p>
-                </div>
+
               </div>
             </div>
           </div>
@@ -279,78 +198,7 @@ export default function CompanyDetails() {
       </main>
 
       {/* Sliding Menu */}
-      <div
-        className={`fixed px-6 top-0 flex flex-col md:hidden right-0 h-full w-[100%] bg-herobg z-50 transform transition-transform duration-300 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <NavbarDynamic
-          hideBottomBorder
-          openState={menuOpen}
-          toggleMenu={toggleMenu}
-        />
 
-        <ul className=" flex flex-col">
-          {/* About Link */}
-          <li className="py-5">
-            <Link
-              className={`text-white text-[13px] w-full ${
-                router.pathname === "/about" ? "bg-[#051b22]" : ""
-              }`}
-              href="/about"
-            >
-              <p className="capitalize">ABOUT</p>
-            </Link>
-          </li>
-          {/* Mission Link */}
-          <li className="py-5">
-            <Link
-              className={`text-white text-[13px] w-full ${
-                router.pathname === "/mission" ? "bg-[#051b22]" : ""
-              }`}
-              href="/mission"
-            >
-              <p className="capitalize">MISSION</p>
-            </Link>
-          </li>
-
-          {/* Our Companies Link */}
-          <li className="py-5">
-            <Link
-              className={`text-white text-[13px] w-full ${
-                router.pathname === "/our-companies" ? "bg-[#051b22]" : ""
-              }`}
-              href="/our-companies"
-            >
-              <p className="capitalize">OUR COMPANIES</p>
-            </Link>
-          </li>
-
-          {/* Team Link */}
-          <li className="py-5">
-            <Link
-              className={`text-white text-[13px] w-full ${
-                router.pathname === "/team" ? "bg-[#051b22]" : ""
-              }`}
-              href="/team"
-            >
-              <p className="capitalize">TEAM</p>
-            </Link>
-          </li>
-
-          {/* Blog */}
-          <li className="py-5">
-            <Link
-              className={`text-white text-[13px] w-full ${
-                router.pathname === "/blog" ? "bg-[#051b22]" : ""
-              }`}
-              href="/blog"
-            >
-              <p className="capitalize">BLOG</p>
-            </Link>
-          </li>
-        </ul>
-      </div>
 
       <footer className="w-full footer-bg flex items-center justify-center py-[8px] lg:h-[100px]">
         <p className="footer-text font-lora">© 2024 {siteConfig.name}</p>
