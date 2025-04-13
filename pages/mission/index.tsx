@@ -89,18 +89,7 @@ export default function DocsPage() {
             </ParagraphComp>
 
             {/* Optimized full-width Image */}
-            <div className="my-6 w-full">
-              <Image
-                src="/assets/mission1.png"
-                alt="ceo"
-                quality={60}
-                layout="responsive"
-                width={1000}
-                height={500}
-                className="object-cover"
-                priority
-              />
-            </div>
+
 
             <ParagraphComp>
               Aorta’s goal is simple: To build the Africa we desire, by
@@ -113,6 +102,12 @@ export default function DocsPage() {
             <ParagraphComp>
               <span className="font-semibold">
                 We are not hoping for a better future, we are building it.
+              </span>
+            </ParagraphComp>
+
+            <ParagraphComp>
+              <span className="italic font-lora">
+                Solomon Ojo <br /> Aorta CEO
               </span>
             </ParagraphComp>
 

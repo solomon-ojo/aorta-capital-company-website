@@ -1,4 +1,5 @@
 import Image from "next/image";
+// Removed invalid import for 'next/video'
 import DefaultLayout from "@/layouts/default";
 import { SiteFiles } from "@/config/siteFiles";
 import AnimatedButton from "@/components/animatedButton";
@@ -12,12 +13,9 @@ export default function IndexPage() {
         <div className="lg:flex-1 h-[200px] md:h-[300px] lg:h-full relative">
           <Image
             src={SiteFiles.homeBg}
-            alt="Background Image"
+            alt="Background"
             layout="fill"
             objectFit="cover"
-            objectPosition="left 50%"
-            quality={75}
-            priority
           />
         </div>
 

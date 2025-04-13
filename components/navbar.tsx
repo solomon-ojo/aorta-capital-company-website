@@ -20,8 +20,8 @@ export const Navbar = ({ toggleMenu, openState }: NavbarProps) => {
 
   const Links: LinkType[] = [
     {
-      title: "About",
-      path: "/about",
+      title: "Home",
+      path: "/",
     },
     {
       title: "Mission",

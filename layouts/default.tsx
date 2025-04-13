@@ -44,15 +44,15 @@ export default function DefaultLayout({
         }`}
       >
         <ul className="mt-[80px] flex flex-col">
-          {/* Mission Link */}
+          {/* Home Link */}
           <li className="">
             <Link
               className={`text-white text-[13px] leading-[30px] w-full px-6 py-5 ${
-                router.pathname === "/about" ? "bg-[#051b22]" : ""
+                router.pathname === "/" ? "bg-[#051b22]" : ""
               }`}
-              href="/about"
+              href="/"
             >
-              <p className="capitalize">ABOUT</p>
+              <p className="capitalize">Home</p>
             </Link>
           </li>
 
